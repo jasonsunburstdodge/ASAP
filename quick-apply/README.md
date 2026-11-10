@@ -41,3 +41,7 @@ Source continuity: based on repository commit `162138d3ca0aa505156d940ada5f56f07
 Nine automated DOM checks passed: general discovery through JSON, ad location confirmation and missing-credential redirect, Spanish screening through email preview, incomplete requirements, mocked speech-language/consent/transcript/error handling, ambiguous input and Back, coverage for all 31 summaries, call/form/chat opening choices and alternate-role selection preserving profile while resetting role-specific answers. Run with Node 24, install `jsdom@31.0.0` as a development dependency, then `node tests/recruiter.cjs`.
 
 Public-browser checks verified the top call CTA and its tel target, no-prefill entry, location/category questions, job results, unmet-credential redirect, retained location and Spanish alternatives. Desktop layout visually checked. Speech recognition was tested with mock events only; actual microphone transcription, installed voice playback and physical mobile devices remain unverified. No actual phone call was placed. Email and COATS remain disconnected.
+
+### Voice selection update
+
+Nov. 10, 2026: prefer available named adult female voices in each language, expose the actual device voice selector and handle late-loading voice lists. Nine DOM tests pass, including female-voice preference over an earlier-listed male voice and Spanish voice selection. ElevenLabs Rachel is documented as a recommended hosted option, not an active integration. Prior source preserved at `4ae410ab8582084241e45c04e69db79988c4cded`.

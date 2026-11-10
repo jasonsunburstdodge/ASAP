@@ -13,8 +13,30 @@ function title(j){return lang==='es'?(data.titles[j.id]||nice(j.title)):nice(j.t
 function category(j){return data.categories.find(c=>c[0]!=='any'&&new RegExp(c[3]).test(j.title))?.[0]||'production';}
 function label(key){return labels[key]?.[lang==='es'?1:0]||key;}
 function displayValue(key,val){return enums[key]?.find(x=>x[0]===val)?.[lang==='es'?1:0] || (key==='category'?data.categories.find(x=>x[0]===val)?.[lang==='es'?2:1]:null)||val;}
-function stopVoice(){if(recognizer){recognizer.abort();recognizer=null;}listening=false;window.speechSynthesis?.cancel();$('chatMic').setAttribute('aria-pressed','false');$('chatMic').textContent=tr('Use microphone','Usar micrófono');}
-function speak(text){if(!$('readAloud').checked||!('speechSynthesis' in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text.replace(/ASAP/g,'A S A P'));u.lang=lang==='es'?'es-US':'en-US';const v=speechSynthesis.getVoices().find(v=>v.lang.toLowerCase()===u.lang.toLowerCase())||speechSynthesis.getVoices().find(v=>v.lang.startsWith(lang));if(v)u.voice=v;u.rate=.96;u.onerror=e=>{if(!['canceled','interrupted'].includes(e.error))$('chatStatus').textContent=tr('Audio is unavailable. You can read every question here.','El audio no está disponible. Puede leer cada pregunta aquí.');};speechSynthesis.speak(u);}
+function stopVoice(){waitingForVoice=false;if(recognizer){recognizer.abort();recognizer=null;}listening=false;window.speechSynthesis?.cancel();$('chatMic').setAttribute('aria-pressed','false');$('chatMic').textContent=tr('Use microphone','Usar micrófono');}
+// Prefer named adult women's voices where the device offers them; never infer gender from language alone.
+const voicePreferences={en:['Aria','Jenny','Samantha','Zira','Ava','Allison','Susan','Victoria','Karen','Serena','Sonia'],es:['Dalia','Paloma','Sabina','Paulina','Mónica','Monica','Elvira','Helena','Laura']};
+const selectedVoices={};
+let availableVoices=[],waitingForVoice=false;
+function voiceKey(v){return v.voiceURI||v.name+'|'+v.lang;}
+function voiceRank(v){const i=voicePreferences[lang].findIndex(n=>(v.name||'').toLowerCase().includes(n.toLowerCase()));return (i<0?1000:i*10)+(v.lang.toLowerCase()===(lang==='es'?'es-mx':'en-us')?0:2);}
+function refreshVoices(){
+ availableVoices=(window.speechSynthesis?.getVoices()||[]).filter(v=>v.lang?.toLowerCase().startsWith(lang)).sort((a,b)=>voiceRank(a)-voiceRank(b));
+ const box=$('chatVoice');box.replaceChildren();
+ if(!availableVoices.length){box.add(new Option(tr('No voice loaded for this language','No hay voz cargada para este idioma'),''));box.disabled=true;return;}
+ box.disabled=false;availableVoices.forEach(v=>box.add(new Option((v.name||v.lang)+' · '+v.lang,voiceKey(v))));
+ box.value=availableVoices.some(v=>voiceKey(v)===selectedVoices[lang])?selectedVoices[lang]:voiceKey(availableVoices[0]);
+}
+function speak(text){
+ if(!$('readAloud').checked||!('speechSynthesis' in window))return;
+ window.speechSynthesis.cancel();refreshVoices();
+ const v=availableVoices.find(v=>voiceKey(v)===$('chatVoice').value);
+ if(!v){waitingForVoice=true;$('chatStatus').textContent=tr('A voice for this language has not loaded. You can keep reading or try Hear again.','No se ha cargado una voz para este idioma. Puede seguir leyendo o intentar Escuchar de nuevo.');return;}
+ waitingForVoice=false;
+ const u=new SpeechSynthesisUtterance(text.replace(/ASAP/g,'A S A P'));u.lang=v.lang;u.voice=v;u.rate=.94;u.pitch=1;
+ u.onerror=e=>{if(!['canceled','interrupted'].includes(e.error))$('chatStatus').textContent=tr('Audio is unavailable. You can read every question here.','El audio no está disponible. Puede leer cada pregunta aquí.');};speechSynthesis.speak(u);
+}
+
 function message(text,user=false){const box=document.createElement('div');box.className='chat-message'+(user?' user':'');box.lang=lang;const who=document.createElement('span');who.className='message-who';who.textContent=user?tr('YOU','USTED'):tr('ASAP ASSISTANT','ASISTENTE ASAP');box.append(who,document.createTextNode(text));$('chatMessages').append(box);$('chatMessages').scrollTop=$('chatMessages').scrollHeight;transcript.push({speaker:user?'candidate':'assistant',text,language:lang});return box;}
 function ask(text){currentQuestion=text;return message(text);}
 function option(en,es,value,action,sub='',aliases=[]){const b=document.createElement('button');b.type='button';b.textContent=tr(en,es);if(sub){b.className='job-choice';const s=document.createElement('small');s.textContent=sub;b.append(s);}const item={value,label:tr(en,es),aliases:[en,es,String(value),...aliases],action};choices.push(item);b.onclick=()=>accept(item.label,item.value,action);$('chatChoices').append(b);}
@@ -141,10 +163,11 @@ function transfer(submit){
 }
 function localize(){
  $('recruiterChat').lang=lang;
- const map={chatTitle:['Your ASAP job guide','Su guía de empleo ASAP'],chatSubtitle:['Virtual recruiting assistant','Asistente virtual de reclutamiento'],languageLabel:['Language','Idioma'],readAloudLabel:['Read questions aloud','Leer preguntas en voz alta'],repeatQuestion:['Hear again','Escuchar de nuevo'],chatDemo:['Concept: use sample details. Nothing is sent to ASAP.','Concepto: use datos de ejemplo. No se envía nada a ASAP.'],chatInputLabel:['Your answer','Su respuesta'],chatMic:['Use microphone','Usar micrófono'],chatSend:['Send answer','Enviar respuesta'],chatBack:['Previous question','Pregunta anterior'],chatRestart:['Start over','Empezar de nuevo'],humanRecruiter:['Call 501-537-2727','Llamar al 501-537-2727'],voiceTitle:['Use voice input?','¿Usar entrada de voz?'],voiceNotice:['Your browser may send audio to its speech service to turn it into text. This concept does not save audio. You can edit the words before sending them, or keep typing.','Su navegador puede enviar audio a su servicio de voz para convertirlo en texto. Este concepto no guarda audio. Puede editar las palabras antes de enviarlas o seguir escribiendo.'],allowVoice:['Use microphone','Usar micrófono'],cancelVoice:['Keep typing','Seguir escribiendo']};for(const[id,v]of Object.entries(map))$(id).textContent=v[lang==='es'?1:0];
+ const map={chatTitle:['Your ASAP job guide','Su guía de empleo ASAP'],chatSubtitle:['Virtual recruiting assistant','Asistente virtual de reclutamiento'],languageLabel:['Language','Idioma'],voiceLabel:['Voice','Voz'],readAloudLabel:['Read questions aloud','Leer preguntas en voz alta'],repeatQuestion:['Hear again','Escuchar de nuevo'],chatDemo:['Concept: use sample details. Nothing is sent to ASAP.','Concepto: use datos de ejemplo. No se envía nada a ASAP.'],chatInputLabel:['Your answer','Su respuesta'],chatMic:['Use microphone','Usar micrófono'],chatSend:['Send answer','Enviar respuesta'],chatBack:['Previous question','Pregunta anterior'],chatRestart:['Start over','Empezar de nuevo'],humanRecruiter:['Call 501-537-2727','Llamar al 501-537-2727'],voiceTitle:['Use voice input?','¿Usar entrada de voz?'],voiceNotice:['Your browser may send audio to its speech service to turn it into text. This concept does not save audio. You can edit the words before sending them, or keep typing.','Su navegador puede enviar audio a su servicio de voz para convertirlo en texto. Este concepto no guarda audio. Puede editar las palabras antes de enviarlas o seguir escribiendo.'],allowVoice:['Use microphone','Usar micrófono'],cancelVoice:['Keep typing','Seguir escribiendo']};for(const[id,v]of Object.entries(map))$(id).textContent=v[lang==='es'?1:0];
  $('chatInput').placeholder=tr('Type here or use the microphone','Escriba aquí o use el micrófono');$('closeChat').ariaLabel=tr('Close chat','Cerrar chat');$('chatChoices').ariaLabel=tr('Suggested answers','Respuestas sugeridas');
  const supported=!!(window.SpeechRecognition||window.webkitSpeechRecognition);$('chatMic').disabled=!supported;
  if(!supported)$('chatStatus').textContent=tr('Voice input is unavailable in this browser. Please type your answers.','La entrada de voz no está disponible en este navegador. Escriba sus respuestas.');
+ refreshVoices();$('chatVoice').setAttribute('aria-label',tr('Speaking voice','Voz del asistente'));
  $('readAloud').disabled=!('speechSynthesis' in window);$('repeatQuestion').disabled=!('speechSynthesis' in window);
 }
 function listen(){
@@ -165,6 +188,8 @@ $('readAloud').onchange=()=>{if($('readAloud').checked)speak(currentQuestion);el
 $('chatMic').onclick=()=>{if(!voiceAllowed){$('voiceConsent').showModal();}else listen();};$('allowVoice').onclick=()=>{voiceAllowed=true;$('voiceConsent').close();listen();};$('cancelVoice').onclick=()=>$('voiceConsent').close();
 $('chatBack').onclick=()=>{stopVoice();const prev=history.pop();if(!prev)return;({state,p,answers,checkIndex,roleIndex,interviewIndex,editing}=prev);selected=catalog.find(j=>j.id===prev.selected)||null;transcript=transcript.slice(0,prev.transcriptLength);$('chatMessages').replaceChildren();const restored=[...transcript];transcript=[];restored.forEach(m=>message(m.text,m.speaker==='candidate'));render();};
 $('chatRestart').onclick=()=>{stopVoice();p={};selected=null;answers=[];history=[];transcript=[];editing=null;checkIndex=roleIndex=interviewIndex=0;usedVoice=false;window.ASAP_CHAT_SUBMISSION=null;$('chatMessages').replaceChildren();go('welcome');};
+$('chatVoice').onchange=()=>{selectedVoices[lang]=$('chatVoice').value;if($('readAloud').checked)speak(currentQuestion);};
+window.speechSynthesis?.addEventListener?.('voiceschanged',()=>{refreshVoices();if(waitingForVoice&&$('recruiterChat').open&&$('readAloud').checked)speak(currentQuestion);});
 window.addEventListener('pagehide',stopVoice);localize();
 if(new URLSearchParams(location.search).get('chat')==='open')open();
 })();

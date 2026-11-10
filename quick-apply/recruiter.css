@@ -3,3 +3,5 @@
 .call-banner{background:#fff1e3;display:flex;gap:22px;align-items:center;justify-content:center;padding:15px 25px;flex-wrap:wrap}.call-banner strong,.call-banner span{display:block}.call-banner strong{font-size:17px}.call-banner span{font-size:12px}.call-banner small{font-size:10px}.call-banner .button{padding:12px 20px;font-size:14px}#chatChoices a{padding:10px 13px;border:1px solid #dcb28c;border-radius:8px;background:#fff;color:#713800;font-size:12px;text-decoration:none;min-height:40px}#chatChoices a:hover{background:#fff2e4}@media(max-width:650px){.call-banner{gap:10px;text-align:center;padding:14px}.call-banner small{width:100%}.call-banner .button{padding:10px 15px}.call-banner strong{font-size:15px}.call-banner span{font-size:11px}}
 
 #recruiterChat{text-align:left}#recruiterChat .chat-header,#chatForm{text-align:left}
+
+#recruiterChat .voice-setting{width:100%;display:flex;align-items:center;gap:8px}#recruiterChat .voice-setting select{max-width:calc(100% - 45px);font-size:11px;flex:1;min-width:0}

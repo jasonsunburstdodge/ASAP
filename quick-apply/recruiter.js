@@ -302,6 +302,7 @@ function transfer(submit){
 }
 function localize(){
  $('recruiterChat').lang=lang;
+ $('mobileSettings').textContent=tr('Language & audio','Idioma y audio');
  $('companyHelp').textContent=tr('Ask about ASAP','Preguntar sobre ASAP');
  const map={chatTitle:['ASAP Job Seeking Assistant','Asistente de búsqueda de empleo ASAP'],chatSubtitle:['Virtual recruiting assistant','Asistente virtual de reclutamiento'],languageLabel:['Language','Idioma'],voiceLabel:['Voice','Voz'],readAloudLabel:['Read questions aloud','Leer preguntas en voz alta'],repeatQuestion:['Hear again','Escuchar de nuevo'],chatDemo:['Concept: use sample details. Nothing is sent to ASAP.','Concepto: use datos de ejemplo. No se envía nada a ASAP.'],chatInputLabel:['Your answer','Su respuesta'],chatMic:['Use microphone','Usar micrófono'],chatSend:['Send answer','Enviar respuesta'],chatBack:['Previous question','Pregunta anterior'],chatRestart:['Start over','Empezar de nuevo'],humanRecruiter:['Call 501-537-2727','Llamar al 501-537-2727'],voiceTitle:['Use voice input?','¿Usar entrada de voz?'],voiceNotice:['Your browser may send audio to its speech service to turn it into text. This concept does not save audio. You can edit the words before sending them, or keep typing.','Su navegador puede enviar audio a su servicio de voz para convertirlo en texto. Este concepto no guarda audio. Puede editar las palabras antes de enviarlas o seguir escribiendo.'],allowVoice:['Use microphone','Usar micrófono'],cancelVoice:['Keep typing','Seguir escribiendo']};for(const[id,v]of Object.entries(map))$(id).textContent=v[lang==='es'?1:0];
  $('chatInput').placeholder=tr('Type here or use the microphone','Escriba aquí o use el micrófono');$('closeChat').ariaLabel=tr('Close chat','Cerrar chat');$('chatChoices').ariaLabel=tr('Suggested answers','Respuestas sugeridas');
@@ -319,10 +320,22 @@ function listen(){
  r.onerror=e=>{const denied=['not-allowed','service-not-allowed'].includes(e.error);$('chatStatus').textContent=denied?tr('Microphone access was not allowed. You can keep typing.','No se permitió el micrófono. Puede seguir escribiendo.'):tr('Voice input could not finish. Try again or type your answer.','La entrada de voz no terminó. Intente otra vez o escriba.');};
  r.onend=()=>{listening=false;recognizer=null;$('chatMic').textContent=tr('Use microphone','Usar micrófono');$('chatMic').setAttribute('aria-pressed','false');};try{r.start();}catch{error(tr('Could not start the microphone. Please type or try again.','No se pudo iniciar el micrófono. Escriba o intente otra vez.'));}
 }
-function open(){if(!$('recruiterChat').open)$('recruiterChat').showModal();$('chatLauncher').setAttribute('aria-expanded','true');if(!transcript.length)render();localize();$('chatInput').focus();}
+function open(){if(!$('recruiterChat').open)$('recruiterChat').showModal();$('chatLauncher').setAttribute('aria-expanded','true');if(!transcript.length)render();localize();if(window.innerWidth>759)$('chatInput').focus();else $('closeChat').focus({preventScroll:true});}
 function close(){stopVoice();$('recruiterChat').close();$('chatLauncher').setAttribute('aria-expanded','false');}
 $('openRecruiter').onclick=open;$('chatLauncher').onclick=open;$('closeChat').onclick=close;$('recruiterChat').addEventListener('cancel',()=>{stopVoice();$('chatLauncher').setAttribute('aria-expanded','false');});
 $('chatForm').onsubmit=submitText;
+const mobileDock=document.createElement('div');mobileDock.id='chatMobileDock';
+$('recruiterChat').insertBefore(mobileDock,document.querySelector('#recruiterChat .chat-bottom'));
+function fitMobileChat(){
+ const mobile=window.innerWidth<=759,dialog=$('recruiterChat');
+ const target=mobile?mobileDock:document.querySelector('.chat-response');
+ if($('chatForm').parentElement!==target){target.append($('chatForm'),$('chatStatus'));}
+ const viewport=window.visualViewport;
+ dialog.style.setProperty('--chat-height',(viewport?.height||window.innerHeight)+'px');
+ dialog.style.setProperty('--chat-top',(viewport?.offsetTop||0)+'px');
+}
+$('mobileSettings').onclick=()=>{const expanded=$('mobileSettings').getAttribute('aria-expanded')!=='true';$('mobileSettings').setAttribute('aria-expanded',String(expanded));$('recruiterChat').classList.toggle('settings-expanded',expanded);};
+window.addEventListener('resize',fitMobileChat);window.visualViewport?.addEventListener('resize',fitMobileChat);window.visualViewport?.addEventListener('scroll',fitMobileChat);fitMobileChat();
 $('companyHelp').onclick=()=>showCompanyHelp();
 $('chatLanguage').onchange=()=>{stopVoice();lang=$('chatLanguage').value;localize();if(transcript.length)render();};
 $('readAloud').onchange=()=>{if($('readAloud').checked)speak(currentQuestion);else {window.ASAP_SAVED_AUDIO?.stop();window.speechSynthesis?.cancel();}};$('repeatQuestion').onclick=()=>{$('readAloud').checked=true;speak(currentQuestion);};

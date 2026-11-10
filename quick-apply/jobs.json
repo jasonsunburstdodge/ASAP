@@ -8,7 +8,16 @@
       "location": "SOUTH AUSTIN",
       "employment_type": null,
       "url": "https://asapworksforme.com/job/construction-materials-technician-cmt/",
-      "posted": "2026-10-29"
+      "posted": "2026-10-29",
+      "requirements_source_url": "https://asapworksforme.com/job/construction-materials-technician-cmt/",
+      "requirements": [
+        "Must be 18+ with a valid driver’s license (no DUIs)",
+        "Must have a truck (equipment transport required)",
+        "Ability to lift 50 lbs",
+        "Strong reliability, flexibility, and communication skills"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9510",
@@ -16,7 +25,26 @@
       "location": "ROUND ROCK/PFLUGERVILLE",
       "employment_type": null,
       "url": "https://asapworksforme.com/job/warehouse-driver-associate/",
-      "posted": "2026-10-29"
+      "posted": "2026-10-29",
+      "requirements_source_url": "https://asapworksforme.com/job/warehouse-driver-associate/",
+      "requirements": [
+        "Minimum of 3 years of recent warehouse experience",
+        "Forklift experience preferred",
+        "Experience with pick and pack operations",
+        "Ability to lift 40-75 lbs repeatedly throughout the day",
+        "Comfortable working in a fast-paced, high-volume environment",
+        "Strong attention to detail with the ability to maintain accuracy under pressure",
+        "Ability to follow directions and work efficiently both independently and as part of a team",
+        "Reliable transportation required",
+        "Physical Demands & Work Environment:",
+        "Heavy lifting and pulling required",
+        "Fast-paced warehouse environment",
+        "Indoor and outdoor work as needed",
+        "ADDITIONAL REQUIREMENT",
+        "Candidates will be required to complete a brief warehouse aptitude test as part of the hiring process."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9509",
@@ -24,7 +52,18 @@
       "location": "SOUTH AUSTIN",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/box-truck-driver/",
-      "posted": "2026-10-29"
+      "posted": "2026-10-29",
+      "requirements_source_url": "https://asapworksforme.com/job/box-truck-driver/",
+      "requirements": [
+        "At least 1 year of experience driving a box truck or larger commercial vehicle",
+        "Familiarity with the Austin and San Marcos areas",
+        "Ability to perform physically demanding work throughout the day",
+        "Clean driving record",
+        "Ability to pass a background check in accordance with applicable laws",
+        "Dependable with excellent attendance and a strong work ethic"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9507",
@@ -32,7 +71,16 @@
       "location": "CONWAY",
       "employment_type": "Other",
       "url": "https://asapworksforme.com/job/mover-lawn-care/",
-      "posted": "2026-10-28"
+      "posted": "2026-10-28",
+      "requirements_source_url": "https://asapworksforme.com/job/mover-lawn-care/",
+      "requirements": [
+        "MUST HAVE VALID DRIVER’S LICENSE, WITH NO OUTSTANDING TICKETS",
+        "MUST BE ABLE TO LIFT 50 LBS",
+        "MUST BE ABLE TO PASS A BACKGROUND CHECK",
+        "MUST PASS DRUG TEST"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9505",
@@ -40,7 +88,13 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/seamstress/",
-      "posted": "2026-10-27"
+      "posted": "2026-10-27",
+      "requirements_source_url": "https://asapworksforme.com/job/seamstress/",
+      "requirements": [
+        "Applicants must have experience operating a sewing machine."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9503",
@@ -48,7 +102,14 @@
       "location": "NORTH LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/manufacturing-lead/",
-      "posted": "2026-10-26"
+      "posted": "2026-10-26",
+      "requirements_source_url": "https://asapworksforme.com/job/manufacturing-lead/",
+      "requirements": [
+        "LEAD"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot",
+      "requirements_note": "The listing only specifies “LEAD.” A recruiter can clarify the minimum experience for this role."
     },
     {
       "id": "9502",
@@ -56,7 +117,28 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/administrative-assistant/",
-      "posted": "2026-10-26"
+      "posted": "2026-10-26",
+      "requirements_source_url": "https://asapworksforme.com/job/administrative-assistant/",
+      "requirements": [
+        "Manage and coordinate daily administrative tasks to ensure operational efficiency",
+        "Prepare, edit, and format documents using Microsoft Office applications such as Word, Excel, and PowerPoint",
+        "Assist with scheduling appointments, meetings, and calendar management",
+        "Support team members with various administrative duties as needed",
+        "Ensure accurate data entry and record keeping",
+        "Respond promptly to internal and external inquiries via email or phone",
+        "Perform general office duties to support overall business operations",
+        "Order snacks/office supplies",
+        "Ordering promo supplies",
+        "Proven experience in an administrative or clerical role preferred",
+        "Strong proficiency in Microsoft Office Suite (Word, Excel, PowerPoint)",
+        "Excellent communication skills, particularly over the phone and via email",
+        "High level of computer literacy with the ability to quickly adapt to new software tools",
+        "Ability to multitask effectively while maintaining attention to detail",
+        "Professional demeanor with strong organizational skills",
+        "Ability to work independently and as part of a team in a full-time capacity"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9495",
@@ -64,7 +146,23 @@
       "location": "CONWAY",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/buyer-purchasing-agent/",
-      "posted": "2026-10-21"
+      "posted": "2026-10-21",
+      "requirements_source_url": "https://asapworksforme.com/job/buyer-purchasing-agent/",
+      "requirements": [
+        "Build and maintain productive, long-term relationships with key suppliers and global business partners.",
+        "Aid with inventory management, including Finished Goods, Work in Process and Raw Materials.",
+        "Investigate inventory discrepancies and implement corrective action when problem has been identified.",
+        "EDUCATION REQUIRED",
+        "High School Diploma or Equivalent",
+        "Post Secondary School in Related Courses preferred.",
+        "EXPERIENCE REQUIRED",
+        "3 Years related experience",
+        "Strong computer skills (SAP)",
+        "Knowledge of steel industry",
+        "Customer Service background a plus"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9492",
@@ -72,7 +170,28 @@
       "location": "LITTLE ROCK",
       "employment_type": "Contract",
       "url": "https://asapworksforme.com/job/parts-manager/",
-      "posted": "2026-10-19"
+      "posted": "2026-10-19",
+      "requirements_source_url": "https://asapworksforme.com/job/parts-manager/",
+      "requirements": [
+        "Purchase machines, accessories, parts, and consumable supplies.",
+        "Communicate with vendor and manufacturer representatives to obtain pricing, product availability, and purchasing information.",
+        "Research and negotiate pricing to identify the best available deals and purchasing opportunities.",
+        "Receive, inspect, organize, and inventory purchased items upon delivery.",
+        "Create and fulfill customer sales orders for parts and consumable products.",
+        "Prepare and ship customer orders, accurately documenting shipping information and tracking numbers for each outbound package.",
+        "Maintain accurate inventory records using the company’s inventory control software.",
+        "Organize and maintain parts and consumables inventory to ensure items are readily accessible and properly accounted for.",
+        "Create and maintain spreadsheets to track department expenses, warranty credits, machine-related invoices, and purchasing activity.",
+        "Complete weekly and monthly expense reports based on purchasing history and department expenditures.",
+        "Research and identify cost-effective shipping options for returns and other logistics needs.",
+        "Maintain a clean, organized, and professional workstation and parts area.",
+        "Assist with answering incoming company phone calls and directing calls as needed throughout the day.",
+        "Work closely with sales representatives and vendors to identify pricing opportunities, product availability, and other purchasing solutions.",
+        "Perform other duties and activities as necessary to support the efficient operation of the Parts and Service Departments.",
+        "This is a drug free environment - Background check required"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9488",
@@ -80,7 +199,38 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/mig-welder/",
-      "posted": "2026-10-15"
+      "posted": "2026-10-15",
+      "requirements_source_url": "https://asapworksforme.com/job/mig-welder/",
+      "requirements": [
+        "Essential Job Duties:",
+        "1.Read drawings, specifications and shop cut sheets to determine work requirements, material and equipment.",
+        "2.Collect necessary components and parts to be welded. All surfaces should be in suitable condition for welding and the settings of the weld equipment checked.",
+        "3.Employees will work to ensure that tasks are performed in a safe and timely manner, in accordance with specifications as detailed on cut sheets, and with completeness and accuracy.",
+        "4.Maintain accurate counts on completed and scrapped products, record counts according to company policy.",
+        "5.Complete Daily Production sheets to track the quantity of products produced. Turn in the completed form to the Lead person after each shift.",
+        "6.Communicate to Lead person any problems in production and make recommendations to improve efficiency.",
+        "7.Follow procedures that maintain high standards of operations, comply with OSHA safety requirements, and result in products that conform to specifications and quality standards.",
+        "8.Set up, adjust, change compressed gas cylinders and perform minor maintenance on various pieces of welding equipment.",
+        "9.Observe and follow training recommendations on the proper and safe operation of all equipment.",
+        "10.Ensure that workstations within the department are clean, organized and free of dangerous conditions and that hazardous materials are properly stored.",
+        "11.Alert Lead person when the supply of raw material and components begin to run low and needs to be requested/ordered.",
+        "Competencies:",
+        "1.Must be able to follow assigned tasks and keep up with the work flow and activities of others.",
+        "2.Must be able to establish good working relationship with others and communicate effectively with management.",
+        "3.Ability to set up and safely operate equipment.",
+        "4.Thorough knowledge of MIG welding processes, including advanced welding techniques in a steel fabrication environment, and of welding tools and equipment.",
+        "5.Knowledge of shop work procedures and safety policies.",
+        "6.Must display safety conscious behavior.",
+        "7.Ability to read and understand shop cut sheets and engineering drawings to make acceptable weldments that comply with these specifications.",
+        "8.Competency in shop math skills including fractions and angles.",
+        "9.Strong orientation toward thoroughness, accuracy and urgency.",
+        "10.Ability to work in a stressful, fast-paced environment.",
+        "Education and Experience Requirements:",
+        "1.High school diploma or GED required.",
+        "2.Vo-Tech certification in welding process or minimum of 2 years MIG welding experience."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9487",
@@ -88,7 +238,16 @@
       "location": "NORTH LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/metal-inspector/",
-      "posted": "2026-10-15"
+      "posted": "2026-10-15",
+      "requirements_source_url": "https://asapworksforme.com/job/metal-inspector/",
+      "requirements": [
+        "Mechanical Aptitude: Demonstrated capability to understand mechanical processes and machinery operation.",
+        "Tool Proficiency: Ability to safely and accurately use hand tools.",
+        "Physical Stamina: Capacity to stand, walk, and lean over production lines for extended periods.",
+        "Coordination: Superior eye-hand coordination for precision measurement and handling of heavy or small parts."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9479",
@@ -96,7 +255,20 @@
       "location": "LITTLE ROCK",
       "employment_type": "Other",
       "url": "https://asapworksforme.com/job/delivery-driver/",
-      "posted": "2026-10-07"
+      "posted": "2026-10-07",
+      "requirements_source_url": "https://asapworksforme.com/job/delivery-driver/",
+      "requirements": [
+        "Must be physically able to lift 50+lbs.",
+        "Must be able to physically move and position machines weighing several hundred pounds (these machines are on wheels and dollies are available).",
+        "Must be physically able to walk distances up to 2-5 miles in a day.",
+        "Will be loading and unloading box trucks and/or transit delivery vans. (These are all equipped with ramps or power lift gates)",
+        "Needs to be presentable with no visible tattoos.",
+        "Must have ability to communicate professionally and effectively.",
+        "Must have a clean driving record.",
+        "Will be required to pass a drug test and a background check"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9473",
@@ -104,7 +276,15 @@
       "location": "LITTLE ROCK",
       "employment_type": null,
       "url": "https://asapworksforme.com/job/bank-teller-7a-4p/",
-      "posted": "2026-10-05"
+      "posted": "2026-10-05",
+      "requirements_source_url": "https://asapworksforme.com/job/bank-teller-7a-4p/",
+      "requirements": [
+        "Must have cash handling work experience.",
+        "Must have friendly face-to-face customer service skills.",
+        "Will drug test and background check"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9458",
@@ -112,7 +292,18 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/production-maintenance/",
-      "posted": "2026-09-29"
+      "posted": "2026-09-29",
+      "requirements_source_url": "https://asapworksforme.com/job/production-maintenance/",
+      "requirements": [
+        "Candidate needs to be knowledgeable in basic math, measurements, symbols, and transformers (how to wire H&X).",
+        "Candidate should be able to explain PLC in detail.",
+        "Candidate should be knowledgeable in wiring diagrams and motors.",
+        "Candidate needs industrial Maintenance/Manufacturing experience.",
+        "Candidate needs a minimum of 4 yrs. Heavy Electrical / Mechanical experience.",
+        "Food Manufacturing is preferred, but not required."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9457",
@@ -120,7 +311,20 @@
       "location": "CONWAY",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/industrial-tech/",
-      "posted": "2026-09-29"
+      "posted": "2026-09-29",
+      "requirements_source_url": "https://asapworksforme.com/job/industrial-tech/",
+      "requirements": [
+        "High school diploma or equivalent; technical degree or certification in industrial maintenance or a related field preferred.",
+        "Proven experience as an industrial equipment technician, preferably in the automotive or metal fabrication industry.",
+        "Strong knowledge of mechanical, electrical, and hydraulic systems.",
+        "Proficiency in using diagnostic tools and equipment.",
+        "Excellent problem-solving skills and attention to detail.",
+        "Strong communication and teamwork abilities.",
+        "Ability to work in a fast-paced environment and handle multiple tasks simultaneously.",
+        "Must be able to pass a drug test and background check"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9456",
@@ -128,7 +332,20 @@
       "location": "CONWAY",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/maintenance-mechanic/",
-      "posted": "2026-09-29"
+      "posted": "2026-09-29",
+      "requirements_source_url": "https://asapworksforme.com/job/maintenance-mechanic/",
+      "requirements": [
+        "3+ years of industrial maintenance experience in automotive or metal fabrication environments.",
+        "Strong understanding of mechanical systems, including presses, tooling, conveyors, and automation.",
+        "Working knowledge of hydraulics, pneumatics, and mechanical power transmission.",
+        "Basic electrical troubleshooting (motors, sensors, safety circuits; PLC exposure preferred).",
+        "Ability to read and interpret blueprints, electrical schematics, and technical documentation.",
+        "Welding experience (MIG/TIG/Stick) preferred.",
+        "Familiarity with IATF 16949, PFMEA, Control Plans, and preventive maintenance documentation.",
+        "Must be able to pass a drug test and background check"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9455",
@@ -136,7 +353,15 @@
       "location": "CONWAY",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/maintenance-millwright/",
-      "posted": "2026-09-29"
+      "posted": "2026-09-29",
+      "requirements_source_url": "https://asapworksforme.com/job/maintenance-millwright/",
+      "requirements": [
+        "Must hold a valid License Certificate of Qualification 433a Industrial Millwright.",
+        "Post Secondary Diploma and experience in technical areas, C.E.T. or Professional Engineering Designation will be considered in lieu of C of Q.",
+        "Must be able to pass a drug test and background check"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9410",
@@ -144,15 +369,52 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/laser-operator/",
-      "posted": "2026-09-25"
+      "posted": "2026-09-25",
+      "requirements_source_url": "https://asapworksforme.com/job/laser-operator/",
+      "requirements": [
+        "Basic Qualifications:",
+        "Must have basic fabrication background.",
+        "Basic knowledge of laser operation and maintenance.",
+        "Competent at basic dimensional measuring and use of measurement tools.",
+        "Demonstrated competency in basic shop math including decimals and fractions.",
+        "Mechanical aptitude.",
+        "Computer skills, including familiarity with CNC programming.",
+        "Ability to read and understand shop cut sheets and other shop drawing aids.",
+        "Safety conscious behavior.",
+        "Strong orientation toward quality and continuous improvement.",
+        "Attention to detail.",
+        "Must be punctual and have excellent attendance.",
+        "Physical Requirements:",
+        "Lift, carry, push or pull 1-65 lbs frequently.",
+        "Squat/kneel, bend/stoop, twist/turn, grasp and reach overhead and outward frequently.",
+        "Sit, stand and walk for 1-10 hours per day.",
+        "Ability to work in a 40-100 degree Fahrenheit work environment.",
+        "Ability to work in a fast-paced industrial environment wearing hearing protection, vision protection, steel-toed shoes and other appropriate protective clothing."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9400",
-      "title": "CLASS A CDL \u2013 NIGHTS",
+      "title": "CLASS A CDL – NIGHTS",
       "location": "NORTH LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/class-a-cdl-nights/",
-      "posted": "2026-09-22"
+      "posted": "2026-09-22",
+      "requirements_source_url": "https://asapworksforme.com/job/class-a-cdl-nights/",
+      "requirements": [
+        "Valid and current Commercial Driver’s License (CDL Class A).",
+        "Current Department of Transportation (DOT) Medical Card.",
+        "Minimum of 1-2 years of commercial driving experience",
+        "Clean Motor Vehicle Record (MVR) with no major violations or recent DUI/DWI convictions. ( 5 years )",
+        "Must successfully pass a mandatory DOT pre-employment drug screening and background check.",
+        "Physical Requirements:",
+        "Ability to pass a federal DOT physical exam every two years",
+        "Ability to perform constant repetitive lifting of 50+ lbs. and occasionally heavier objects over 100 lbs. using proper lifting techniques",
+        "Resilience to work and manually unload cargo outdoors in all types of weather conditions (heat, rain, snow, cold)."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9399",
@@ -160,7 +422,29 @@
       "location": "LONOKE",
       "employment_type": "Contract",
       "url": "https://asapworksforme.com/job/manufacturing-accountant/",
-      "posted": "2026-09-22"
+      "posted": "2026-09-22",
+      "requirements_source_url": "https://asapworksforme.com/job/manufacturing-accountant/",
+      "requirements": [
+        "BS Accounting or related field.",
+        "3 years hands-on manufacturing accounting experience.",
+        "Experience with a fully integrated ERP system - SAP preferred.",
+        "Skills and Requirements:",
+        "Physical and / or mental requirements (handling of materials, working positions - lifting, climbing…degree of problem solving, communicating (oral and written), reading comprehension.)",
+        "High attention to detail and level of accuracy.",
+        "Excellent interpersonal and communication skills.",
+        "Experience working with high performance teams.",
+        "Strong analytical & problem solving skills.",
+        "Self-motivated and able to work with minimal supervision.",
+        "Job Equipment Used:",
+        "PC proficiency - advanced Windows, PowerPoint, and Excel application software skills.",
+        "Spreadsheet, database, and other automated reporting systems.",
+        "General office and communications equipment.",
+        "Working Conditions:",
+        "Office environment with moderate exposure to manufacturing plant environment.",
+        "Drug-Free Workplace - Background Check Required"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9397",
@@ -168,7 +452,20 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/shop-welder/",
-      "posted": "2026-09-21"
+      "posted": "2026-09-21",
+      "requirements_source_url": "https://asapworksforme.com/job/shop-welder/",
+      "requirements": [
+        "Skills proficiency in MIG welding (galvanneal steel )",
+        "Strong ability to read mechanical blueprints and interpret technical drawings accurately.",
+        "Knowledge of sheet metal fabrication, pipe threading, plasma cutting, soldering, and machining operations",
+        "Mechanical knowledge related to metal materials, fabrication shop procedures, and manufacturing standards.",
+        "Ability to use measuring instruments such as calipers, micrometers, tape measures, and shop math for precise measurements.",
+        "Basic math skills necessary for measurements and calculations involved in fabrication tasks.",
+        "Experience working with forklifts or other material handling equipment.",
+        "Commitment to safety protocol adherence at all times during operations."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9392",
@@ -176,7 +473,14 @@
       "location": "MAUMELLE",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/machine-operator-special-project/",
-      "posted": "2026-09-18"
+      "posted": "2026-09-18",
+      "requirements_source_url": "https://asapworksforme.com/job/machine-operator-special-project/",
+      "requirements": [
+        "Steel toed boots.",
+        "Must pass drug test and background check."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9364",
@@ -184,7 +488,17 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/driver-helper/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/driver-helper/",
+      "requirements": [
+        "New Federal DL ( 21yrs + )",
+        "Must have an outgoing and customer friendly attitude",
+        "Pass a drug test",
+        "Clean background check.",
+        "Ability to lift 50lbs repetitively"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9362",
@@ -192,7 +506,19 @@
       "location": "CONWAY",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/co2-laser-operator/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/co2-laser-operator/",
+      "requirements": [
+        "5 years of machine shop experience required. A technical trade certificate may be substituted for a portion of the required on-the-job experience.",
+        "CO2 laser operating experience required/preferred, with experience operating Amada, Haas, and other CNC/fabrication equipment strongly preferred. Program editing experience is a plus.",
+        "Must be self-motivated, dependable, and able to multitask in a fast-paced production environment while maintaining quality and meeting deadlines.",
+        "Must be able to read and interpret technical drawings, troubleshoot problems, communicate effectively, and work well as part of a team.",
+        "Must have a valid driver’s license and available vehicle and be able to stand for extended periods, move throughout the workplace, stoop, bend, crouch, and regularly lift or move materials weighing 50+ lbs.",
+        "Must be aware of manufacturing and machine shop safety hazards, willing to use appropriate protective equipment and precautions, and comfortable working in a non-temperature-controlled environment.",
+        "Will be required to pass a drug test and a background check"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9359",
@@ -200,7 +526,17 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/mechanic-shop-assistant/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/mechanic-shop-assistant/",
+      "requirements": [
+        "Strong mechanical aptitude and basic familiarity with common hand tools.",
+        "Move customer or company vehicles safely in and out of the shop bays, and pick up parts as needed.",
+        "Ability to stand for extended periods, bend, crouch, and comfortably lift up to 50 lbs.",
+        "High school diploma or GED equivalent preferred; trade/vocational school attendance is a plus.",
+        "Must have a valid driver’s license and pass a background & drug screen"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9358",
@@ -208,15 +544,47 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/order-selector-delivery-driver/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/order-selector-delivery-driver/",
+      "requirements": [
+        "Job Duties:",
+        "Efficiently pick and pack customer orders using barcode scanning technology and warehouse management systems to ensure accuracy.",
+        "Operate heavy equipment including reach trucks, forklifts., pallet jacks, and manual handling tools to load, unload, and transport goods safely.",
+        "Maintain inventory accuracy through regular stock checks, updating inventory management systems, and conducting quality control inspections.",
+        "Excellent organizational skills with attention to detail in order fulfillment and quality control processes.",
+        "Job Skills:",
+        "Expertise in operating various warehouse equipment and systems to ensure efficient order fulfillment, inventory management, and adherence to safety protocols.",
+        "Detail-oriented.",
+        "Physically capable of heavy lifting.",
+        "Committed to maintaining high standards of quality and safety throughout all warehouse operation.",
+        "Must have a valid driver’s license to assist in deliveries when needed."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9357",
-      "title": "CDL DRIVERS \u2013 CLASS A / B",
+      "title": "CDL DRIVERS – CLASS A / B",
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/cdl-drivers-class-a-b/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/cdl-drivers-class-a-b/",
+      "requirements": [
+        "Valid and current Commercial Driver’s License.",
+        "Current Department of Transportation (DOT) Medical Card.",
+        "Clean Motor Vehicle Record (MVR) with no major violations or recent DUI/DWI convictions. ( 5 years )",
+        "Must successfully pass a mandatory DOT pre-employment drug screening and background check.",
+        "Responsibilities:",
+        "Ability to pass a federal DOT physical exam every two years",
+        "Perform constant repetitive lifting of 50+ lbs. and occasionally heavier objects over 100 lbs. using proper lifting techniques",
+        "Use GPS or dispatch instructions to plan efficient routes and meet delivery schedules",
+        "Complete delivery receipts, log work/rest periods, and maintain required records",
+        "Resilience to work and manually unload cargo outdoors in all types of weather conditions (heat, rain, snow, cold).",
+        "Communicate professionally with customers, warehouse staff, and dispatch"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9355",
@@ -224,7 +592,20 @@
       "location": "CONWAY",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/tool-die-machinist/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/tool-die-machinist/",
+      "requirements": [
+        "Experience in Tool & Die or Machining (manual + CNC preferred).",
+        "Ability to read blueprints and hold tight tolerances.",
+        "Proficiency with precision measuring instruments.",
+        "Ability to stand for extended periods and lift up to 40 lbs.",
+        "Occasional bending, kneeling, and reaching.",
+        "High school diploma or equivalent.",
+        "Apprenticeship completion is a plus.",
+        "Strong teamwork, quality focus, and problem-solving skills."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9353",
@@ -232,7 +613,15 @@
       "location": "FAYETTEVILLE",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/non-commercial-delivery-driver/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/non-commercial-delivery-driver/",
+      "requirements": [
+        "Driver’s License with a clean driving record",
+        "Ability to pass background check and drug screen",
+        "Must be able to lift up to 75lbs"
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9352",
@@ -240,7 +629,26 @@
       "location": "LITTLE ROCK",
       "employment_type": "Full Time",
       "url": "https://asapworksforme.com/job/deliver-driver/",
-      "posted": "2026-09-17"
+      "posted": "2026-09-17",
+      "requirements_source_url": "https://asapworksforme.com/job/deliver-driver/",
+      "requirements": [
+        "Job Duties & Requirements:",
+        "Previous delivery experience is required with the ability to safely operate vehicles, including trucks and automobiles.",
+        "Plan and follow efficient delivery routes to optimize time and fuel usage while maintaining punctuality",
+        "Load and unload merchandise with proper lifting techniques, adhering to safe lifting practices and managing heavy items when necessary.",
+        "Build positive relationships with customers through professional communication, addressing inquiries, and ensuring a high level of customer satisfaction.",
+        "Perform routine vehicle inspections before and after trips to ensure safety standards are met; report any maintenance issues promptly.",
+        "Maintain accurate delivery documentation, including receipts, delivery logs, and route records.",
+        "Ensure compliance with all applicable traffic laws, safety regulations, and company policies during route driving.",
+        "Proven experience in commercial driving, including route driving and automobile transportation; military driving experience is a plus.",
+        "Valid driver’s license with a clean driving record",
+        "Knowledge of DOT regulations, safe lifting practices, and heavy lifting techniques.",
+        "Excellent communication skills for client interaction and team coordination.",
+        "Retail store experience or merchandising background is advantageous.",
+        "Organizational skills for managing schedules, delivery documentation, and inventory control."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     },
     {
       "id": "9202",
@@ -248,7 +656,19 @@
       "location": "MANOR",
       "employment_type": null,
       "url": "https://asapworksforme.com/job/forklift-warehouse-associate/",
-      "posted": "2026-08-31"
+      "posted": "2026-08-31",
+      "requirements_source_url": "https://asapworksforme.com/job/forklift-warehouse-associate/",
+      "requirements": [
+        "Minimum of 2 years of warehouse experience preferred.",
+        "Proven experience operating stand-up and reach forklifts.",
+        "Experience with inventory management, cycle counting, and order picking.",
+        "Knowledge of outbound shipping processes and preparing Bills of Lading (BOLs).",
+        "Comfortable using tablets, computers, and warehouse inventory systems.",
+        "Ability to read, write, and communicate effectively in English.",
+        "Ability to lift up to 50 pounds and stand or walk for extended periods."
+      ],
+      "requirements_retrieved_at": "2026-11-10",
+      "requirements_status": "source_snapshot"
     }
   ]
 }

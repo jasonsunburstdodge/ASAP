@@ -20,7 +20,7 @@ ASAP logo and industries-page people illustration come from asapworksforme.com. 
 
 ## Revision: ad prefill and requirements
 
-Default page simulates a Facebook ad: Full-Time, Conway preference, Forklift Warehouse Associate - Manor. The source job remains Manor with employment type unspecified; this mismatch is explicitly labeled in the concept. Production campaigns must resolve valid job metadata server-side.
+The explicit `?campaign=facebook-forklift` demo simulates a Facebook ad: Full-Time, Conway preference, Forklift Warehouse Associate - Manor. The source job remains Manor with employment type unspecified; this mismatch is explicitly labeled in the concept. Production campaigns must resolve valid job metadata server-side.
 
 - `?entry=direct` opens the manual search flow with no prefilled job.
 - `?campaign=facebook-forklift&job_id=9202&preferred_location=CONWAY&job_type=Full%20Time&utm_source=facebook&utm_medium=paid_social` demonstrates campaign prefill.
@@ -29,3 +29,9 @@ Default page simulates a Facebook ad: Full-Time, Conway preference, Forklift War
 - A No minimum-requirements response opens the alternate-position dialog on submit and generates no JSON/email. Choosing another position preserves contact fields but resets job-specific questions and attestation.
 - JSON version is `asap.quick_apply.v2`; includes requirements snapshot, explicit response and campaign context. No application category.
 - Hero reuses the exact transparent people asset from ASAP's industries page; CSS recreates the layered geometric backdrop in shades of orange.
+
+## Revision: bilingual recruiter chat
+
+The base page now opens without ad assumptions. Use `?entry=direct&chat=open` for general discovery. The recruiter avatar opens a guided English/Spanish conversation with optional dictation and read-aloud, job-specific screening, alternate-role exploration and short interviews. Chat can fill the existing form or generate its local application preview after explicit review. See `recruiter-build-guide.html` for the full flow and production requirements.
+
+Source continuity: based on repository commit `162138d3ca0aa505156d940ada5f56f07799d343`, preserved in Git history and local backup branch `backup/pre-recruiter-chat-20261110`. Reviewed the current ASAP Client Statement of Truth and existing Quick Apply README/build guide on Nov. 10, 2026. User authorized this preview extension in the project conversation. Production/client approval is not claimed. This README records the preview task; the separate agency-wide task register was not edited.

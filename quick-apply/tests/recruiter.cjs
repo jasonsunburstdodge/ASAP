@@ -49,3 +49,5 @@ function finish(t){t.say('Alex');t.say('Sample');t.say('5015550123');t.say('alex
 }
 
 {const t=setup();t.w.speechSynthesis.getVoices=()=>[{name:'Microsoft Aria',lang:'en-US',voiceURI:'aria'},{name:'Microsoft Sonia',lang:'en-GB',voiceURI:'sonia'},{name:'Microsoft George',lang:'en-GB',voiceURI:'george'}];t.$('readAloud').checked=true;t.$('readAloud').dispatchEvent(new t.w.Event('change'));assert.equal(t.w.spoken.voice.name,'Microsoft Sonia');console.log('PASS female UK English preferred over US voice');t.dom.window.close();}
+
+{const t=setup();t.w.speechSynthesis.getVoices=()=>[{name:'Google US English',lang:'en-US',voiceURI:'us'},{name:'Google UK English Female',lang:'en-GB',voiceURI:'uk-female'},{name:'Google UK English Male',lang:'en-GB',voiceURI:'uk-male'}];t.$('readAloud').checked=true;t.$('readAloud').dispatchEvent(new t.w.Event('change'));assert.equal(t.w.spoken.voice.voiceURI,'uk-female');assert(!t.$('chatVoice').textContent.includes('UK English Male'));console.log('PASS Chrome UK female selected automatically');t.dom.window.close();}

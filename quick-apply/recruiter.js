@@ -15,7 +15,7 @@ function label(key){return labels[key]?.[lang==='es'?1:0]||key;}
 function displayValue(key,val){return enums[key]?.find(x=>x[0]===val)?.[lang==='es'?1:0] || (key==='category'?data.categories.find(x=>x[0]===val)?.[lang==='es'?2:1]:null)||val;}
 function stopVoice(){window.ASAP_SAVED_AUDIO?.stop();waitingForVoice=false;if(recognizer){recognizer.abort();recognizer=null;}listening=false;window.speechSynthesis?.cancel();$('chatMic').setAttribute('aria-pressed','false');$('chatMic').textContent=tr('Use microphone','Usar micrófono');}
 // Prefer named adult women's voices where the device offers them; never infer gender from language alone.
-const voicePreferences={en:['Aria','Jenny','Samantha','Ava','Allison','Susan','Victoria','Karen','Serena','Sonia'],es:['Dalia','Paloma','Sabina','Paulina','Mónica','Monica','Elvira','Helena','Laura']};
+const voicePreferences={en:['Google UK English Female','Sonia','Serena','Aria','Jenny','Samantha','Ava','Allison','Susan','Victoria','Karen','Serena','Sonia'],es:['Dalia','Paloma','Sabina','Paulina','Mónica','Monica','Elvira','Helena','Laura']};
 const selectedVoices={};
 let availableVoices=[],waitingForVoice=false;
 function voiceKey(v){return v.voiceURI||v.name+'|'+v.lang;}
@@ -29,7 +29,8 @@ function refreshVoices(){
  if(recorded)box.add(new Option(tr('Rachel · saved audio','Rachel · audio grabado'),'recorded-rachel'));
  if(!availableVoices.length&&!recorded){box.add(new Option(tr('No voice loaded for this language','No hay voz cargada para este idioma'),''));box.disabled=true;return;}
  box.disabled=false;availableVoices.forEach(v=>box.add(new Option((v.name||v.lang)+' · '+v.lang,voiceKey(v))));
- box.value=[...box.options].some(v=>v.value===selectedVoices[lang])?selectedVoices[lang]:(recorded?'recorded-rachel':voiceKey(availableVoices[0]));
+ const ukFemale=lang==='en'&&availableVoices.find(v=>v.lang.toLowerCase()==='en-gb');
+ box.value=ukFemale?voiceKey(ukFemale):(recorded?'recorded-rachel':voiceKey(availableVoices[0]));
 }
 function speak(text){
  if(!$('readAloud').checked)return;

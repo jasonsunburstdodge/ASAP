@@ -88,3 +88,5 @@
 @media(max-width:759px){#recruiterChat{width:calc(100vw - 12px);max-height:calc(100dvh - 12px)}.chat-columns{grid-template-columns:1fr}.chat-conversation{padding:12px 14px}.chat-response{padding:10px 14px;border-left:0;border-top:1px solid #efd6c0;gap:8px}.chat-message{font-size:16px;line-height:1.4}#chatChoices{grid-template-columns:1fr 1fr;gap:7px}#chatChoices button,#chatChoices a{font-size:12px;padding:9px}#chatForm{padding-top:8px}#chatForm textarea{height:44px;min-height:44px}#recruiterChat .chat-bottom{gap:5px;padding:8px 12px}#recruiterChat .chat-bottom button,#recruiterChat .chat-bottom a{font-size:11px;min-height:40px}}
 
 #recruiterChat .chat-choice-hint{margin:0;color:#65432a;font-size:13px;line-height:1.45;font-weight:600}#recruiterChat .chat-choice-hint[hidden]{display:none}
+
+.asap-help-link{display:block;background:#bf5000;color:#fff!important;font-weight:800;padding:10px 14px;border-radius:10px;margin:8px 0;text-decoration:underline}.asap-help-link:focus-visible{outline:3px solid #163b69;outline-offset:3px}

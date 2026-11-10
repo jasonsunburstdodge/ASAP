@@ -134,7 +134,26 @@ function jobOptions(){
  if(!p.showAll)option('Explore all roles in this location','Explorar todos los puestos aquí','all',()=>{p.showAll=true;go('results');});
  option('Choose another location','Elegir otro lugar','location',()=>{delete p.location;p.showAll=false;go('location');});
 }
+let companyHelp=false;
+function showCompanyHelp(query=''){
+ stopVoice();companyHelp=true;choices=[];$('chatMessages').replaceChildren();$('chatChoices').replaceChildren();$('chatPages').hidden=true;$('chatChoiceHint').hidden=true;$('chatInput').value='';$('chatInput').disabled=false;$('chatSend').disabled=false;$('chatBack').disabled=true;
+ const topics=window.ASAP_SITE_HELP||[],q=norm(query);
+ const hits=q?topics.filter(t=>new RegExp('\\b('+t.pattern+')\\b').test(q)):[];
+ if(query)message(query,true);
+ const answer=hits.length===1?hits[0]:null;
+ currentQuestion=answer?(lang==='es'?answer.es:answer.en):query?tr('Thanks for asking. I do not have a verified answer to that specific question. You can explore the official pages below or call an ASAP recruiter.','Gracias por preguntar. No tengo una respuesta verificada a esa pregunta específica. Puede consultar las páginas oficiales de abajo o llamar a un reclutador de ASAP.'):tr('I can help with questions about ASAP, office contacts, applications and career resources. What would you like to know?','Puedo ayudar con preguntas sobre ASAP, oficinas, solicitudes y recursos profesionales. ¿Qué le gustaría saber?');
+ message(currentQuestion);
+ const link=(title,url)=>{const a=document.createElement('a');a.className='asap-help-link';a.textContent=title;a.href=url;a.target='_blank';a.rel='noopener noreferrer';$('chatMessages').append(a);};
+ if(answer)link(tr('Open official ASAP page','Abrir página oficial de ASAP'),'https://asapworksforme.com/'+answer.path);
+ else if(query){const words=q.split(' ').filter(w=>w.length>3);const found=(window.ASAP_SITE_INDEX?.pages||[]).map(p=>({...p,score:words.filter(w=>norm(p.title).includes(w)).length})).filter(p=>p.score>0).sort((a,b)=>b.score-a.score).slice(0,3);found.forEach(p=>link(p.title,p.url));link(tr('Contact ASAP','Contactar a ASAP'),'https://asapworksforme.com/contact-us/');}
+ const button=(text,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=fn;$('chatChoices').append(b);};
+ button(tr('Return to my application','Volver a mi solicitud'),()=>{companyHelp=false;render();});
+ if(!query)topics.forEach(t=>button(lang==='es'?t.esTitle:t.enTitle,()=>showCompanyHelp(t.id==='apply'?'application':t.id==='contact'?'contact':t.id==='requirements'?'requirements':t.id==='resources'?'resources':t.id==='employers'?'employer':t.id==='pay'?'payroll':t.id==='about'?'about':t.id==='privacy'?'privacy':t.id==='hours'?'hours':'jobs')));
+ if(!query){arrangeStep();$('chatChoiceHint').hidden=true;}
+ currentQuestion+=' '+tr('What else would you like to know, or would you like to return to your application?','¿Qué más desea saber, o quiere volver a su solicitud?');speak(currentQuestion);
+}
 function render(){
+ if(companyHelp){showCompanyHelp();return;}
  choices=[];$('chatMessages').replaceChildren();$('chatChoices').replaceChildren();$('chatInput').value='';$('chatInput').disabled=false;$('chatSend').disabled=false;$('chatBack').disabled=!history.length;$('chatStatus').textContent='';
  let box;
  switch(state){
@@ -261,7 +280,7 @@ function answerMatchText(value){
  }
  return text;
 }
-function submitText(e){e.preventDefault();const text=$('chatInput').value.trim();if(!validText(text))return;
+function submitText(e){e.preventDefault();const text=$('chatInput').value.trim();if(companyHelp){if(text)showCompanyHelp(text);return;}if(/^(what|when|where|how|does|is|can|do|who|que|cuando|donde|como)\b/i.test(norm(text))&&/\b(asap|payroll|paid|office|offices|privacy|nomina|oficina|oficinas)\b/.test(norm(text))){showCompanyHelp(text);return;}if(!validText(text))return;
  if(choices.length){let hits=choices.filter(c=>c.aliases.some(a=>answerMatchText(a)===answerMatchText(text)));if(!hits.length){
  const normalized=answerMatchText(text);
  // Do not treat a preference mentioned in a denial or qualification as an answer.
@@ -283,6 +302,7 @@ function transfer(submit){
 }
 function localize(){
  $('recruiterChat').lang=lang;
+ $('companyHelp').textContent=tr('Ask about ASAP','Preguntar sobre ASAP');
  const map={chatTitle:['ASAP Job Seeking Assistant','Asistente de búsqueda de empleo ASAP'],chatSubtitle:['Virtual recruiting assistant','Asistente virtual de reclutamiento'],languageLabel:['Language','Idioma'],voiceLabel:['Voice','Voz'],readAloudLabel:['Read questions aloud','Leer preguntas en voz alta'],repeatQuestion:['Hear again','Escuchar de nuevo'],chatDemo:['Concept: use sample details. Nothing is sent to ASAP.','Concepto: use datos de ejemplo. No se envía nada a ASAP.'],chatInputLabel:['Your answer','Su respuesta'],chatMic:['Use microphone','Usar micrófono'],chatSend:['Send answer','Enviar respuesta'],chatBack:['Previous question','Pregunta anterior'],chatRestart:['Start over','Empezar de nuevo'],humanRecruiter:['Call 501-537-2727','Llamar al 501-537-2727'],voiceTitle:['Use voice input?','¿Usar entrada de voz?'],voiceNotice:['Your browser may send audio to its speech service to turn it into text. This concept does not save audio. You can edit the words before sending them, or keep typing.','Su navegador puede enviar audio a su servicio de voz para convertirlo en texto. Este concepto no guarda audio. Puede editar las palabras antes de enviarlas o seguir escribiendo.'],allowVoice:['Use microphone','Usar micrófono'],cancelVoice:['Keep typing','Seguir escribiendo']};for(const[id,v]of Object.entries(map))$(id).textContent=v[lang==='es'?1:0];
  $('chatInput').placeholder=tr('Type here or use the microphone','Escriba aquí o use el micrófono');$('closeChat').ariaLabel=tr('Close chat','Cerrar chat');$('chatChoices').ariaLabel=tr('Suggested answers','Respuestas sugeridas');
  const supported=!!(window.SpeechRecognition||window.webkitSpeechRecognition);$('chatMic').disabled=!supported;
@@ -303,11 +323,12 @@ function open(){if(!$('recruiterChat').open)$('recruiterChat').showModal();$('ch
 function close(){stopVoice();$('recruiterChat').close();$('chatLauncher').setAttribute('aria-expanded','false');}
 $('openRecruiter').onclick=open;$('chatLauncher').onclick=open;$('closeChat').onclick=close;$('recruiterChat').addEventListener('cancel',()=>{stopVoice();$('chatLauncher').setAttribute('aria-expanded','false');});
 $('chatForm').onsubmit=submitText;
+$('companyHelp').onclick=()=>showCompanyHelp();
 $('chatLanguage').onchange=()=>{stopVoice();lang=$('chatLanguage').value;localize();if(transcript.length)render();};
 $('readAloud').onchange=()=>{if($('readAloud').checked)speak(currentQuestion);else {window.ASAP_SAVED_AUDIO?.stop();window.speechSynthesis?.cancel();}};$('repeatQuestion').onclick=()=>{$('readAloud').checked=true;speak(currentQuestion);};
 $('chatMic').onclick=()=>{if(!voiceAllowed){$('voiceConsent').showModal();}else listen();};$('allowVoice').onclick=()=>{voiceAllowed=true;$('voiceConsent').close();listen();};$('cancelVoice').onclick=()=>$('voiceConsent').close();
 $('chatBack').onclick=()=>{stopVoice();const prev=history.pop();if(!prev)return;({state,p,answers,checkIndex,roleIndex,interviewIndex,editing}=prev);selected=catalog.find(j=>j.id===prev.selected)||null;transcript=transcript.slice(0,prev.transcriptLength);$('chatMessages').replaceChildren();const restored=[...transcript];transcript=[];restored.forEach(m=>message(m.text,m.speaker==='candidate'));render();};
-$('chatRestart').onclick=()=>{stopVoice();p={};selected=null;answers=[];history=[];transcript=[];editing=null;checkIndex=roleIndex=interviewIndex=0;usedVoice=false;window.ASAP_CHAT_SUBMISSION=null;$('chatMessages').replaceChildren();go('welcome');};
+$('chatRestart').onclick=()=>{companyHelp=false;stopVoice();p={};selected=null;answers=[];history=[];transcript=[];editing=null;checkIndex=roleIndex=interviewIndex=0;usedVoice=false;window.ASAP_CHAT_SUBMISSION=null;$('chatMessages').replaceChildren();go('welcome');};
 $('chatVoice').onchange=()=>{selectedVoices[lang]=$('chatVoice').value;if($('readAloud').checked)speak(currentQuestion);};
 window.speechSynthesis?.addEventListener?.('voiceschanged',()=>{refreshVoices();if(waitingForVoice&&$('recruiterChat').open&&$('readAloud').checked)speak(currentQuestion);});
 window.addEventListener('pagehide',stopVoice);localize();

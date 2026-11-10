@@ -42,7 +42,7 @@ function detail(){
 }
 function switchFilters(){campaignPinned=false;$('campaignNotice').hidden=true;populate();}
 $('typeFilter').onchange=switchFilters;$('branch').onchange=switchFilters;
-$('job').onchange=()=>{if($('job').value!==campaign.job_id){campaignPinned=false;$('campaignNotice').hidden=true;const selected=$('job').value,selectedJob=jobs.find(j=>j.id===selected);if(selectedJob)$('typeFilter').value=selectedJob.employment_type||'unspecified';populate(selected);}else{detail();renderQuestions();resetMinimum();clearOutputs();}};
+$('job').onchange=()=>{campaignPinned=false;$('campaignNotice').hidden=true;const selected=$('job').value,selectedJob=jobs.find(j=>j.id===selected);if(selectedJob)$('typeFilter').value=selectedJob.employment_type||'unspecified';populate(selected);};
 $('minimumNo').onchange=()=>{$('noRequirementsHint').hidden=!$('minimumNo').checked;clearOutputs();};
 $('minimumYes').onchange=()=>{$('noRequirementsHint').hidden=true;clearOutputs();};
 function chooseAnother(){if($('requirementsDialog').open)$('requirementsDialog').close();campaignPinned=false;$('campaignNotice').hidden=true;populate();showStep(0);$('job').focus();}

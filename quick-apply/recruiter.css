@@ -90,3 +90,7 @@
 #recruiterChat .chat-choice-hint{margin:0;color:#65432a;font-size:13px;line-height:1.45;font-weight:600}#recruiterChat .chat-choice-hint[hidden]{display:none}
 
 .asap-help-link{display:block;background:#bf5000;color:#fff!important;font-weight:800;padding:10px 14px;border-radius:10px;margin:8px 0;text-decoration:underline}.asap-help-link:focus-visible{outline:3px solid #163b69;outline-offset:3px}
+
+/* Orange label beneath the assistant portrait. */
+#chatLauncher>span{background:#bf5000;color:#fff;font-weight:800}
+#chatLauncher>span small{color:#fff;font-weight:700}

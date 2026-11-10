@@ -89,7 +89,7 @@ function jobOptions(){
  option('Choose another location','Elegir otro lugar','location',()=>{delete p.location;p.showAll=false;go('location');});
 }
 function render(){
- choices=[];$('chatChoices').replaceChildren();$('chatInput').value='';$('chatInput').disabled=false;$('chatSend').disabled=false;$('chatBack').disabled=!history.length;$('chatStatus').textContent='';
+ choices=[];$('chatMessages').replaceChildren();$('chatChoices').replaceChildren();$('chatInput').value='';$('chatInput').disabled=false;$('chatSend').disabled=false;$('chatBack').disabled=!history.length;$('chatStatus').textContent='';
  let box;
  switch(state){
  case 'welcome':
@@ -136,7 +136,17 @@ function render(){
  if(state==='results')currentQuestion=tr('Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location.','Revise los puestos mostrados. Elija uno para revisar sus requisitos, explore otros tipos de trabajo o elija otro lugar.');
  if(state==='review')currentQuestion=tr('Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent.','Revise sus datos de contacto y respuestas en la pantalla. Puede editarlos antes de crear la vista previa. No se ha enviado información.');
  currentQuestion=responsePrompt(currentQuestion);
+ arrangeStep();
  speak(currentQuestion);
+}
+function arrangeStep(){
+ const nodes=[...$('chatChoices').children],nav=$('chatPages');nav.replaceChildren();nav.hidden=nodes.length<=4;
+ let page=0;const pages=Math.ceil(nodes.length/4);
+ function draw(){nodes.forEach((n,i)=>{n.hidden=Math.floor(i/4)!==page;});nav.replaceChildren();if(pages<=1)return;
+ const prev=document.createElement('button'),next=document.createElement('button'),count=document.createElement('span');
+ prev.type=next.type='button';prev.textContent=tr('Back','Atrás');next.textContent=tr('More options','Más opciones');prev.disabled=page===0;next.disabled=page===pages-1;count.textContent=(page+1)+' / '+pages;
+ prev.onclick=()=>{page--;draw();};next.onclick=()=>{page++;draw();};nav.append(prev,count,next);}
+ draw();
 }
 function enumOptions(k){enums[k].forEach(v=>option(v[0],v[1],v[0]));}
 function roleQuestion(q){const map={license_class:'¿Qué clase de licencia de conducir tiene actualmente?',vehicle_experience:'¿Qué vehículos ha conducido para trabajar?',equipment_experience:'¿Qué equipos de almacén ha usado?',warehouse_tasks:'¿Qué tareas de almacén ha realizado?',maintenance_experience:'¿Qué equipos o sistemas ha mantenido o reparado?',electrical_mechanical_years:'¿Cuánta experiencia eléctrica o mecánica pesada tiene?',technical_equipment:'¿Qué máquinas, procesos de soldadura o herramientas ha usado?',technical_training:'¿Qué formación o certificaciones relacionadas tiene?',office_systems:'¿Qué programas o sistemas empresariales ha usado?',office_tasks:'¿Qué tareas de este puesto ha realizado?',relevant_tasks:'¿Con qué tareas o equipos se siente más cómodo?'};return lang==='es'?map[q.id]||q.label:q.label;}
@@ -173,7 +183,7 @@ function handle(v){
 }
 function error(s){$('chatStatus').textContent=s;message(s);}
 function clarifyAnswer(text){
- stopVoice();message(text,true);
+ stopVoice();$('chatMessages').replaceChildren();message(text,true);
  const needs={
   welcome:['To get started, I need to know how you would like help: use the form yourself or explore jobs with me. You can also use the call button to speak with a recruiter.','Para comenzar, necesito saber cómo prefiere recibir ayuda: completar el formulario o explorar empleos conmigo. También puede usar el botón de llamada para hablar con un reclutador.'],
   location:['To show the right openings, I need the location where you want to work. If it is not shown, choose “My location is not listed.”','Para mostrarle las vacantes adecuadas, necesito saber dónde quiere trabajar. Si no aparece, elija “Mi ubicación no aparece”.'],
@@ -191,6 +201,7 @@ function clarifyAnswer(text){
  const examples=choices.slice(0,2).map(c=>'“'+c.label+'”').join(tr(' or ',' o '));
  currentQuestion=tr('Thank you for explaining. I have kept your response in this conversation. ','Gracias por explicarlo. Su respuesta queda en esta conversación. ')+tr(...detail)+' '+tr('Which option fits best? You can say or select ','¿Qué opción le corresponde mejor? Puede decir o seleccionar ')+examples+'.';
  message(currentQuestion);$('chatStatus').textContent=tr('Your answer is above. Please choose the closest option, or use the recruiter call link.','Su respuesta aparece arriba. Elija la opción más cercana o use el enlace para llamar al reclutador.');
+ arrangeStep();
  speak(currentQuestion);
 }
 function submitText(e){e.preventDefault();const text=$('chatInput').value.trim();if(!validText(text))return;

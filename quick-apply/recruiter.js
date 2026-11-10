@@ -13,7 +13,7 @@ function title(j){return lang==='es'?(data.titles[j.id]||nice(j.title)):nice(j.t
 function category(j){return data.categories.find(c=>c[0]!=='any'&&new RegExp(c[3]).test(j.title))?.[0]||'production';}
 function label(key){return labels[key]?.[lang==='es'?1:0]||key;}
 function displayValue(key,val){return enums[key]?.find(x=>x[0]===val)?.[lang==='es'?1:0] || (key==='category'?data.categories.find(x=>x[0]===val)?.[lang==='es'?2:1]:null)||val;}
-function stopVoice(){waitingForVoice=false;if(recognizer){recognizer.abort();recognizer=null;}listening=false;window.speechSynthesis?.cancel();$('chatMic').setAttribute('aria-pressed','false');$('chatMic').textContent=tr('Use microphone','Usar micrófono');}
+function stopVoice(){window.ASAP_SAVED_AUDIO?.stop();waitingForVoice=false;if(recognizer){recognizer.abort();recognizer=null;}listening=false;window.speechSynthesis?.cancel();$('chatMic').setAttribute('aria-pressed','false');$('chatMic').textContent=tr('Use microphone','Usar micrófono');}
 // Prefer named adult women's voices where the device offers them; never infer gender from language alone.
 const voicePreferences={en:['Aria','Jenny','Samantha','Zira','Ava','Allison','Susan','Victoria','Karen','Serena','Sonia'],es:['Dalia','Paloma','Sabina','Paulina','Mónica','Monica','Elvira','Helena','Laura']};
 const selectedVoices={};
@@ -22,15 +22,22 @@ function voiceKey(v){return v.voiceURI||v.name+'|'+v.lang;}
 function voiceRank(v){const i=voicePreferences[lang].findIndex(n=>(v.name||'').toLowerCase().includes(n.toLowerCase()));return (i<0?1000:i*10)+(v.lang.toLowerCase()===(lang==='es'?'es-mx':'en-us')?0:2);}
 function refreshVoices(){
  availableVoices=(window.speechSynthesis?.getVoices()||[]).filter(v=>v.lang?.toLowerCase().startsWith(lang)).sort((a,b)=>voiceRank(a)-voiceRank(b));
- const box=$('chatVoice');box.replaceChildren();
- if(!availableVoices.length){box.add(new Option(tr('No voice loaded for this language','No hay voz cargada para este idioma'),''));box.disabled=true;return;}
+ const box=$('chatVoice');box.replaceChildren();const recorded=window.ASAP_SAVED_AUDIO?.available(lang);
+ if(recorded)box.add(new Option(tr('Rachel · saved audio','Rachel · audio grabado'),'recorded-rachel'));
+ if(!availableVoices.length&&!recorded){box.add(new Option(tr('No voice loaded for this language','No hay voz cargada para este idioma'),''));box.disabled=true;return;}
  box.disabled=false;availableVoices.forEach(v=>box.add(new Option((v.name||v.lang)+' · '+v.lang,voiceKey(v))));
- box.value=availableVoices.some(v=>voiceKey(v)===selectedVoices[lang])?selectedVoices[lang]:voiceKey(availableVoices[0]);
+ box.value=[...box.options].some(v=>v.value===selectedVoices[lang])?selectedVoices[lang]:(recorded?'recorded-rachel':voiceKey(availableVoices[0]));
 }
 function speak(text){
+ if(!$('readAloud').checked)return;
+ window.speechSynthesis?.cancel();refreshVoices();
+ if($('chatVoice').value==='recorded-rachel'&&window.ASAP_SAVED_AUDIO?.play(text,lang,()=>{ $('chatStatus').textContent=tr('Recorded audio is unavailable. Using the selected device voice.','El audio grabado no está disponible. Se usará la voz del dispositivo.');speakDevice(text);},s=>{$('chatStatus').textContent=s;}))return;
+ speakDevice(text);
+}
+function speakDevice(text){
  if(!$('readAloud').checked||!('speechSynthesis' in window))return;
  window.speechSynthesis.cancel();refreshVoices();
- const v=availableVoices.find(v=>voiceKey(v)===$('chatVoice').value);
+ const v=availableVoices.find(v=>voiceKey(v)===$('chatVoice').value)||availableVoices[0];
  if(!v){waitingForVoice=true;$('chatStatus').textContent=tr('A voice for this language has not loaded. You can keep reading or try Hear again.','No se ha cargado una voz para este idioma. Puede seguir leyendo o intentar Escuchar de nuevo.');return;}
  waitingForVoice=false;
  const u=new SpeechSynthesisUtterance(text.replace(/ASAP/g,'A S A P'));u.lang=v.lang;u.voice=v;u.rate=.94;u.pitch=1;
@@ -110,6 +117,8 @@ function render(){
  case 'zip':ask(tr('What is your ZIP code?','¿Cuál es su código postal?'));break;
  case 'review':renderReview();break;
  }
+ if(state==='results')currentQuestion=tr('Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location.','Revise los puestos mostrados. Elija uno para revisar sus requisitos, explore otros tipos de trabajo o elija otro lugar.');
+ if(state==='review')currentQuestion=tr('Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent.','Revise sus datos de contacto y respuestas en la pantalla. Puede editarlos antes de crear la vista previa. No se ha enviado información.');
  speak(currentQuestion);
 }
 function enumOptions(k){enums[k].forEach(v=>option(v[0],v[1],v[0]));}
@@ -168,10 +177,10 @@ function localize(){
  const supported=!!(window.SpeechRecognition||window.webkitSpeechRecognition);$('chatMic').disabled=!supported;
  if(!supported)$('chatStatus').textContent=tr('Voice input is unavailable in this browser. Please type your answers.','La entrada de voz no está disponible en este navegador. Escriba sus respuestas.');
  refreshVoices();$('chatVoice').setAttribute('aria-label',tr('Speaking voice','Voz del asistente'));
- $('readAloud').disabled=!('speechSynthesis' in window);$('repeatQuestion').disabled=!('speechSynthesis' in window);
+ $('readAloud').disabled=!('speechSynthesis' in window)&&!window.ASAP_SAVED_AUDIO?.available(lang);$('repeatQuestion').disabled=$('readAloud').disabled;
 }
 function listen(){
- if(listening){recognizer?.stop();return;}window.speechSynthesis?.cancel();
+ if(listening){recognizer?.stop();return;}window.ASAP_SAVED_AUDIO?.stop();window.speechSynthesis?.cancel();
  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){error(tr('Please type; this browser does not support voice input.','Escriba; este navegador no admite entrada de voz.'));return;}
  const r=new SR();recognizer=r;r.lang=lang==='es'?'es-US':'en-US';r.continuous=false;r.interimResults=false;r.maxAlternatives=1;
  r.onstart=()=>{listening=true;$('chatMic').setAttribute('aria-pressed','true');$('chatMic').textContent=tr('Stop listening','Dejar de escuchar');$('chatStatus').textContent=tr('Listening. Your words will appear below for review before you send.','Escuchando. Sus palabras aparecerán para revisarlas antes de enviarlas.');};
@@ -184,7 +193,7 @@ function close(){stopVoice();$('recruiterChat').close();$('chatLauncher').setAtt
 $('openRecruiter').onclick=open;$('chatLauncher').onclick=open;$('closeChat').onclick=close;$('recruiterChat').addEventListener('cancel',()=>{stopVoice();$('chatLauncher').setAttribute('aria-expanded','false');});
 $('chatForm').onsubmit=submitText;
 $('chatLanguage').onchange=()=>{stopVoice();lang=$('chatLanguage').value;localize();if(transcript.length)render();};
-$('readAloud').onchange=()=>{if($('readAloud').checked)speak(currentQuestion);else window.speechSynthesis?.cancel();};$('repeatQuestion').onclick=()=>{$('readAloud').checked=true;speak(currentQuestion);};
+$('readAloud').onchange=()=>{if($('readAloud').checked)speak(currentQuestion);else {window.ASAP_SAVED_AUDIO?.stop();window.speechSynthesis?.cancel();}};$('repeatQuestion').onclick=()=>{$('readAloud').checked=true;speak(currentQuestion);};
 $('chatMic').onclick=()=>{if(!voiceAllowed){$('voiceConsent').showModal();}else listen();};$('allowVoice').onclick=()=>{voiceAllowed=true;$('voiceConsent').close();listen();};$('cancelVoice').onclick=()=>$('voiceConsent').close();
 $('chatBack').onclick=()=>{stopVoice();const prev=history.pop();if(!prev)return;({state,p,answers,checkIndex,roleIndex,interviewIndex,editing}=prev);selected=catalog.find(j=>j.id===prev.selected)||null;transcript=transcript.slice(0,prev.transcriptLength);$('chatMessages').replaceChildren();const restored=[...transcript];transcript=[];restored.forEach(m=>message(m.text,m.speaker==='candidate'));render();};
 $('chatRestart').onclick=()=>{stopVoice();p={};selected=null;answers=[];history=[];transcript=[];editing=null;checkIndex=roleIndex=interviewIndex=0;usedVoice=false;window.ASAP_CHAT_SUBMISSION=null;$('chatMessages').replaceChildren();go('welcome');};

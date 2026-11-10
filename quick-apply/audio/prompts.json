@@ -1,0 +1,3657 @@
+{
+  "version": "asap.rachel.saved_audio.v1",
+  "voice_name": "Rachel",
+  "voice_id": "21m00Tcm4TlvDq8ikWAM",
+  "model_id": "eleven_multilingual_v2",
+  "status": "scripts_only_audio_not_generated",
+  "prompts": [
+    {
+      "id": "en-5dc7efcf286bc811",
+      "language": "en",
+      "text": "Hi, I am the ASAP virtual recruiting assistant. You can call us directly, fill out the quick-apply form or answer a few questions with me. You can type your answers or use the microphone to speak. Turn on “Read questions aloud” to hear me. We can explore jobs together and prepare your quick-apply form. A recruiter makes the next decision.",
+      "spoken_text": "Hi, I am the A S A P virtual recruiting assistant. You can call us directly, fill out the quick-apply form or answer a few questions with me. You can type your answers or use the microphone to speak. Turn on “Read questions aloud” to hear me. We can explore jobs together and prepare your quick-apply form. A recruiter makes the next decision.",
+      "filename": "en-5dc7efcf286bc811.mp3",
+      "uses": [
+        "welcome:9511"
+      ]
+    },
+    {
+      "id": "en-789ae1c0a6b8f152",
+      "language": "en",
+      "text": "Where would you like to work? Choose a location with listed jobs.",
+      "spoken_text": "Where would you like to work? Choose a location with listed jobs.",
+      "filename": "en-789ae1c0a6b8f152.mp3",
+      "uses": [
+        "location:9511"
+      ]
+    },
+    {
+      "id": "en-b8e66b4a8d641fb2",
+      "language": "en",
+      "text": "I only have listings for the locations shown. A recruiter can help with other areas. Would you like to explore a listed location?",
+      "spoken_text": "I only have listings for the locations shown. A recruiter can help with other areas. Would you like to explore a listed location?",
+      "filename": "en-b8e66b4a8d641fb2.mp3",
+      "uses": [
+        "unlisted:9511"
+      ]
+    },
+    {
+      "id": "en-693f9efbd60bec0f",
+      "language": "en",
+      "text": "What kind of work interests you? It is fine to be open to several options.",
+      "spoken_text": "What kind of work interests you? It is fine to be open to several options.",
+      "filename": "en-693f9efbd60bec0f.mp3",
+      "uses": [
+        "category:9511"
+      ]
+    },
+    {
+      "id": "en-59ad0caacf4131d7",
+      "language": "en",
+      "text": "How much experience do you have in that kind of work?",
+      "spoken_text": "How much experience do you have in that kind of work?",
+      "filename": "en-59ad0caacf4131d7.mp3",
+      "uses": [
+        "experience:9511"
+      ]
+    },
+    {
+      "id": "en-d83c7ed3805d83dd",
+      "language": "en",
+      "text": "Tell me about work you have done, equipment you have used or skills you want to bring. If this would be your first job, say so.",
+      "spoken_text": "Tell me about work you have done, equipment you have used or skills you want to bring. If this would be your first job, say so.",
+      "filename": "en-d83c7ed3805d83dd.mp3",
+      "uses": [
+        "skills:9511"
+      ]
+    },
+    {
+      "id": "en-ab9c1440cf103c89",
+      "language": "en",
+      "text": "Which shift works for you? I will keep this preference for the recruiter.",
+      "spoken_text": "Which shift works for you? I will keep this preference for the recruiter.",
+      "filename": "en-ab9c1440cf103c89.mp3",
+      "uses": [
+        "shift:9511"
+      ]
+    },
+    {
+      "id": "en-5dd5aad9b970cace",
+      "language": "en",
+      "text": "What type of employment are you looking for?",
+      "spoken_text": "What type of employment are you looking for?",
+      "filename": "en-5dd5aad9b970cace.mp3",
+      "uses": [
+        "type:9511"
+      ]
+    },
+    {
+      "id": "en-19aee4c43bd326a9",
+      "language": "en",
+      "text": "When could you start?",
+      "spoken_text": "When could you start?",
+      "filename": "en-19aee4c43bd326a9.mp3",
+      "uses": [
+        "startAvailability:9511"
+      ]
+    },
+    {
+      "id": "en-7e4db23a0e772d59",
+      "language": "en",
+      "text": "What hourly pay are you looking for? Enter a dollar amount, or choose “Discuss with recruiter.” Pay is not available in this catalog.",
+      "spoken_text": "What hourly pay are you looking for? Enter a dollar amount, or choose “Discuss with recruiter.” Pay is not available in this catalog.",
+      "filename": "en-7e4db23a0e772d59.mp3",
+      "uses": [
+        "desiredPay:9511"
+      ]
+    },
+    {
+      "id": "en-0fe239fc7c1415e9",
+      "language": "en",
+      "text": "Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location.",
+      "spoken_text": "Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location.",
+      "filename": "en-0fe239fc7c1415e9.mp3",
+      "uses": [
+        "results:9511"
+      ]
+    },
+    {
+      "id": "en-1a393261f04fd829",
+      "language": "en",
+      "text": "Based on your answers, this position may not be the right fit right now. Other positions may fit your experience. Can I ask a few questions to help you explore those options?",
+      "spoken_text": "Based on your answers, this position may not be the right fit right now. Other positions may fit your experience. Can I ask a few questions to help you explore those options?",
+      "filename": "en-1a393261f04fd829.mp3",
+      "uses": [
+        "redirect:9511"
+      ]
+    },
+    {
+      "id": "en-ea39d972fed85666",
+      "language": "en",
+      "text": "An ASAP recruiter can help clarify this. I will not mark you as meeting a requirement you are unsure about. Call the Little Rock recruiter line below, or explore other positions.",
+      "spoken_text": "An A S A P recruiter can help clarify this. I will not mark you as meeting a requirement you are unsure about. Call the Little Rock recruiter line below, or explore other positions.",
+      "filename": "en-ea39d972fed85666.mp3",
+      "uses": [
+        "unclear:9511"
+      ]
+    },
+    {
+      "id": "en-ad86340df5b2c875",
+      "language": "en",
+      "text": "What is your first name? Use sample details in this concept.",
+      "spoken_text": "What is your first name? Use sample details in this concept.",
+      "filename": "en-ad86340df5b2c875.mp3",
+      "uses": [
+        "firstName:9511"
+      ]
+    },
+    {
+      "id": "en-445e56c8d54c49e7",
+      "language": "en",
+      "text": "What is your last name?",
+      "spoken_text": "What is your last name?",
+      "filename": "en-445e56c8d54c49e7.mp3",
+      "uses": [
+        "lastName:9511"
+      ]
+    },
+    {
+      "id": "en-c5f1522cd3f52c89",
+      "language": "en",
+      "text": "What phone number can a recruiter use? Please check all 10 digits after dictating.",
+      "spoken_text": "What phone number can a recruiter use? Please check all 10 digits after dictating.",
+      "filename": "en-c5f1522cd3f52c89.mp3",
+      "uses": [
+        "phone:9511"
+      ]
+    },
+    {
+      "id": "en-e756892857e6e492",
+      "language": "en",
+      "text": "What email address should the confirmation use? Please check the spelling after dictating.",
+      "spoken_text": "What email address should the confirmation use? Please check the spelling after dictating.",
+      "filename": "en-e756892857e6e492.mp3",
+      "uses": [
+        "email:9511"
+      ]
+    },
+    {
+      "id": "en-906e226929b228f2",
+      "language": "en",
+      "text": "What city do you live in? This can differ from your preferred work location.",
+      "spoken_text": "What city do you live in? This can differ from your preferred work location.",
+      "filename": "en-906e226929b228f2.mp3",
+      "uses": [
+        "city:9511"
+      ]
+    },
+    {
+      "id": "en-74445f08beee97a4",
+      "language": "en",
+      "text": "What state do you live in? You may type another U.S. state.",
+      "spoken_text": "What state do you live in? You may type another U.S. state.",
+      "filename": "en-74445f08beee97a4.mp3",
+      "uses": [
+        "state:9511"
+      ]
+    },
+    {
+      "id": "en-36afba4a6fa20c63",
+      "language": "en",
+      "text": "What is your ZIP code?",
+      "spoken_text": "What is your ZIP code?",
+      "filename": "en-36afba4a6fa20c63.mp3",
+      "uses": [
+        "zip:9511"
+      ]
+    },
+    {
+      "id": "en-accbf88503619618",
+      "language": "en",
+      "text": "Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent.",
+      "spoken_text": "Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent.",
+      "filename": "en-accbf88503619618.mp3",
+      "uses": [
+        "review:9511"
+      ]
+    },
+    {
+      "id": "en-355dc1a5899dc09f",
+      "language": "en",
+      "text": "Construction Materials Technician (Cmt) · South Austin",
+      "spoken_text": "Construction Materials Technician (Cmt) · South Austin",
+      "filename": "en-355dc1a5899dc09f.mp3",
+      "uses": [
+        "jobOverview:9511"
+      ]
+    },
+    {
+      "id": "en-c187fbabbe4a5d2e",
+      "language": "en",
+      "text": "The listing asks for age 18+, a valid driver’s license with no DUIs, a truck for equipment transport and lifting 50 pounds. Reliability, flexibility and communication are also listed.",
+      "spoken_text": "The listing asks for age 18+, a valid driver’s license with no DUIs, a truck for equipment transport and lifting 50 pounds. Reliability, flexibility and communication are also listed.",
+      "filename": "en-c187fbabbe4a5d2e.mp3",
+      "uses": [
+        "jobOverview:9511",
+        "requirements:9511"
+      ]
+    },
+    {
+      "id": "en-0cadd4a648a15005",
+      "language": "en",
+      "text": "Can you meet the minimum requirements for this role, including its job duties? Items marked “preferred” are not mandatory. If you need clarification or want to discuss support for a duty, choose “Talk to a recruiter.” Do not share medical information.",
+      "spoken_text": "Can you meet the minimum requirements for this role, including its job duties? Items marked “preferred” are not mandatory. If you need clarification or want to discuss support for a duty, choose “Talk to a recruiter.” Do not share medical information.",
+      "filename": "en-0cadd4a648a15005.mp3",
+      "uses": [
+        "requirements:9511",
+        "requirements:9510",
+        "requirements:9509",
+        "requirements:9507",
+        "requirements:9505",
+        "requirements:9503",
+        "requirements:9502",
+        "requirements:9495",
+        "requirements:9492",
+        "requirements:9488",
+        "requirements:9487",
+        "requirements:9479",
+        "requirements:9473",
+        "requirements:9458",
+        "requirements:9457",
+        "requirements:9456",
+        "requirements:9455",
+        "requirements:9410",
+        "requirements:9400",
+        "requirements:9399",
+        "requirements:9397",
+        "requirements:9392",
+        "requirements:9364",
+        "requirements:9362",
+        "requirements:9359",
+        "requirements:9358",
+        "requirements:9357",
+        "requirements:9355",
+        "requirements:9353",
+        "requirements:9352",
+        "requirements:9202"
+      ]
+    },
+    {
+      "id": "en-6f3a5a55c8978846",
+      "language": "en",
+      "text": "What relevant training, licenses or certifications do you hold? Include the type only, no ID numbers.",
+      "spoken_text": "What relevant training, licenses or certifications do you hold? Include the type only, no ID numbers.",
+      "filename": "en-6f3a5a55c8978846.mp3",
+      "uses": [
+        "certifications:9511",
+        "certifications:9509",
+        "certifications:9507",
+        "certifications:9505",
+        "certifications:9503",
+        "certifications:9502",
+        "certifications:9495",
+        "certifications:9492",
+        "certifications:9488",
+        "certifications:9487",
+        "certifications:9479",
+        "certifications:9473",
+        "certifications:9458",
+        "certifications:9457",
+        "certifications:9456",
+        "certifications:9455",
+        "certifications:9410",
+        "certifications:9400",
+        "certifications:9399",
+        "certifications:9397",
+        "certifications:9392",
+        "certifications:9364",
+        "certifications:9362",
+        "certifications:9359",
+        "certifications:9357",
+        "certifications:9355",
+        "certifications:9353",
+        "certifications:9352"
+      ]
+    },
+    {
+      "id": "en-aa41a85cab4757d7",
+      "language": "en",
+      "text": "This job is in South Austin. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in South Austin. Can you reliably get to that location for work?",
+      "filename": "en-aa41a85cab4757d7.mp3",
+      "uses": [
+        "transportation:9511",
+        "transportation:9509"
+      ]
+    },
+    {
+      "id": "en-dd36bd7d7901f7a7",
+      "language": "en",
+      "text": "Which tasks or equipment are you most comfortable with?",
+      "spoken_text": "Which tasks or equipment are you most comfortable with?",
+      "filename": "en-dd36bd7d7901f7a7.mp3",
+      "uses": [
+        "role:9511",
+        "role:9507",
+        "role:9505",
+        "role:9503",
+        "role:9487"
+      ]
+    },
+    {
+      "id": "en-5c1a52a7977dbb80",
+      "language": "en",
+      "text": "A short question for your recruiter. What outdoor or physical work have you done, and what equipment did you use? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. What outdoor or physical work have you done, and what equipment did you use? A new worker can explain what they would do.",
+      "filename": "en-5c1a52a7977dbb80.mp3",
+      "uses": [
+        "interview:9511",
+        "interview:9507"
+      ]
+    },
+    {
+      "id": "en-2329ab022e6da436",
+      "language": "en",
+      "text": "A short question for your recruiter. How do you prepare to work safely in changing conditions? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. How do you prepare to work safely in changing conditions? A new worker can explain what they would do.",
+      "filename": "en-2329ab022e6da436.mp3",
+      "uses": [
+        "interview:9511",
+        "interview:9507"
+      ]
+    },
+    {
+      "id": "en-209394ad53481426",
+      "language": "en",
+      "text": "Your link points to Construction Materials Technician (Cmt) in South Austin. Is that where you want to work?",
+      "spoken_text": "Your link points to Construction Materials Technician (Cmt) in South Austin. Is that where you want to work?",
+      "filename": "en-209394ad53481426.mp3",
+      "uses": [
+        "welcome:9511"
+      ]
+    },
+    {
+      "id": "en-28af4f991eb7526d",
+      "language": "en",
+      "text": "Warehouse / Driver Associate · Round Rock/Pflugerville",
+      "spoken_text": "Warehouse / Driver Associate · Round Rock/Pflugerville",
+      "filename": "en-28af4f991eb7526d.mp3",
+      "uses": [
+        "jobOverview:9510"
+      ]
+    },
+    {
+      "id": "en-5c638bb9f721608a",
+      "language": "en",
+      "text": "The listing asks for 3 years of recent warehouse experience, picking and packing, repeated lifting of 40–75 pounds and reliable transportation. Forklift experience is preferred. A warehouse aptitude test is part of hiring.",
+      "spoken_text": "The listing asks for 3 years of recent warehouse experience, picking and packing, repeated lifting of 40–75 pounds and reliable transportation. Forklift experience is preferred. A warehouse aptitude test is part of hiring.",
+      "filename": "en-5c638bb9f721608a.mp3",
+      "uses": [
+        "jobOverview:9510",
+        "requirements:9510"
+      ]
+    },
+    {
+      "id": "en-a0d3da08ebd0908d",
+      "language": "en",
+      "text": "What forklift training or certification do you hold, if any? Include the equipment type and when you trained. Do not include ID numbers. This answer goes to a recruiter; a certificate is not an automatic requirement unless the listing says so.",
+      "spoken_text": "What forklift training or certification do you hold, if any? Include the equipment type and when you trained. Do not include ID numbers. This answer goes to a recruiter; a certificate is not an automatic requirement unless the listing says so.",
+      "filename": "en-a0d3da08ebd0908d.mp3",
+      "uses": [
+        "certifications:9510",
+        "certifications:9358",
+        "certifications:9202"
+      ]
+    },
+    {
+      "id": "en-106506b98b241468",
+      "language": "en",
+      "text": "This job is in Round Rock/Pflugerville. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Round Rock/Pflugerville. Can you reliably get to that location for work?",
+      "filename": "en-106506b98b241468.mp3",
+      "uses": [
+        "transportation:9510"
+      ]
+    },
+    {
+      "id": "en-be3833433a1c0703",
+      "language": "en",
+      "text": "Do you have at least 3 years of recent warehouse experience?",
+      "spoken_text": "Do you have at least 3 years of recent warehouse experience?",
+      "filename": "en-be3833433a1c0703.mp3",
+      "uses": [
+        "check:9510"
+      ]
+    },
+    {
+      "id": "en-c4fb58223db10fde",
+      "language": "en",
+      "text": "What driver’s license class do you currently hold?",
+      "spoken_text": "What driver’s license class do you currently hold?",
+      "filename": "en-c4fb58223db10fde.mp3",
+      "uses": [
+        "role:9510",
+        "role:9509",
+        "role:9479",
+        "role:9400",
+        "role:9364",
+        "role:9358",
+        "role:9357",
+        "role:9353",
+        "role:9352"
+      ]
+    },
+    {
+      "id": "en-5db7a5d91975fec3",
+      "language": "en",
+      "text": "What vehicles have you driven for work?",
+      "spoken_text": "What vehicles have you driven for work?",
+      "filename": "en-5db7a5d91975fec3.mp3",
+      "uses": [
+        "role:9510",
+        "role:9509",
+        "role:9479",
+        "role:9400",
+        "role:9364",
+        "role:9358",
+        "role:9357",
+        "role:9353",
+        "role:9352"
+      ]
+    },
+    {
+      "id": "en-c2432db9914da4ca",
+      "language": "en",
+      "text": "A short question for your recruiter. Tell me about the equipment you used and the tasks you handled in a recent warehouse role. A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. Tell me about the equipment you used and the tasks you handled in a recent warehouse role. A new worker can explain what they would do.",
+      "filename": "en-c2432db9914da4ca.mp3",
+      "uses": [
+        "interview:9510",
+        "interview:9358",
+        "interview:9202"
+      ]
+    },
+    {
+      "id": "en-2b5aa5513d23d8b3",
+      "language": "en",
+      "text": "A short question for your recruiter. What would you do if a shipment count did not agree with the paperwork? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. What would you do if a shipment count did not agree with the paperwork? A new worker can explain what they would do.",
+      "filename": "en-2b5aa5513d23d8b3.mp3",
+      "uses": [
+        "interview:9510",
+        "interview:9358",
+        "interview:9202"
+      ]
+    },
+    {
+      "id": "en-1a0ceccdb799d8ce",
+      "language": "en",
+      "text": "Your link points to Warehouse / Driver Associate in Round Rock/Pflugerville. Is that where you want to work?",
+      "spoken_text": "Your link points to Warehouse / Driver Associate in Round Rock/Pflugerville. Is that where you want to work?",
+      "filename": "en-1a0ceccdb799d8ce.mp3",
+      "uses": [
+        "welcome:9510"
+      ]
+    },
+    {
+      "id": "en-62ac249ae2a223c0",
+      "language": "en",
+      "text": "Box Truck Driver · South Austin",
+      "spoken_text": "Box Truck Driver · South Austin",
+      "filename": "en-62ac249ae2a223c0.mp3",
+      "uses": [
+        "jobOverview:9509"
+      ]
+    },
+    {
+      "id": "en-2add61278c0a1e52",
+      "language": "en",
+      "text": "The listing asks for at least 1 year driving a box truck or larger commercial vehicle, Austin/San Marcos area familiarity, physical work and a clean driving record. Screening and dependable attendance are listed.",
+      "spoken_text": "The listing asks for at least 1 year driving a box truck or larger commercial vehicle, Austin/San Marcos area familiarity, physical work and a clean driving record. Screening and dependable attendance are listed.",
+      "filename": "en-2add61278c0a1e52.mp3",
+      "uses": [
+        "jobOverview:9509",
+        "requirements:9509"
+      ]
+    },
+    {
+      "id": "en-5363d1c173b15e12",
+      "language": "en",
+      "text": "Do you have at least 1 year driving a box truck or larger commercial vehicle?",
+      "spoken_text": "Do you have at least 1 year driving a box truck or larger commercial vehicle?",
+      "filename": "en-5363d1c173b15e12.mp3",
+      "uses": [
+        "check:9509"
+      ]
+    },
+    {
+      "id": "en-5c0dddf961e9e708",
+      "language": "en",
+      "text": "A short question for your recruiter. What vehicles have you driven for work, and what deliveries did you handle? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. What vehicles have you driven for work, and what deliveries did you handle? A new worker can explain what they would do.",
+      "filename": "en-5c0dddf961e9e708.mp3",
+      "uses": [
+        "interview:9509",
+        "interview:9479",
+        "interview:9400",
+        "interview:9364",
+        "interview:9357",
+        "interview:9353",
+        "interview:9352"
+      ]
+    },
+    {
+      "id": "en-a0d4f571940c6896",
+      "language": "en",
+      "text": "A short question for your recruiter. What would you do if you found a vehicle problem before a delivery? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. What would you do if you found a vehicle problem before a delivery? A new worker can explain what they would do.",
+      "filename": "en-a0d4f571940c6896.mp3",
+      "uses": [
+        "interview:9509",
+        "interview:9479",
+        "interview:9400",
+        "interview:9364",
+        "interview:9357",
+        "interview:9353",
+        "interview:9352"
+      ]
+    },
+    {
+      "id": "en-fcbc73d13c291b0a",
+      "language": "en",
+      "text": "Your link points to Box Truck Driver in South Austin. Is that where you want to work?",
+      "spoken_text": "Your link points to Box Truck Driver in South Austin. Is that where you want to work?",
+      "filename": "en-fcbc73d13c291b0a.mp3",
+      "uses": [
+        "welcome:9509"
+      ]
+    },
+    {
+      "id": "en-8e96ea6650c41081",
+      "language": "en",
+      "text": "Mover/ Lawn Care · Conway",
+      "spoken_text": "Mover/ Lawn Care · Conway",
+      "filename": "en-8e96ea6650c41081.mp3",
+      "uses": [
+        "jobOverview:9507"
+      ]
+    },
+    {
+      "id": "en-0753caa096ae7b00",
+      "language": "en",
+      "text": "The listing asks for a valid driver’s license with no outstanding tickets, lifting 50 pounds, a background check and a drug test.",
+      "spoken_text": "The listing asks for a valid driver’s license with no outstanding tickets, lifting 50 pounds, a background check and a drug test.",
+      "filename": "en-0753caa096ae7b00.mp3",
+      "uses": [
+        "jobOverview:9507",
+        "requirements:9507"
+      ]
+    },
+    {
+      "id": "en-f6faef7315cbbfeb",
+      "language": "en",
+      "text": "This job is in Conway. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Conway. Can you reliably get to that location for work?",
+      "filename": "en-f6faef7315cbbfeb.mp3",
+      "uses": [
+        "transportation:9507",
+        "transportation:9495",
+        "transportation:9457",
+        "transportation:9456",
+        "transportation:9455",
+        "transportation:9362",
+        "transportation:9355"
+      ]
+    },
+    {
+      "id": "en-9585c042c528cbda",
+      "language": "en",
+      "text": "Do you hold a current driver’s license?",
+      "spoken_text": "Do you hold a current driver’s license?",
+      "filename": "en-9585c042c528cbda.mp3",
+      "uses": [
+        "check:9507",
+        "check:9359",
+        "check:9358",
+        "check:9353",
+        "check:9352"
+      ]
+    },
+    {
+      "id": "en-728f0323bb19ce8f",
+      "language": "en",
+      "text": "Your link points to Mover/ Lawn Care in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Mover/ Lawn Care in Conway. Is that where you want to work?",
+      "filename": "en-728f0323bb19ce8f.mp3",
+      "uses": [
+        "welcome:9507"
+      ]
+    },
+    {
+      "id": "en-8abe5c8c4bfaad05",
+      "language": "en",
+      "text": "Seamstress · Little Rock",
+      "spoken_text": "Seamstress · Little Rock",
+      "filename": "en-8abe5c8c4bfaad05.mp3",
+      "uses": [
+        "jobOverview:9505"
+      ]
+    },
+    {
+      "id": "en-172c9884c20cc50b",
+      "language": "en",
+      "text": "Experience operating a sewing machine is required.",
+      "spoken_text": "Experience operating a sewing machine is required.",
+      "filename": "en-172c9884c20cc50b.mp3",
+      "uses": [
+        "jobOverview:9505",
+        "requirements:9505"
+      ]
+    },
+    {
+      "id": "en-e1e17689c2a4e0f2",
+      "language": "en",
+      "text": "This job is in Little Rock. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Little Rock. Can you reliably get to that location for work?",
+      "filename": "en-e1e17689c2a4e0f2.mp3",
+      "uses": [
+        "transportation:9505",
+        "transportation:9502",
+        "transportation:9492",
+        "transportation:9488",
+        "transportation:9479",
+        "transportation:9473",
+        "transportation:9458",
+        "transportation:9410",
+        "transportation:9397",
+        "transportation:9364",
+        "transportation:9359",
+        "transportation:9358",
+        "transportation:9357",
+        "transportation:9352"
+      ]
+    },
+    {
+      "id": "en-456a6f84b1348099",
+      "language": "en",
+      "text": "Have you operated a sewing machine for work?",
+      "spoken_text": "Have you operated a sewing machine for work?",
+      "filename": "en-456a6f84b1348099.mp3",
+      "uses": [
+        "check:9505"
+      ]
+    },
+    {
+      "id": "en-8ebb9bfdfa08abc7",
+      "language": "en",
+      "text": "A short question for your recruiter. Describe the machines or production tasks you have handled. A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. Describe the machines or production tasks you have handled. A new worker can explain what they would do.",
+      "filename": "en-8ebb9bfdfa08abc7.mp3",
+      "uses": [
+        "interview:9505",
+        "interview:9503",
+        "interview:9487",
+        "interview:9392"
+      ]
+    },
+    {
+      "id": "en-4dbb4d80954706f7",
+      "language": "en",
+      "text": "A short question for your recruiter. What would you do if you noticed a quality or safety problem? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. What would you do if you noticed a quality or safety problem? A new worker can explain what they would do.",
+      "filename": "en-4dbb4d80954706f7.mp3",
+      "uses": [
+        "interview:9505",
+        "interview:9503",
+        "interview:9487",
+        "interview:9392"
+      ]
+    },
+    {
+      "id": "en-41a1d9de02f5b15d",
+      "language": "en",
+      "text": "Your link points to Seamstress in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Seamstress in Little Rock. Is that where you want to work?",
+      "filename": "en-41a1d9de02f5b15d.mp3",
+      "uses": [
+        "welcome:9505"
+      ]
+    },
+    {
+      "id": "en-663a4b565f7f718d",
+      "language": "en",
+      "text": "Manufacturing Lead · North Little Rock",
+      "spoken_text": "Manufacturing Lead · North Little Rock",
+      "filename": "en-663a4b565f7f718d.mp3",
+      "uses": [
+        "jobOverview:9503"
+      ]
+    },
+    {
+      "id": "en-fbc1583a0eae29c6",
+      "language": "en",
+      "text": "This listing only says “LEAD.” A recruiter needs to clarify its requirements.",
+      "spoken_text": "This listing only says “LEAD.” A recruiter needs to clarify its requirements.",
+      "filename": "en-fbc1583a0eae29c6.mp3",
+      "uses": [
+        "jobOverview:9503",
+        "requirements:9503"
+      ]
+    },
+    {
+      "id": "en-98573cc27d3e2a4d",
+      "language": "en",
+      "text": "This job is in North Little Rock. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in North Little Rock. Can you reliably get to that location for work?",
+      "filename": "en-98573cc27d3e2a4d.mp3",
+      "uses": [
+        "transportation:9503",
+        "transportation:9487",
+        "transportation:9400"
+      ]
+    },
+    {
+      "id": "en-92b32090042e8ead",
+      "language": "en",
+      "text": "Your link points to Manufacturing Lead in North Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Manufacturing Lead in North Little Rock. Is that where you want to work?",
+      "filename": "en-92b32090042e8ead.mp3",
+      "uses": [
+        "welcome:9503"
+      ]
+    },
+    {
+      "id": "en-436daecbfcea9927",
+      "language": "en",
+      "text": "Administrative Assistant · Little Rock",
+      "spoken_text": "Administrative Assistant · Little Rock",
+      "filename": "en-436daecbfcea9927.mp3",
+      "uses": [
+        "jobOverview:9502"
+      ]
+    },
+    {
+      "id": "en-011d9092a4c266c0",
+      "language": "en",
+      "text": "The role involves office administration, scheduling, records and supplies. Microsoft Office proficiency, communication, organization and computer skills are listed. Administrative experience is preferred.",
+      "spoken_text": "The role involves office administration, scheduling, records and supplies. Microsoft Office proficiency, communication, organization and computer skills are listed. Administrative experience is preferred.",
+      "filename": "en-011d9092a4c266c0.mp3",
+      "uses": [
+        "jobOverview:9502",
+        "requirements:9502"
+      ]
+    },
+    {
+      "id": "en-0570dc4ac13e6a27",
+      "language": "en",
+      "text": "What software or business systems have you used?",
+      "spoken_text": "What software or business systems have you used?",
+      "filename": "en-0570dc4ac13e6a27.mp3",
+      "uses": [
+        "role:9502",
+        "role:9495",
+        "role:9492",
+        "role:9473",
+        "role:9399"
+      ]
+    },
+    {
+      "id": "en-e52c0c1049974dbc",
+      "language": "en",
+      "text": "Which duties in this job have you handled before?",
+      "spoken_text": "Which duties in this job have you handled before?",
+      "filename": "en-e52c0c1049974dbc.mp3",
+      "uses": [
+        "role:9502",
+        "role:9495",
+        "role:9492",
+        "role:9473",
+        "role:9399"
+      ]
+    },
+    {
+      "id": "en-c9e85d156f9352ae",
+      "language": "en",
+      "text": "A short question for your recruiter. Tell me about the office systems or software you have used. A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. Tell me about the office systems or software you have used. A new worker can explain what they would do.",
+      "filename": "en-c9e85d156f9352ae.mp3",
+      "uses": [
+        "interview:9502",
+        "interview:9495",
+        "interview:9492",
+        "interview:9473",
+        "interview:9399"
+      ]
+    },
+    {
+      "id": "en-780f13b86eb7c1ed",
+      "language": "en",
+      "text": "A short question for your recruiter. How do you check your work when handling records, money or orders? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. How do you check your work when handling records, money or orders? A new worker can explain what they would do.",
+      "filename": "en-780f13b86eb7c1ed.mp3",
+      "uses": [
+        "interview:9502",
+        "interview:9495",
+        "interview:9492",
+        "interview:9473",
+        "interview:9399"
+      ]
+    },
+    {
+      "id": "en-5c5073ac20082548",
+      "language": "en",
+      "text": "Your link points to Administrative Assistant in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Administrative Assistant in Little Rock. Is that where you want to work?",
+      "filename": "en-5c5073ac20082548.mp3",
+      "uses": [
+        "welcome:9502"
+      ]
+    },
+    {
+      "id": "en-d48e1b2527410759",
+      "language": "en",
+      "text": "Buyer/ Purchasing Agent · Conway",
+      "spoken_text": "Buyer/ Purchasing Agent · Conway",
+      "filename": "en-d48e1b2527410759.mp3",
+      "uses": [
+        "jobOverview:9495"
+      ]
+    },
+    {
+      "id": "en-d47eb6a39a15bf37",
+      "language": "en",
+      "text": "The listing asks for a high school diploma or equivalent, 3 years of related experience, SAP skills and steel-industry knowledge. Related postsecondary courses are preferred; customer service is a plus.",
+      "spoken_text": "The listing asks for a high school diploma or equivalent, 3 years of related experience, SAP skills and steel-industry knowledge. Related postsecondary courses are preferred; customer service is a plus.",
+      "filename": "en-d47eb6a39a15bf37.mp3",
+      "uses": [
+        "jobOverview:9495",
+        "requirements:9495"
+      ]
+    },
+    {
+      "id": "en-70a5c5a849f4d8b3",
+      "language": "en",
+      "text": "Do you have 3 years of related purchasing experience?",
+      "spoken_text": "Do you have 3 years of related purchasing experience?",
+      "filename": "en-70a5c5a849f4d8b3.mp3",
+      "uses": [
+        "check:9495"
+      ]
+    },
+    {
+      "id": "en-8bbf75a627588e29",
+      "language": "en",
+      "text": "Your link points to Buyer/ Purchasing Agent in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Buyer/ Purchasing Agent in Conway. Is that where you want to work?",
+      "filename": "en-8bbf75a627588e29.mp3",
+      "uses": [
+        "welcome:9495"
+      ]
+    },
+    {
+      "id": "en-2ab76a6d270d961c",
+      "language": "en",
+      "text": "Parts Manager · Little Rock",
+      "spoken_text": "Parts Manager · Little Rock",
+      "filename": "en-2ab76a6d270d961c.mp3",
+      "uses": [
+        "jobOverview:9492"
+      ]
+    },
+    {
+      "id": "en-46a34a9b4017f13f",
+      "language": "en",
+      "text": "Duties include purchasing, vendor contact, inventory, shipping, spreadsheets and reports. The listing specifies a drug-free environment and a background check.",
+      "spoken_text": "Duties include purchasing, vendor contact, inventory, shipping, spreadsheets and reports. The listing specifies a drug-free environment and a background check.",
+      "filename": "en-46a34a9b4017f13f.mp3",
+      "uses": [
+        "jobOverview:9492",
+        "requirements:9492"
+      ]
+    },
+    {
+      "id": "en-54f120dff7f00314",
+      "language": "en",
+      "text": "Your link points to Parts Manager in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Parts Manager in Little Rock. Is that where you want to work?",
+      "filename": "en-54f120dff7f00314.mp3",
+      "uses": [
+        "welcome:9492"
+      ]
+    },
+    {
+      "id": "en-2a6a0d0a1671fc78",
+      "language": "en",
+      "text": "Mig Welder · Little Rock",
+      "spoken_text": "Mig Welder · Little Rock",
+      "filename": "en-2a6a0d0a1671fc78.mp3",
+      "uses": [
+        "jobOverview:9488"
+      ]
+    },
+    {
+      "id": "en-7c9e33c9d953236d",
+      "language": "en",
+      "text": "The listing asks for MIG welding knowledge, safe equipment use, reading drawings and shop math. A high school diploma/GED is required, plus welding certification or at least 2 years of MIG experience.",
+      "spoken_text": "The listing asks for MIG welding knowledge, safe equipment use, reading drawings and shop math. A high school diploma/GED is required, plus welding certification or at least 2 years of MIG experience.",
+      "filename": "en-7c9e33c9d953236d.mp3",
+      "uses": [
+        "jobOverview:9488",
+        "requirements:9488"
+      ]
+    },
+    {
+      "id": "en-b45257f24358fda8",
+      "language": "en",
+      "text": "What machines, welding processes or tools have you used?",
+      "spoken_text": "What machines, welding processes or tools have you used?",
+      "filename": "en-b45257f24358fda8.mp3",
+      "uses": [
+        "role:9488",
+        "role:9410",
+        "role:9397",
+        "role:9392",
+        "role:9362",
+        "role:9355"
+      ]
+    },
+    {
+      "id": "en-447c8df80219fdea",
+      "language": "en",
+      "text": "What related training or certifications do you have?",
+      "spoken_text": "What related training or certifications do you have?",
+      "filename": "en-447c8df80219fdea.mp3",
+      "uses": [
+        "role:9488",
+        "role:9410",
+        "role:9397",
+        "role:9392",
+        "role:9362",
+        "role:9355"
+      ]
+    },
+    {
+      "id": "en-406f60d167d3e8d6",
+      "language": "en",
+      "text": "A short question for your recruiter. Describe a repair or technical task you completed. Which tools did you use? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. Describe a repair or technical task you completed. Which tools did you use? A new worker can explain what they would do.",
+      "filename": "en-406f60d167d3e8d6.mp3",
+      "uses": [
+        "interview:9488",
+        "interview:9458",
+        "interview:9457",
+        "interview:9456",
+        "interview:9455",
+        "interview:9410",
+        "interview:9397",
+        "interview:9362",
+        "interview:9359",
+        "interview:9355"
+      ]
+    },
+    {
+      "id": "en-b2e5a9d5b2be35e3",
+      "language": "en",
+      "text": "A short question for your recruiter. How do you check that your work is safe and ready for use? A new worker can explain what they would do.",
+      "spoken_text": "A short question for your recruiter. How do you check that your work is safe and ready for use? A new worker can explain what they would do.",
+      "filename": "en-b2e5a9d5b2be35e3.mp3",
+      "uses": [
+        "interview:9488",
+        "interview:9458",
+        "interview:9457",
+        "interview:9456",
+        "interview:9455",
+        "interview:9410",
+        "interview:9397",
+        "interview:9362",
+        "interview:9359",
+        "interview:9355"
+      ]
+    },
+    {
+      "id": "en-6f4b1439714d4a0e",
+      "language": "en",
+      "text": "Your link points to Mig Welder in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Mig Welder in Little Rock. Is that where you want to work?",
+      "filename": "en-6f4b1439714d4a0e.mp3",
+      "uses": [
+        "welcome:9488"
+      ]
+    },
+    {
+      "id": "en-c92422cf09f8d0e5",
+      "language": "en",
+      "text": "Metal Inspector · North Little Rock",
+      "spoken_text": "Metal Inspector · North Little Rock",
+      "filename": "en-c92422cf09f8d0e5.mp3",
+      "uses": [
+        "jobOverview:9487"
+      ]
+    },
+    {
+      "id": "en-dd3c816770ed0f22",
+      "language": "en",
+      "text": "The listing asks for mechanical aptitude, safe hand-tool use, precision coordination and standing, walking or leaning over production lines for extended periods.",
+      "spoken_text": "The listing asks for mechanical aptitude, safe hand-tool use, precision coordination and standing, walking or leaning over production lines for extended periods.",
+      "filename": "en-dd3c816770ed0f22.mp3",
+      "uses": [
+        "jobOverview:9487",
+        "requirements:9487"
+      ]
+    },
+    {
+      "id": "en-cb8287e5fe6d1393",
+      "language": "en",
+      "text": "Your link points to Metal Inspector in North Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Metal Inspector in North Little Rock. Is that where you want to work?",
+      "filename": "en-cb8287e5fe6d1393.mp3",
+      "uses": [
+        "welcome:9487"
+      ]
+    },
+    {
+      "id": "en-7a67bdeae6aec5be",
+      "language": "en",
+      "text": "Delivery Driver · Little Rock",
+      "spoken_text": "Delivery Driver · Little Rock",
+      "filename": "en-7a67bdeae6aec5be.mp3",
+      "uses": [
+        "jobOverview:9479"
+      ]
+    },
+    {
+      "id": "en-89c1883c46c95916",
+      "language": "en",
+      "text": "The role involves lifting 50+ pounds, moving heavy machines with dollies, walking 2–5 miles and loading vehicles. A clean driving record and screening are listed. Review the full listing with a recruiter.",
+      "spoken_text": "The role involves lifting 50+ pounds, moving heavy machines with dollies, walking 2–5 miles and loading vehicles. A clean driving record and screening are listed. Review the full listing with a recruiter.",
+      "filename": "en-89c1883c46c95916.mp3",
+      "uses": [
+        "jobOverview:9479",
+        "requirements:9479"
+      ]
+    },
+    {
+      "id": "en-fe4049ce7b9617b4",
+      "language": "en",
+      "text": "Your link points to Delivery Driver in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Delivery Driver in Little Rock. Is that where you want to work?",
+      "filename": "en-fe4049ce7b9617b4.mp3",
+      "uses": [
+        "welcome:9479"
+      ]
+    },
+    {
+      "id": "en-17996502f2e1ec4c",
+      "language": "en",
+      "text": "Bank Teller 7a-4p · Little Rock",
+      "spoken_text": "Bank Teller 7a-4p · Little Rock",
+      "filename": "en-17996502f2e1ec4c.mp3",
+      "uses": [
+        "jobOverview:9473"
+      ]
+    },
+    {
+      "id": "en-523e62aeee7e8d5a",
+      "language": "en",
+      "text": "Cash-handling work experience and friendly face-to-face customer service are required. Drug testing and background screening are listed. The title specifies 7 a.m.–4 p.m.",
+      "spoken_text": "Cash-handling work experience and friendly face-to-face customer service are required. Drug testing and background screening are listed. The title specifies 7 a.m.–4 p.m.",
+      "filename": "en-523e62aeee7e8d5a.mp3",
+      "uses": [
+        "jobOverview:9473",
+        "requirements:9473"
+      ]
+    },
+    {
+      "id": "en-68a042b0bc2cad83",
+      "language": "en",
+      "text": "Do you have work experience handling cash?",
+      "spoken_text": "Do you have work experience handling cash?",
+      "filename": "en-68a042b0bc2cad83.mp3",
+      "uses": [
+        "check:9473"
+      ]
+    },
+    {
+      "id": "en-c4ac67776bf91332",
+      "language": "en",
+      "text": "Your link points to Bank Teller 7a-4p in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Bank Teller 7a-4p in Little Rock. Is that where you want to work?",
+      "filename": "en-c4ac67776bf91332.mp3",
+      "uses": [
+        "welcome:9473"
+      ]
+    },
+    {
+      "id": "en-13ff9b0899bedb49",
+      "language": "en",
+      "text": "Production Maintenance · Little Rock",
+      "spoken_text": "Production Maintenance · Little Rock",
+      "filename": "en-13ff9b0899bedb49.mp3",
+      "uses": [
+        "jobOverview:9458"
+      ]
+    },
+    {
+      "id": "en-2c26d791b1f4ba3f",
+      "language": "en",
+      "text": "The listing asks for industrial maintenance experience and at least 4 years of heavy electrical/mechanical work, including PLCs, wiring diagrams, motors and transformers. Food manufacturing is preferred, not required.",
+      "spoken_text": "The listing asks for industrial maintenance experience and at least 4 years of heavy electrical/mechanical work, including PLCs, wiring diagrams, motors and transformers. Food manufacturing is preferred, not required.",
+      "filename": "en-2c26d791b1f4ba3f.mp3",
+      "uses": [
+        "jobOverview:9458",
+        "requirements:9458"
+      ]
+    },
+    {
+      "id": "en-eac9a32b1af9c82a",
+      "language": "en",
+      "text": "Do you have at least 4 years of heavy electrical or mechanical experience?",
+      "spoken_text": "Do you have at least 4 years of heavy electrical or mechanical experience?",
+      "filename": "en-eac9a32b1af9c82a.mp3",
+      "uses": [
+        "check:9458"
+      ]
+    },
+    {
+      "id": "en-c0641b84bb9311fa",
+      "language": "en",
+      "text": "What equipment or systems have you maintained or repaired?",
+      "spoken_text": "What equipment or systems have you maintained or repaired?",
+      "filename": "en-c0641b84bb9311fa.mp3",
+      "uses": [
+        "role:9458",
+        "role:9457",
+        "role:9456",
+        "role:9455",
+        "role:9359"
+      ]
+    },
+    {
+      "id": "en-c877834d0199851b",
+      "language": "en",
+      "text": "How much heavy electrical or mechanical experience do you have?",
+      "spoken_text": "How much heavy electrical or mechanical experience do you have?",
+      "filename": "en-c877834d0199851b.mp3",
+      "uses": [
+        "role:9458",
+        "role:9457",
+        "role:9456",
+        "role:9455",
+        "role:9359"
+      ]
+    },
+    {
+      "id": "en-941a09b12fb9ebbd",
+      "language": "en",
+      "text": "Your link points to Production Maintenance in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Production Maintenance in Little Rock. Is that where you want to work?",
+      "filename": "en-941a09b12fb9ebbd.mp3",
+      "uses": [
+        "welcome:9458"
+      ]
+    },
+    {
+      "id": "en-491166e69b1f3626",
+      "language": "en",
+      "text": "Industrial Tech · Conway",
+      "spoken_text": "Industrial Tech · Conway",
+      "filename": "en-491166e69b1f3626.mp3",
+      "uses": [
+        "jobOverview:9457"
+      ]
+    },
+    {
+      "id": "en-0a0fa895f55a278c",
+      "language": "en",
+      "text": "The listing asks for a high school diploma/equivalent, industrial equipment experience, mechanical/electrical/hydraulic knowledge and diagnostic tools. A related technical qualification is preferred. Screening is listed.",
+      "spoken_text": "The listing asks for a high school diploma/equivalent, industrial equipment experience, mechanical/electrical/hydraulic knowledge and diagnostic tools. A related technical qualification is preferred. Screening is listed.",
+      "filename": "en-0a0fa895f55a278c.mp3",
+      "uses": [
+        "jobOverview:9457",
+        "requirements:9457"
+      ]
+    },
+    {
+      "id": "en-9c6ea938ce88dba0",
+      "language": "en",
+      "text": "Your link points to Industrial Tech in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Industrial Tech in Conway. Is that where you want to work?",
+      "filename": "en-9c6ea938ce88dba0.mp3",
+      "uses": [
+        "welcome:9457"
+      ]
+    },
+    {
+      "id": "en-e77f703326ae7e21",
+      "language": "en",
+      "text": "Maintenance Mechanic · Conway",
+      "spoken_text": "Maintenance Mechanic · Conway",
+      "filename": "en-e77f703326ae7e21.mp3",
+      "uses": [
+        "jobOverview:9456"
+      ]
+    },
+    {
+      "id": "en-7ce75d1a306efd51",
+      "language": "en",
+      "text": "The listing asks for 3+ years of industrial maintenance in automotive or metal fabrication, mechanical systems, hydraulics/pneumatics, basic electrical troubleshooting and technical drawings. Welding and PLC exposure are preferred. Screening is listed.",
+      "spoken_text": "The listing asks for 3+ years of industrial maintenance in automotive or metal fabrication, mechanical systems, hydraulics/pneumatics, basic electrical troubleshooting and technical drawings. Welding and PLC exposure are preferred. Screening is listed.",
+      "filename": "en-7ce75d1a306efd51.mp3",
+      "uses": [
+        "jobOverview:9456",
+        "requirements:9456"
+      ]
+    },
+    {
+      "id": "en-772abcf698f9610c",
+      "language": "en",
+      "text": "Do you have at least 3 years of industrial maintenance in automotive or metal fabrication?",
+      "spoken_text": "Do you have at least 3 years of industrial maintenance in automotive or metal fabrication?",
+      "filename": "en-772abcf698f9610c.mp3",
+      "uses": [
+        "check:9456"
+      ]
+    },
+    {
+      "id": "en-69b19caa77ff9797",
+      "language": "en",
+      "text": "Your link points to Maintenance Mechanic in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Maintenance Mechanic in Conway. Is that where you want to work?",
+      "filename": "en-69b19caa77ff9797.mp3",
+      "uses": [
+        "welcome:9456"
+      ]
+    },
+    {
+      "id": "en-2342e05eeee8c2b4",
+      "language": "en",
+      "text": "Maintenance Millwright · Conway",
+      "spoken_text": "Maintenance Millwright · Conway",
+      "filename": "en-2342e05eeee8c2b4.mp3",
+      "uses": [
+        "jobOverview:9455"
+      ]
+    },
+    {
+      "id": "en-a18957f57b657e03",
+      "language": "en",
+      "text": "The listing specifies a 433a Industrial Millwright qualification, with a related diploma/experience, C.E.T. or professional engineering designation considered as an alternative. A recruiter must verify equivalency. Screening is listed.",
+      "spoken_text": "The listing specifies a 433a Industrial Millwright qualification, with a related diploma/experience, C.E.T. or professional engineering designation considered as an alternative. A recruiter must verify equivalency. Screening is listed.",
+      "filename": "en-a18957f57b657e03.mp3",
+      "uses": [
+        "jobOverview:9455",
+        "requirements:9455"
+      ]
+    },
+    {
+      "id": "en-06690724b7244123",
+      "language": "en",
+      "text": "Your link points to Maintenance Millwright in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Maintenance Millwright in Conway. Is that where you want to work?",
+      "filename": "en-06690724b7244123.mp3",
+      "uses": [
+        "welcome:9455"
+      ]
+    },
+    {
+      "id": "en-ab9aa7ef4bd9aaef",
+      "language": "en",
+      "text": "Laser Operator · Little Rock",
+      "spoken_text": "Laser Operator · Little Rock",
+      "filename": "en-ab9aa7ef4bd9aaef.mp3",
+      "uses": [
+        "jobOverview:9410"
+      ]
+    },
+    {
+      "id": "en-c3397770ab6e3ed4",
+      "language": "en",
+      "text": "The listing asks for fabrication, laser operation/maintenance, measuring, shop math, CNC familiarity and reading drawings. Physical duties include moving up to 65 pounds, long periods on your feet and a 40–100°F environment with protective equipment.",
+      "spoken_text": "The listing asks for fabrication, laser operation/maintenance, measuring, shop math, CNC familiarity and reading drawings. Physical duties include moving up to 65 pounds, long periods on your feet and a 40–100°F environment with protective equipment.",
+      "filename": "en-c3397770ab6e3ed4.mp3",
+      "uses": [
+        "jobOverview:9410",
+        "requirements:9410"
+      ]
+    },
+    {
+      "id": "en-1136671924e818f2",
+      "language": "en",
+      "text": "Your link points to Laser Operator in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Laser Operator in Little Rock. Is that where you want to work?",
+      "filename": "en-1136671924e818f2.mp3",
+      "uses": [
+        "welcome:9410"
+      ]
+    },
+    {
+      "id": "en-cd7c217456fe006a",
+      "language": "en",
+      "text": "Class A CDL – Nights · North Little Rock",
+      "spoken_text": "Class A CDL – Nights · North Little Rock",
+      "filename": "en-cd7c217456fe006a.mp3",
+      "uses": [
+        "jobOverview:9400"
+      ]
+    },
+    {
+      "id": "en-3f6f4201c13ca7c5",
+      "language": "en",
+      "text": "This is a night-driving role. The listing asks for a current Class A CDL, DOT medical card, 1–2 years commercial driving and a clean driving record. DOT screening, physical requirements, heavy unloading and outdoor work are listed.",
+      "spoken_text": "This is a night-driving role. The listing asks for a current Class A CDL, DOT medical card, 1–2 years commercial driving and a clean driving record. DOT screening, physical requirements, heavy unloading and outdoor work are listed.",
+      "filename": "en-3f6f4201c13ca7c5.mp3",
+      "uses": [
+        "jobOverview:9400",
+        "requirements:9400"
+      ]
+    },
+    {
+      "id": "en-504260e33c4e4520",
+      "language": "en",
+      "text": "Do you hold a current Class A CDL?",
+      "spoken_text": "Do you hold a current Class A CDL?",
+      "filename": "en-504260e33c4e4520.mp3",
+      "uses": [
+        "check:9400"
+      ]
+    },
+    {
+      "id": "en-b6a1f0c4b1d2ea3b",
+      "language": "en",
+      "text": "Do you hold a current DOT medical card? Do not share medical details.",
+      "spoken_text": "Do you hold a current DOT medical card? Do not share medical details.",
+      "filename": "en-b6a1f0c4b1d2ea3b.mp3",
+      "uses": [
+        "check:9400",
+        "check:9357"
+      ]
+    },
+    {
+      "id": "en-3e45b21974027c58",
+      "language": "en",
+      "text": "Your link points to Class A CDL – Nights in North Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Class A CDL – Nights in North Little Rock. Is that where you want to work?",
+      "filename": "en-3e45b21974027c58.mp3",
+      "uses": [
+        "welcome:9400"
+      ]
+    },
+    {
+      "id": "en-e86a1539ec6411aa",
+      "language": "en",
+      "text": "Manufacturing Accountant · Lonoke",
+      "spoken_text": "Manufacturing Accountant · Lonoke",
+      "filename": "en-e86a1539ec6411aa.mp3",
+      "uses": [
+        "jobOverview:9399"
+      ]
+    },
+    {
+      "id": "en-0869b65960cc123f",
+      "language": "en",
+      "text": "The listing asks for an accounting-related bachelor’s degree, 3 years of manufacturing accounting, integrated ERP experience and advanced office/spreadsheet skills. SAP is preferred. Screening is listed.",
+      "spoken_text": "The listing asks for an accounting-related bachelor’s degree, 3 years of manufacturing accounting, integrated ERP experience and advanced office/spreadsheet skills. SAP is preferred. Screening is listed.",
+      "filename": "en-0869b65960cc123f.mp3",
+      "uses": [
+        "jobOverview:9399",
+        "requirements:9399"
+      ]
+    },
+    {
+      "id": "en-23da852748b3e094",
+      "language": "en",
+      "text": "This job is in Lonoke. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Lonoke. Can you reliably get to that location for work?",
+      "filename": "en-23da852748b3e094.mp3",
+      "uses": [
+        "transportation:9399"
+      ]
+    },
+    {
+      "id": "en-7c462508a0127423",
+      "language": "en",
+      "text": "Do you have an accounting-related bachelor’s degree and 3 years of manufacturing accounting?",
+      "spoken_text": "Do you have an accounting-related bachelor’s degree and 3 years of manufacturing accounting?",
+      "filename": "en-7c462508a0127423.mp3",
+      "uses": [
+        "check:9399"
+      ]
+    },
+    {
+      "id": "en-a1e2aca99f92ad2c",
+      "language": "en",
+      "text": "Your link points to Manufacturing Accountant in Lonoke. Is that where you want to work?",
+      "spoken_text": "Your link points to Manufacturing Accountant in Lonoke. Is that where you want to work?",
+      "filename": "en-a1e2aca99f92ad2c.mp3",
+      "uses": [
+        "welcome:9399"
+      ]
+    },
+    {
+      "id": "en-8d1eac73b47a60b0",
+      "language": "en",
+      "text": "Shop Welder · Little Rock",
+      "spoken_text": "Shop Welder · Little Rock",
+      "filename": "en-8d1eac73b47a60b0.mp3",
+      "uses": [
+        "jobOverview:9397"
+      ]
+    },
+    {
+      "id": "en-1c215f7346fc128d",
+      "language": "en",
+      "text": "The listing asks for MIG welding, reading blueprints, metal-fabrication knowledge, precision measurement, shop math and material-handling equipment experience, with safe working practices.",
+      "spoken_text": "The listing asks for MIG welding, reading blueprints, metal-fabrication knowledge, precision measurement, shop math and material-handling equipment experience, with safe working practices.",
+      "filename": "en-1c215f7346fc128d.mp3",
+      "uses": [
+        "jobOverview:9397",
+        "requirements:9397"
+      ]
+    },
+    {
+      "id": "en-933c7f8c47b4e228",
+      "language": "en",
+      "text": "Your link points to Shop Welder in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Shop Welder in Little Rock. Is that where you want to work?",
+      "filename": "en-933c7f8c47b4e228.mp3",
+      "uses": [
+        "welcome:9397"
+      ]
+    },
+    {
+      "id": "en-43e0ec2d2a5bb7dd",
+      "language": "en",
+      "text": "Machine Operator Special Project · Maumelle",
+      "spoken_text": "Machine Operator Special Project · Maumelle",
+      "filename": "en-43e0ec2d2a5bb7dd.mp3",
+      "uses": [
+        "jobOverview:9392"
+      ]
+    },
+    {
+      "id": "en-f050742beb1049ee",
+      "language": "en",
+      "text": "The published requirements list steel-toed boots and passing a drug test and background check. No minimum years of experience are stated.",
+      "spoken_text": "The published requirements list steel-toed boots and passing a drug test and background check. No minimum years of experience are stated.",
+      "filename": "en-f050742beb1049ee.mp3",
+      "uses": [
+        "jobOverview:9392",
+        "requirements:9392"
+      ]
+    },
+    {
+      "id": "en-8f96d1857927e2af",
+      "language": "en",
+      "text": "This job is in Maumelle. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Maumelle. Can you reliably get to that location for work?",
+      "filename": "en-8f96d1857927e2af.mp3",
+      "uses": [
+        "transportation:9392"
+      ]
+    },
+    {
+      "id": "en-a595ec421d63f3e7",
+      "language": "en",
+      "text": "Your link points to Machine Operator Special Project in Maumelle. Is that where you want to work?",
+      "spoken_text": "Your link points to Machine Operator Special Project in Maumelle. Is that where you want to work?",
+      "filename": "en-a595ec421d63f3e7.mp3",
+      "uses": [
+        "welcome:9392"
+      ]
+    },
+    {
+      "id": "en-052583e32cab873c",
+      "language": "en",
+      "text": "Driver Helper · Little Rock",
+      "spoken_text": "Driver Helper · Little Rock",
+      "filename": "en-052583e32cab873c.mp3",
+      "uses": [
+        "jobOverview:9364"
+      ]
+    },
+    {
+      "id": "en-3f366f1336f01392",
+      "language": "en",
+      "text": "The listing specifies a “New Federal DL (21yrs+)”, customer service, repeated lifting of 50 pounds and screening. A recruiter should clarify the license wording.",
+      "spoken_text": "The listing specifies a “New Federal DL (21yrs+)”, customer service, repeated lifting of 50 pounds and screening. A recruiter should clarify the license wording.",
+      "filename": "en-3f366f1336f01392.mp3",
+      "uses": [
+        "jobOverview:9364",
+        "requirements:9364"
+      ]
+    },
+    {
+      "id": "en-56f3fea633e95afb",
+      "language": "en",
+      "text": "Your link points to Driver Helper in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Driver Helper in Little Rock. Is that where you want to work?",
+      "filename": "en-56f3fea633e95afb.mp3",
+      "uses": [
+        "welcome:9364"
+      ]
+    },
+    {
+      "id": "en-e6697c4a2cbfa52d",
+      "language": "en",
+      "text": "Co2 Laser Operator · Conway",
+      "spoken_text": "Co2 Laser Operator · Conway",
+      "filename": "en-e6697c4a2cbfa52d.mp3",
+      "uses": [
+        "jobOverview:9362"
+      ]
+    },
+    {
+      "id": "en-9c84cfbcbec612d3",
+      "language": "en",
+      "text": "The listing asks for 5 years of machine-shop experience, with technical training allowed to replace part, technical drawings, a valid driver’s license/vehicle and moving 50+ pounds. Its CO2 laser requirement is ambiguous (“required/preferred”); a recruiter should clarify.",
+      "spoken_text": "The listing asks for 5 years of machine-shop experience, with technical training allowed to replace part, technical drawings, a valid driver’s license/vehicle and moving 50+ pounds. Its CO2 laser requirement is ambiguous (“required/preferred”); a recruiter should clarify.",
+      "filename": "en-9c84cfbcbec612d3.mp3",
+      "uses": [
+        "jobOverview:9362",
+        "requirements:9362"
+      ]
+    },
+    {
+      "id": "en-72c70f08ea57b907",
+      "language": "en",
+      "text": "Your link points to Co2 Laser Operator in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Co2 Laser Operator in Conway. Is that where you want to work?",
+      "filename": "en-72c70f08ea57b907.mp3",
+      "uses": [
+        "welcome:9362"
+      ]
+    },
+    {
+      "id": "en-57df9f1a5a800c44",
+      "language": "en",
+      "text": "Mechanic Shop Assistant · Little Rock",
+      "spoken_text": "Mechanic Shop Assistant · Little Rock",
+      "filename": "en-57df9f1a5a800c44.mp3",
+      "uses": [
+        "jobOverview:9359"
+      ]
+    },
+    {
+      "id": "en-c6cf27139a015ffe",
+      "language": "en",
+      "text": "The listing asks for mechanical aptitude, hand tools, safe vehicle movement, a valid driver’s license and physical duties including lifting 50 pounds. High school/GED and vocational training are preferred. Screening is listed.",
+      "spoken_text": "The listing asks for mechanical aptitude, hand tools, safe vehicle movement, a valid driver’s license and physical duties including lifting 50 pounds. High school/GED and vocational training are preferred. Screening is listed.",
+      "filename": "en-c6cf27139a015ffe.mp3",
+      "uses": [
+        "jobOverview:9359",
+        "requirements:9359"
+      ]
+    },
+    {
+      "id": "en-710e838b6520c66e",
+      "language": "en",
+      "text": "Your link points to Mechanic Shop Assistant in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Mechanic Shop Assistant in Little Rock. Is that where you want to work?",
+      "filename": "en-710e838b6520c66e.mp3",
+      "uses": [
+        "welcome:9359"
+      ]
+    },
+    {
+      "id": "en-7d21ecc62d57a4b2",
+      "language": "en",
+      "text": "Order Selector / Delivery Driver · Little Rock",
+      "spoken_text": "Order Selector / Delivery Driver · Little Rock",
+      "filename": "en-7d21ecc62d57a4b2.mp3",
+      "uses": [
+        "jobOverview:9358"
+      ]
+    },
+    {
+      "id": "en-26d359b0d5e69609",
+      "language": "en",
+      "text": "The role involves order picking, inventory, warehouse systems and safe material-handling equipment use. Heavy lifting and a valid driver’s license for deliveries are listed.",
+      "spoken_text": "The role involves order picking, inventory, warehouse systems and safe material-handling equipment use. Heavy lifting and a valid driver’s license for deliveries are listed.",
+      "filename": "en-26d359b0d5e69609.mp3",
+      "uses": [
+        "jobOverview:9358",
+        "requirements:9358"
+      ]
+    },
+    {
+      "id": "en-60a377655e15c8b2",
+      "language": "en",
+      "text": "Your link points to Order Selector / Delivery Driver in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Order Selector / Delivery Driver in Little Rock. Is that where you want to work?",
+      "filename": "en-60a377655e15c8b2.mp3",
+      "uses": [
+        "welcome:9358"
+      ]
+    },
+    {
+      "id": "en-621ade439bf5eae1",
+      "language": "en",
+      "text": "CDL Drivers – Class A / B · Little Rock",
+      "spoken_text": "CDL Drivers – Class A / B · Little Rock",
+      "filename": "en-621ade439bf5eae1.mp3",
+      "uses": [
+        "jobOverview:9357"
+      ]
+    },
+    {
+      "id": "en-7b14b02430077faf",
+      "language": "en",
+      "text": "The listing asks for a current commercial driver’s license, DOT medical card and clean driving record. DOT screening, heavy lifting/unloading, outdoor work, route planning and records are listed.",
+      "spoken_text": "The listing asks for a current commercial driver’s license, DOT medical card and clean driving record. DOT screening, heavy lifting/unloading, outdoor work, route planning and records are listed.",
+      "filename": "en-7b14b02430077faf.mp3",
+      "uses": [
+        "jobOverview:9357",
+        "requirements:9357"
+      ]
+    },
+    {
+      "id": "en-d501140f0fb5729b",
+      "language": "en",
+      "text": "Do you hold a current Class A or Class B CDL?",
+      "spoken_text": "Do you hold a current Class A or Class B CDL?",
+      "filename": "en-d501140f0fb5729b.mp3",
+      "uses": [
+        "check:9357"
+      ]
+    },
+    {
+      "id": "en-79e50c63510201d0",
+      "language": "en",
+      "text": "Your link points to CDL Drivers – Class A / B in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to CDL Drivers – Class A / B in Little Rock. Is that where you want to work?",
+      "filename": "en-79e50c63510201d0.mp3",
+      "uses": [
+        "welcome:9357"
+      ]
+    },
+    {
+      "id": "en-170c76ca8f175e18",
+      "language": "en",
+      "text": "Tool & Die / Machinist · Conway",
+      "spoken_text": "Tool & Die / Machinist · Conway",
+      "filename": "en-170c76ca8f175e18.mp3",
+      "uses": [
+        "jobOverview:9355"
+      ]
+    },
+    {
+      "id": "en-995d222a04aa868e",
+      "language": "en",
+      "text": "The listing asks for tool-and-die or machining experience, blueprints, precision measurement, a high school diploma/equivalent and lifting up to 40 pounds. Manual/CNC experience and an apprenticeship are preferences.",
+      "spoken_text": "The listing asks for tool-and-die or machining experience, blueprints, precision measurement, a high school diploma/equivalent and lifting up to 40 pounds. Manual/CNC experience and an apprenticeship are preferences.",
+      "filename": "en-995d222a04aa868e.mp3",
+      "uses": [
+        "jobOverview:9355",
+        "requirements:9355"
+      ]
+    },
+    {
+      "id": "en-39285e24498cdd29",
+      "language": "en",
+      "text": "Your link points to Tool & Die / Machinist in Conway. Is that where you want to work?",
+      "spoken_text": "Your link points to Tool & Die / Machinist in Conway. Is that where you want to work?",
+      "filename": "en-39285e24498cdd29.mp3",
+      "uses": [
+        "welcome:9355"
+      ]
+    },
+    {
+      "id": "en-152023a3321e3f23",
+      "language": "en",
+      "text": "Non Commercial Delivery Driver · Fayetteville",
+      "spoken_text": "Non Commercial Delivery Driver · Fayetteville",
+      "filename": "en-152023a3321e3f23.mp3",
+      "uses": [
+        "jobOverview:9353"
+      ]
+    },
+    {
+      "id": "en-620c08eaa159f53c",
+      "language": "en",
+      "text": "The listing asks for a driver’s license, clean driving record, lifting up to 75 pounds and background/drug screening.",
+      "spoken_text": "The listing asks for a driver’s license, clean driving record, lifting up to 75 pounds and background/drug screening.",
+      "filename": "en-620c08eaa159f53c.mp3",
+      "uses": [
+        "jobOverview:9353",
+        "requirements:9353"
+      ]
+    },
+    {
+      "id": "en-ca0cc267c48bbc45",
+      "language": "en",
+      "text": "This job is in Fayetteville. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Fayetteville. Can you reliably get to that location for work?",
+      "filename": "en-ca0cc267c48bbc45.mp3",
+      "uses": [
+        "transportation:9353"
+      ]
+    },
+    {
+      "id": "en-25c200f3cba2bf10",
+      "language": "en",
+      "text": "Your link points to Non Commercial Delivery Driver in Fayetteville. Is that where you want to work?",
+      "spoken_text": "Your link points to Non Commercial Delivery Driver in Fayetteville. Is that where you want to work?",
+      "filename": "en-25c200f3cba2bf10.mp3",
+      "uses": [
+        "welcome:9353"
+      ]
+    },
+    {
+      "id": "en-36c9c645c204394d",
+      "language": "en",
+      "text": "Deliver Driver · Little Rock",
+      "spoken_text": "Deliver Driver · Little Rock",
+      "filename": "en-36c9c645c204394d.mp3",
+      "uses": [
+        "jobOverview:9352"
+      ]
+    },
+    {
+      "id": "en-4ad15d1391dd4b42",
+      "language": "en",
+      "text": "The listing asks for delivery/commercial driving experience, a valid driver’s license, clean driving record and safe heavy lifting. Duties include routes, inspections, customer service and delivery records. Retail experience is a plus.",
+      "spoken_text": "The listing asks for delivery/commercial driving experience, a valid driver’s license, clean driving record and safe heavy lifting. Duties include routes, inspections, customer service and delivery records. Retail experience is a plus.",
+      "filename": "en-4ad15d1391dd4b42.mp3",
+      "uses": [
+        "jobOverview:9352",
+        "requirements:9352"
+      ]
+    },
+    {
+      "id": "en-f3d5b3d801357882",
+      "language": "en",
+      "text": "Your link points to Deliver Driver in Little Rock. Is that where you want to work?",
+      "spoken_text": "Your link points to Deliver Driver in Little Rock. Is that where you want to work?",
+      "filename": "en-f3d5b3d801357882.mp3",
+      "uses": [
+        "welcome:9352"
+      ]
+    },
+    {
+      "id": "en-87dcd3d5536ab2f7",
+      "language": "en",
+      "text": "Forklift Warehouse Associate · Manor",
+      "spoken_text": "Forklift Warehouse Associate · Manor",
+      "filename": "en-87dcd3d5536ab2f7.mp3",
+      "uses": [
+        "jobOverview:9202"
+      ]
+    },
+    {
+      "id": "en-0891fc2f9ee20454",
+      "language": "en",
+      "text": "The listing asks for stand-up and reach forklift experience, inventory/cycle counting, picking, shipping/BOLs, computer use, English communication and lifting up to 50 pounds. Two years of warehouse experience is preferred. It does not explicitly list a forklift certificate as mandatory.",
+      "spoken_text": "The listing asks for stand-up and reach forklift experience, inventory/cycle counting, picking, shipping/BOLs, computer use, English communication and lifting up to 50 pounds. Two years of warehouse experience is preferred. It does not explicitly list a forklift certificate as mandatory.",
+      "filename": "en-0891fc2f9ee20454.mp3",
+      "uses": [
+        "jobOverview:9202",
+        "requirements:9202"
+      ]
+    },
+    {
+      "id": "en-9d5827d820f5b99f",
+      "language": "en",
+      "text": "This job is in Manor. Can you reliably get to that location for work?",
+      "spoken_text": "This job is in Manor. Can you reliably get to that location for work?",
+      "filename": "en-9d5827d820f5b99f.mp3",
+      "uses": [
+        "transportation:9202"
+      ]
+    },
+    {
+      "id": "en-5927c77e0dfe2595",
+      "language": "en",
+      "text": "Have you operated both stand-up and reach forklifts?",
+      "spoken_text": "Have you operated both stand-up and reach forklifts?",
+      "filename": "en-5927c77e0dfe2595.mp3",
+      "uses": [
+        "check:9202"
+      ]
+    },
+    {
+      "id": "en-cf56bf47fca12f2d",
+      "language": "en",
+      "text": "What warehouse equipment have you used?",
+      "spoken_text": "What warehouse equipment have you used?",
+      "filename": "en-cf56bf47fca12f2d.mp3",
+      "uses": [
+        "role:9202"
+      ]
+    },
+    {
+      "id": "en-8ef36a36f607b311",
+      "language": "en",
+      "text": "Which warehouse tasks have you performed?",
+      "spoken_text": "Which warehouse tasks have you performed?",
+      "filename": "en-8ef36a36f607b311.mp3",
+      "uses": [
+        "role:9202"
+      ]
+    },
+    {
+      "id": "en-37b7957fedb41c0c",
+      "language": "en",
+      "text": "Your link points to Forklift Warehouse Associate in Manor. Is that where you want to work?",
+      "spoken_text": "Your link points to Forklift Warehouse Associate in Manor. Is that where you want to work?",
+      "filename": "en-37b7957fedb41c0c.mp3",
+      "uses": [
+        "welcome:9202"
+      ]
+    },
+    {
+      "id": "es-e7e75a884f21b678",
+      "language": "es",
+      "text": "Hola, soy el asistente virtual de reclutamiento de ASAP. Puede llamarnos directamente, completar el formulario o responder unas preguntas conmigo. Puede escribir sus respuestas o usar el micrófono para hablar. Active “Leer preguntas en voz alta” para escucharme. Podemos explorar empleos y preparar su formulario. Un reclutador decide el siguiente paso.",
+      "spoken_text": "Hola, soy el asistente virtual de reclutamiento de A S A P. Puede llamarnos directamente, completar el formulario o responder unas preguntas conmigo. Puede escribir sus respuestas o usar el micrófono para hablar. Active “Leer preguntas en voz alta” para escucharme. Podemos explorar empleos y preparar su formulario. Un reclutador decide el siguiente paso.",
+      "filename": "es-e7e75a884f21b678.mp3",
+      "uses": [
+        "welcome:9511"
+      ]
+    },
+    {
+      "id": "es-c0ed01edab144201",
+      "language": "es",
+      "text": "¿Dónde le gustaría trabajar? Elija un lugar con puestos anunciados.",
+      "spoken_text": "¿Dónde le gustaría trabajar? Elija un lugar con puestos anunciados.",
+      "filename": "es-c0ed01edab144201.mp3",
+      "uses": [
+        "location:9511"
+      ]
+    },
+    {
+      "id": "es-f3398d0aa729b34a",
+      "language": "es",
+      "text": "Solo tengo anuncios para los lugares indicados. Un reclutador puede ayudar con otras áreas. ¿Quiere explorar uno de los lugares disponibles?",
+      "spoken_text": "Solo tengo anuncios para los lugares indicados. Un reclutador puede ayudar con otras áreas. ¿Quiere explorar uno de los lugares disponibles?",
+      "filename": "es-f3398d0aa729b34a.mp3",
+      "uses": [
+        "unlisted:9511"
+      ]
+    },
+    {
+      "id": "es-e8431f78b98c6562",
+      "language": "es",
+      "text": "¿Qué tipo de trabajo le interesa? Puede estar abierto a varias opciones.",
+      "spoken_text": "¿Qué tipo de trabajo le interesa? Puede estar abierto a varias opciones.",
+      "filename": "es-e8431f78b98c6562.mp3",
+      "uses": [
+        "category:9511"
+      ]
+    },
+    {
+      "id": "es-889f4e440ba3039e",
+      "language": "es",
+      "text": "¿Cuánta experiencia tiene en ese tipo de trabajo?",
+      "spoken_text": "¿Cuánta experiencia tiene en ese tipo de trabajo?",
+      "filename": "es-889f4e440ba3039e.mp3",
+      "uses": [
+        "experience:9511"
+      ]
+    },
+    {
+      "id": "es-72c27cf4ca3eb2c9",
+      "language": "es",
+      "text": "Cuénteme sobre sus trabajos, equipos que ha usado o habilidades que puede aportar. Si sería su primer empleo, dígamelo.",
+      "spoken_text": "Cuénteme sobre sus trabajos, equipos que ha usado o habilidades que puede aportar. Si sería su primer empleo, dígamelo.",
+      "filename": "es-72c27cf4ca3eb2c9.mp3",
+      "uses": [
+        "skills:9511"
+      ]
+    },
+    {
+      "id": "es-f9dcb030d8996314",
+      "language": "es",
+      "text": "¿Qué turno le conviene? Guardaré su preferencia para el reclutador.",
+      "spoken_text": "¿Qué turno le conviene? Guardaré su preferencia para el reclutador.",
+      "filename": "es-f9dcb030d8996314.mp3",
+      "uses": [
+        "shift:9511"
+      ]
+    },
+    {
+      "id": "es-a649609fcaef3e91",
+      "language": "es",
+      "text": "¿Qué tipo de empleo busca?",
+      "spoken_text": "¿Qué tipo de empleo busca?",
+      "filename": "es-a649609fcaef3e91.mp3",
+      "uses": [
+        "type:9511"
+      ]
+    },
+    {
+      "id": "es-23a722cf3bee9dce",
+      "language": "es",
+      "text": "¿Cuándo podría comenzar?",
+      "spoken_text": "¿Cuándo podría comenzar?",
+      "filename": "es-23a722cf3bee9dce.mp3",
+      "uses": [
+        "startAvailability:9511"
+      ]
+    },
+    {
+      "id": "es-c09e8a2b524d4a27",
+      "language": "es",
+      "text": "¿Qué pago por hora busca? Escriba una cantidad en dólares o elija “Hablar con el reclutador”. Este catálogo no incluye salarios.",
+      "spoken_text": "¿Qué pago por hora busca? Escriba una cantidad en dólares o elija “Hablar con el reclutador”. Este catálogo no incluye salarios.",
+      "filename": "es-c09e8a2b524d4a27.mp3",
+      "uses": [
+        "desiredPay:9511"
+      ]
+    },
+    {
+      "id": "es-cce833811e884e44",
+      "language": "es",
+      "text": "Revise los puestos mostrados. Elija uno para revisar sus requisitos, explore otros tipos de trabajo o elija otro lugar.",
+      "spoken_text": "Revise los puestos mostrados. Elija uno para revisar sus requisitos, explore otros tipos de trabajo o elija otro lugar.",
+      "filename": "es-cce833811e884e44.mp3",
+      "uses": [
+        "results:9511"
+      ]
+    },
+    {
+      "id": "es-d31f47a7fdf47b8e",
+      "language": "es",
+      "text": "Según sus respuestas, este puesto podría no ser adecuado en este momento. Otros puestos podrían encajar con su experiencia. ¿Puedo hacerle unas preguntas para explorar otras opciones?",
+      "spoken_text": "Según sus respuestas, este puesto podría no ser adecuado en este momento. Otros puestos podrían encajar con su experiencia. ¿Puedo hacerle unas preguntas para explorar otras opciones?",
+      "filename": "es-d31f47a7fdf47b8e.mp3",
+      "uses": [
+        "redirect:9511"
+      ]
+    },
+    {
+      "id": "es-72bce89449883697",
+      "language": "es",
+      "text": "Un reclutador de ASAP puede aclarar esto. No marcaré como cumplido un requisito sobre el que tiene dudas. Llame a la línea de Little Rock abajo o explore otros puestos.",
+      "spoken_text": "Un reclutador de A S A P puede aclarar esto. No marcaré como cumplido un requisito sobre el que tiene dudas. Llame a la línea de Little Rock abajo o explore otros puestos.",
+      "filename": "es-72bce89449883697.mp3",
+      "uses": [
+        "unclear:9511"
+      ]
+    },
+    {
+      "id": "es-3574ca2191fa7556",
+      "language": "es",
+      "text": "¿Cuál es su nombre? Use datos de ejemplo en este concepto.",
+      "spoken_text": "¿Cuál es su nombre? Use datos de ejemplo en este concepto.",
+      "filename": "es-3574ca2191fa7556.mp3",
+      "uses": [
+        "firstName:9511"
+      ]
+    },
+    {
+      "id": "es-2e8890665f124508",
+      "language": "es",
+      "text": "¿Cuál es su apellido?",
+      "spoken_text": "¿Cuál es su apellido?",
+      "filename": "es-2e8890665f124508.mp3",
+      "uses": [
+        "lastName:9511"
+      ]
+    },
+    {
+      "id": "es-312a1b9e0c296bdb",
+      "language": "es",
+      "text": "¿A qué número puede llamar un reclutador? Verifique los 10 dígitos después de dictar.",
+      "spoken_text": "¿A qué número puede llamar un reclutador? Verifique los 10 dígitos después de dictar.",
+      "filename": "es-312a1b9e0c296bdb.mp3",
+      "uses": [
+        "phone:9511"
+      ]
+    },
+    {
+      "id": "es-51073f91ddedd558",
+      "language": "es",
+      "text": "¿Qué correo electrónico desea usar? Verifique cómo está escrito después de dictar.",
+      "spoken_text": "¿Qué correo electrónico desea usar? Verifique cómo está escrito después de dictar.",
+      "filename": "es-51073f91ddedd558.mp3",
+      "uses": [
+        "email:9511"
+      ]
+    },
+    {
+      "id": "es-c92c32564fa247f1",
+      "language": "es",
+      "text": "¿En qué ciudad vive? Puede ser distinta del lugar donde desea trabajar.",
+      "spoken_text": "¿En qué ciudad vive? Puede ser distinta del lugar donde desea trabajar.",
+      "filename": "es-c92c32564fa247f1.mp3",
+      "uses": [
+        "city:9511"
+      ]
+    },
+    {
+      "id": "es-38447e52c9f01938",
+      "language": "es",
+      "text": "¿En qué estado vive? Puede escribir otro estado de EE. UU.",
+      "spoken_text": "¿En qué estado vive? Puede escribir otro estado de EE. UU.",
+      "filename": "es-38447e52c9f01938.mp3",
+      "uses": [
+        "state:9511"
+      ]
+    },
+    {
+      "id": "es-5c8aee1351f640a8",
+      "language": "es",
+      "text": "¿Cuál es su código postal?",
+      "spoken_text": "¿Cuál es su código postal?",
+      "filename": "es-5c8aee1351f640a8.mp3",
+      "uses": [
+        "zip:9511"
+      ]
+    },
+    {
+      "id": "es-8f8924b5acfc3d4b",
+      "language": "es",
+      "text": "Revise sus datos de contacto y respuestas en la pantalla. Puede editarlos antes de crear la vista previa. No se ha enviado información.",
+      "spoken_text": "Revise sus datos de contacto y respuestas en la pantalla. Puede editarlos antes de crear la vista previa. No se ha enviado información.",
+      "filename": "es-8f8924b5acfc3d4b.mp3",
+      "uses": [
+        "review:9511"
+      ]
+    },
+    {
+      "id": "es-ef980bbcab211bf6",
+      "language": "es",
+      "text": "Técnico de materiales de construcción · South Austin",
+      "spoken_text": "Técnico de materiales de construcción · South Austin",
+      "filename": "es-ef980bbcab211bf6.mp3",
+      "uses": [
+        "jobOverview:9511"
+      ]
+    },
+    {
+      "id": "es-47225a047002d007",
+      "language": "es",
+      "text": "El anuncio pide tener al menos 18 años, licencia de conducir válida sin DUI, camioneta para transportar equipo y capacidad para levantar 50 libras. También pide responsabilidad, flexibilidad y comunicación.",
+      "spoken_text": "El anuncio pide tener al menos 18 años, licencia de conducir válida sin DUI, camioneta para transportar equipo y capacidad para levantar 50 libras. También pide responsabilidad, flexibilidad y comunicación.",
+      "filename": "es-47225a047002d007.mp3",
+      "uses": [
+        "jobOverview:9511",
+        "requirements:9511"
+      ]
+    },
+    {
+      "id": "es-4e2f02b985eadc93",
+      "language": "es",
+      "text": "¿Puede cumplir los requisitos mínimos de este puesto, incluidas sus tareas? Los puntos marcados como “preferidos” no son obligatorios. Si necesita aclaración o apoyo para una tarea, elija “Hablar con un reclutador”. No comparta información médica.",
+      "spoken_text": "¿Puede cumplir los requisitos mínimos de este puesto, incluidas sus tareas? Los puntos marcados como “preferidos” no son obligatorios. Si necesita aclaración o apoyo para una tarea, elija “Hablar con un reclutador”. No comparta información médica.",
+      "filename": "es-4e2f02b985eadc93.mp3",
+      "uses": [
+        "requirements:9511",
+        "requirements:9510",
+        "requirements:9509",
+        "requirements:9507",
+        "requirements:9505",
+        "requirements:9503",
+        "requirements:9502",
+        "requirements:9495",
+        "requirements:9492",
+        "requirements:9488",
+        "requirements:9487",
+        "requirements:9479",
+        "requirements:9473",
+        "requirements:9458",
+        "requirements:9457",
+        "requirements:9456",
+        "requirements:9455",
+        "requirements:9410",
+        "requirements:9400",
+        "requirements:9399",
+        "requirements:9397",
+        "requirements:9392",
+        "requirements:9364",
+        "requirements:9362",
+        "requirements:9359",
+        "requirements:9358",
+        "requirements:9357",
+        "requirements:9355",
+        "requirements:9353",
+        "requirements:9352",
+        "requirements:9202"
+      ]
+    },
+    {
+      "id": "es-565d48e084e765bb",
+      "language": "es",
+      "text": "¿Qué formación, licencias o certificaciones relacionadas tiene? Indique solo el tipo, sin números de identificación.",
+      "spoken_text": "¿Qué formación, licencias o certificaciones relacionadas tiene? Indique solo el tipo, sin números de identificación.",
+      "filename": "es-565d48e084e765bb.mp3",
+      "uses": [
+        "certifications:9511",
+        "certifications:9509",
+        "certifications:9507",
+        "certifications:9505",
+        "certifications:9503",
+        "certifications:9502",
+        "certifications:9495",
+        "certifications:9492",
+        "certifications:9488",
+        "certifications:9487",
+        "certifications:9479",
+        "certifications:9473",
+        "certifications:9458",
+        "certifications:9457",
+        "certifications:9456",
+        "certifications:9455",
+        "certifications:9410",
+        "certifications:9400",
+        "certifications:9399",
+        "certifications:9397",
+        "certifications:9392",
+        "certifications:9364",
+        "certifications:9362",
+        "certifications:9359",
+        "certifications:9357",
+        "certifications:9355",
+        "certifications:9353",
+        "certifications:9352"
+      ]
+    },
+    {
+      "id": "es-7c3e5fc215dab3db",
+      "language": "es",
+      "text": "Este trabajo está en South Austin. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en South Austin. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-7c3e5fc215dab3db.mp3",
+      "uses": [
+        "transportation:9511",
+        "transportation:9509"
+      ]
+    },
+    {
+      "id": "es-859a91ab3a5418ac",
+      "language": "es",
+      "text": "¿Con qué tareas o equipos se siente más cómodo?",
+      "spoken_text": "¿Con qué tareas o equipos se siente más cómodo?",
+      "filename": "es-859a91ab3a5418ac.mp3",
+      "uses": [
+        "role:9511",
+        "role:9507",
+        "role:9505",
+        "role:9503",
+        "role:9487"
+      ]
+    },
+    {
+      "id": "es-d0d8a01133e32f2a",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Qué trabajo al aire libre o físico ha realizado y qué equipo usó? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Qué trabajo al aire libre o físico ha realizado y qué equipo usó? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-d0d8a01133e32f2a.mp3",
+      "uses": [
+        "interview:9511",
+        "interview:9507"
+      ]
+    },
+    {
+      "id": "es-f9256711f0da8545",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Cómo se prepara para trabajar con seguridad cuando cambian las condiciones? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Cómo se prepara para trabajar con seguridad cuando cambian las condiciones? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-f9256711f0da8545.mp3",
+      "uses": [
+        "interview:9511",
+        "interview:9507"
+      ]
+    },
+    {
+      "id": "es-e7cbec7f946571c5",
+      "language": "es",
+      "text": "Su enlace corresponde a Técnico de materiales de construcción en South Austin. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Técnico de materiales de construcción en South Austin. ¿Quiere trabajar allí?",
+      "filename": "es-e7cbec7f946571c5.mp3",
+      "uses": [
+        "welcome:9511"
+      ]
+    },
+    {
+      "id": "es-ab3307328fad4676",
+      "language": "es",
+      "text": "Asociado de almacén y conductor · Round Rock/Pflugerville",
+      "spoken_text": "Asociado de almacén y conductor · Round Rock/Pflugerville",
+      "filename": "es-ab3307328fad4676.mp3",
+      "uses": [
+        "jobOverview:9510"
+      ]
+    },
+    {
+      "id": "es-d5fe196f3cba989d",
+      "language": "es",
+      "text": "El anuncio pide 3 años de experiencia reciente en almacén, preparación y empaque de pedidos, levantar entre 40 y 75 libras repetidamente y transporte confiable. Se prefiere experiencia con montacargas. Incluye una prueba de aptitud de almacén.",
+      "spoken_text": "El anuncio pide 3 años de experiencia reciente en almacén, preparación y empaque de pedidos, levantar entre 40 y 75 libras repetidamente y transporte confiable. Se prefiere experiencia con montacargas. Incluye una prueba de aptitud de almacén.",
+      "filename": "es-d5fe196f3cba989d.mp3",
+      "uses": [
+        "jobOverview:9510",
+        "requirements:9510"
+      ]
+    },
+    {
+      "id": "es-c30a47efc01cb41e",
+      "language": "es",
+      "text": "¿Qué formación o certificación de montacargas tiene? Indique el tipo de equipo y cuándo recibió formación. No incluya números de identificación. Un reclutador revisará la respuesta; el certificado solo es obligatorio si el anuncio lo indica.",
+      "spoken_text": "¿Qué formación o certificación de montacargas tiene? Indique el tipo de equipo y cuándo recibió formación. No incluya números de identificación. Un reclutador revisará la respuesta; el certificado solo es obligatorio si el anuncio lo indica.",
+      "filename": "es-c30a47efc01cb41e.mp3",
+      "uses": [
+        "certifications:9510",
+        "certifications:9358",
+        "certifications:9202"
+      ]
+    },
+    {
+      "id": "es-993e56a86f3bdfcc",
+      "language": "es",
+      "text": "Este trabajo está en Round Rock/Pflugerville. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Round Rock/Pflugerville. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-993e56a86f3bdfcc.mp3",
+      "uses": [
+        "transportation:9510"
+      ]
+    },
+    {
+      "id": "es-87a8377b95fadca0",
+      "language": "es",
+      "text": "¿Tiene al menos 3 años de experiencia reciente en almacén?",
+      "spoken_text": "¿Tiene al menos 3 años de experiencia reciente en almacén?",
+      "filename": "es-87a8377b95fadca0.mp3",
+      "uses": [
+        "check:9510"
+      ]
+    },
+    {
+      "id": "es-67413349f6e3cfc3",
+      "language": "es",
+      "text": "¿Qué clase de licencia de conducir tiene actualmente?",
+      "spoken_text": "¿Qué clase de licencia de conducir tiene actualmente?",
+      "filename": "es-67413349f6e3cfc3.mp3",
+      "uses": [
+        "role:9510",
+        "role:9509",
+        "role:9479",
+        "role:9400",
+        "role:9364",
+        "role:9358",
+        "role:9357",
+        "role:9353",
+        "role:9352"
+      ]
+    },
+    {
+      "id": "es-7f038915a9b0d08a",
+      "language": "es",
+      "text": "¿Qué vehículos ha conducido para trabajar?",
+      "spoken_text": "¿Qué vehículos ha conducido para trabajar?",
+      "filename": "es-7f038915a9b0d08a.mp3",
+      "uses": [
+        "role:9510",
+        "role:9509",
+        "role:9479",
+        "role:9400",
+        "role:9364",
+        "role:9358",
+        "role:9357",
+        "role:9353",
+        "role:9352"
+      ]
+    },
+    {
+      "id": "es-f35ad2aecbb14ebc",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. Cuénteme sobre los equipos que usó y sus tareas en un puesto reciente de almacén. Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. Cuénteme sobre los equipos que usó y sus tareas en un puesto reciente de almacén. Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-f35ad2aecbb14ebc.mp3",
+      "uses": [
+        "interview:9510",
+        "interview:9358",
+        "interview:9202"
+      ]
+    },
+    {
+      "id": "es-8dc3a1b1d54366ce",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Qué haría si la cantidad de un envío no coincide con los documentos? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Qué haría si la cantidad de un envío no coincide con los documentos? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-8dc3a1b1d54366ce.mp3",
+      "uses": [
+        "interview:9510",
+        "interview:9358",
+        "interview:9202"
+      ]
+    },
+    {
+      "id": "es-2d8bbe51a98cc9ab",
+      "language": "es",
+      "text": "Su enlace corresponde a Asociado de almacén y conductor en Round Rock/Pflugerville. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Asociado de almacén y conductor en Round Rock/Pflugerville. ¿Quiere trabajar allí?",
+      "filename": "es-2d8bbe51a98cc9ab.mp3",
+      "uses": [
+        "welcome:9510"
+      ]
+    },
+    {
+      "id": "es-b61d29403ab9e6b3",
+      "language": "es",
+      "text": "Conductor de camión de caja · South Austin",
+      "spoken_text": "Conductor de camión de caja · South Austin",
+      "filename": "es-b61d29403ab9e6b3.mp3",
+      "uses": [
+        "jobOverview:9509"
+      ]
+    },
+    {
+      "id": "es-2b25b76c2146baf2",
+      "language": "es",
+      "text": "El anuncio pide al menos 1 año conduciendo camiones de caja o vehículos comerciales más grandes, conocer Austin y San Marcos, trabajo físico y un historial de conducción limpio. Incluye verificación de antecedentes y asistencia confiable.",
+      "spoken_text": "El anuncio pide al menos 1 año conduciendo camiones de caja o vehículos comerciales más grandes, conocer Austin y San Marcos, trabajo físico y un historial de conducción limpio. Incluye verificación de antecedentes y asistencia confiable.",
+      "filename": "es-2b25b76c2146baf2.mp3",
+      "uses": [
+        "jobOverview:9509",
+        "requirements:9509"
+      ]
+    },
+    {
+      "id": "es-751bd27cb61b4a43",
+      "language": "es",
+      "text": "¿Tiene al menos 1 año conduciendo camiones de caja o vehículos comerciales más grandes?",
+      "spoken_text": "¿Tiene al menos 1 año conduciendo camiones de caja o vehículos comerciales más grandes?",
+      "filename": "es-751bd27cb61b4a43.mp3",
+      "uses": [
+        "check:9509"
+      ]
+    },
+    {
+      "id": "es-361e9e5684f78cf2",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Qué vehículos ha conducido en el trabajo y qué entregas realizaba? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Qué vehículos ha conducido en el trabajo y qué entregas realizaba? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-361e9e5684f78cf2.mp3",
+      "uses": [
+        "interview:9509",
+        "interview:9479",
+        "interview:9400",
+        "interview:9364",
+        "interview:9357",
+        "interview:9353",
+        "interview:9352"
+      ]
+    },
+    {
+      "id": "es-dd4444f72e058ec1",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Qué haría si encuentra un problema en el vehículo antes de una entrega? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Qué haría si encuentra un problema en el vehículo antes de una entrega? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-dd4444f72e058ec1.mp3",
+      "uses": [
+        "interview:9509",
+        "interview:9479",
+        "interview:9400",
+        "interview:9364",
+        "interview:9357",
+        "interview:9353",
+        "interview:9352"
+      ]
+    },
+    {
+      "id": "es-31f8f5af98a11706",
+      "language": "es",
+      "text": "Su enlace corresponde a Conductor de camión de caja en South Austin. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Conductor de camión de caja en South Austin. ¿Quiere trabajar allí?",
+      "filename": "es-31f8f5af98a11706.mp3",
+      "uses": [
+        "welcome:9509"
+      ]
+    },
+    {
+      "id": "es-254a3a5cf3a160a5",
+      "language": "es",
+      "text": "Mudanzas y cuidado de césped · Conway",
+      "spoken_text": "Mudanzas y cuidado de césped · Conway",
+      "filename": "es-254a3a5cf3a160a5.mp3",
+      "uses": [
+        "jobOverview:9507"
+      ]
+    },
+    {
+      "id": "es-4878b24d0f6be5e0",
+      "language": "es",
+      "text": "El anuncio pide licencia de conducir válida sin multas pendientes, levantar 50 libras, verificación de antecedentes y prueba de drogas.",
+      "spoken_text": "El anuncio pide licencia de conducir válida sin multas pendientes, levantar 50 libras, verificación de antecedentes y prueba de drogas.",
+      "filename": "es-4878b24d0f6be5e0.mp3",
+      "uses": [
+        "jobOverview:9507",
+        "requirements:9507"
+      ]
+    },
+    {
+      "id": "es-72db1d3086c31f83",
+      "language": "es",
+      "text": "Este trabajo está en Conway. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Conway. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-72db1d3086c31f83.mp3",
+      "uses": [
+        "transportation:9507",
+        "transportation:9495",
+        "transportation:9457",
+        "transportation:9456",
+        "transportation:9455",
+        "transportation:9362",
+        "transportation:9355"
+      ]
+    },
+    {
+      "id": "es-dbd27ecc3ba39ff1",
+      "language": "es",
+      "text": "¿Tiene una licencia de conducir vigente?",
+      "spoken_text": "¿Tiene una licencia de conducir vigente?",
+      "filename": "es-dbd27ecc3ba39ff1.mp3",
+      "uses": [
+        "check:9507",
+        "check:9359",
+        "check:9358",
+        "check:9353",
+        "check:9352"
+      ]
+    },
+    {
+      "id": "es-78c0a94b968d1573",
+      "language": "es",
+      "text": "Su enlace corresponde a Mudanzas y cuidado de césped en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Mudanzas y cuidado de césped en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-78c0a94b968d1573.mp3",
+      "uses": [
+        "welcome:9507"
+      ]
+    },
+    {
+      "id": "es-f6f287a94c903870",
+      "language": "es",
+      "text": "Costurero/a · Little Rock",
+      "spoken_text": "Costurero/a · Little Rock",
+      "filename": "es-f6f287a94c903870.mp3",
+      "uses": [
+        "jobOverview:9505"
+      ]
+    },
+    {
+      "id": "es-1f20b3c27a61a223",
+      "language": "es",
+      "text": "Se requiere experiencia operando una máquina de coser.",
+      "spoken_text": "Se requiere experiencia operando una máquina de coser.",
+      "filename": "es-1f20b3c27a61a223.mp3",
+      "uses": [
+        "jobOverview:9505",
+        "requirements:9505"
+      ]
+    },
+    {
+      "id": "es-9d01034236e4028b",
+      "language": "es",
+      "text": "Este trabajo está en Little Rock. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Little Rock. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-9d01034236e4028b.mp3",
+      "uses": [
+        "transportation:9505",
+        "transportation:9502",
+        "transportation:9492",
+        "transportation:9488",
+        "transportation:9479",
+        "transportation:9473",
+        "transportation:9458",
+        "transportation:9410",
+        "transportation:9397",
+        "transportation:9364",
+        "transportation:9359",
+        "transportation:9358",
+        "transportation:9357",
+        "transportation:9352"
+      ]
+    },
+    {
+      "id": "es-32bf9932e0196b6c",
+      "language": "es",
+      "text": "¿Ha operado una máquina de coser en el trabajo?",
+      "spoken_text": "¿Ha operado una máquina de coser en el trabajo?",
+      "filename": "es-32bf9932e0196b6c.mp3",
+      "uses": [
+        "check:9505"
+      ]
+    },
+    {
+      "id": "es-147af2d4e4cdfc1a",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. Describa las máquinas o tareas de producción que ha manejado. Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. Describa las máquinas o tareas de producción que ha manejado. Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-147af2d4e4cdfc1a.mp3",
+      "uses": [
+        "interview:9505",
+        "interview:9503",
+        "interview:9487",
+        "interview:9392"
+      ]
+    },
+    {
+      "id": "es-5024d4fed05fd1b1",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Qué haría si nota un problema de calidad o seguridad? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Qué haría si nota un problema de calidad o seguridad? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-5024d4fed05fd1b1.mp3",
+      "uses": [
+        "interview:9505",
+        "interview:9503",
+        "interview:9487",
+        "interview:9392"
+      ]
+    },
+    {
+      "id": "es-dfdd8107005c2433",
+      "language": "es",
+      "text": "Su enlace corresponde a Costurero/a en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Costurero/a en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-dfdd8107005c2433.mp3",
+      "uses": [
+        "welcome:9505"
+      ]
+    },
+    {
+      "id": "es-947a70bbd14aa4ae",
+      "language": "es",
+      "text": "Líder de manufactura · North Little Rock",
+      "spoken_text": "Líder de manufactura · North Little Rock",
+      "filename": "es-947a70bbd14aa4ae.mp3",
+      "uses": [
+        "jobOverview:9503"
+      ]
+    },
+    {
+      "id": "es-00feb84b86c80922",
+      "language": "es",
+      "text": "Este anuncio solo dice “LEAD”. Un reclutador debe aclarar los requisitos.",
+      "spoken_text": "Este anuncio solo dice “LEAD”. Un reclutador debe aclarar los requisitos.",
+      "filename": "es-00feb84b86c80922.mp3",
+      "uses": [
+        "jobOverview:9503",
+        "requirements:9503"
+      ]
+    },
+    {
+      "id": "es-ad94b4c60acd68fa",
+      "language": "es",
+      "text": "Este trabajo está en North Little Rock. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en North Little Rock. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-ad94b4c60acd68fa.mp3",
+      "uses": [
+        "transportation:9503",
+        "transportation:9487",
+        "transportation:9400"
+      ]
+    },
+    {
+      "id": "es-df8eb2819cc4d89b",
+      "language": "es",
+      "text": "Su enlace corresponde a Líder de manufactura en North Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Líder de manufactura en North Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-df8eb2819cc4d89b.mp3",
+      "uses": [
+        "welcome:9503"
+      ]
+    },
+    {
+      "id": "es-5d13a0b84b0a1017",
+      "language": "es",
+      "text": "Asistente administrativo · Little Rock",
+      "spoken_text": "Asistente administrativo · Little Rock",
+      "filename": "es-5d13a0b84b0a1017.mp3",
+      "uses": [
+        "jobOverview:9502"
+      ]
+    },
+    {
+      "id": "es-38b02bfef1d7eb7f",
+      "language": "es",
+      "text": "El puesto incluye administración, agendas, registros y suministros. Pide dominio de Microsoft Office, comunicación, organización y habilidades informáticas. Se prefiere experiencia administrativa.",
+      "spoken_text": "El puesto incluye administración, agendas, registros y suministros. Pide dominio de Microsoft Office, comunicación, organización y habilidades informáticas. Se prefiere experiencia administrativa.",
+      "filename": "es-38b02bfef1d7eb7f.mp3",
+      "uses": [
+        "jobOverview:9502",
+        "requirements:9502"
+      ]
+    },
+    {
+      "id": "es-56b0fe6ec4dbc3af",
+      "language": "es",
+      "text": "¿Qué programas o sistemas empresariales ha usado?",
+      "spoken_text": "¿Qué programas o sistemas empresariales ha usado?",
+      "filename": "es-56b0fe6ec4dbc3af.mp3",
+      "uses": [
+        "role:9502",
+        "role:9495",
+        "role:9492",
+        "role:9473",
+        "role:9399"
+      ]
+    },
+    {
+      "id": "es-ab276e4429c32e79",
+      "language": "es",
+      "text": "¿Qué tareas de este puesto ha realizado?",
+      "spoken_text": "¿Qué tareas de este puesto ha realizado?",
+      "filename": "es-ab276e4429c32e79.mp3",
+      "uses": [
+        "role:9502",
+        "role:9495",
+        "role:9492",
+        "role:9473",
+        "role:9399"
+      ]
+    },
+    {
+      "id": "es-b8b534e0ee03e25e",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. Cuénteme sobre los sistemas de oficina o programas que ha usado. Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. Cuénteme sobre los sistemas de oficina o programas que ha usado. Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-b8b534e0ee03e25e.mp3",
+      "uses": [
+        "interview:9502",
+        "interview:9495",
+        "interview:9492",
+        "interview:9473",
+        "interview:9399"
+      ]
+    },
+    {
+      "id": "es-dc4c573ee002998b",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Cómo verifica su trabajo al manejar registros, dinero o pedidos? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Cómo verifica su trabajo al manejar registros, dinero o pedidos? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-dc4c573ee002998b.mp3",
+      "uses": [
+        "interview:9502",
+        "interview:9495",
+        "interview:9492",
+        "interview:9473",
+        "interview:9399"
+      ]
+    },
+    {
+      "id": "es-50104412fc437203",
+      "language": "es",
+      "text": "Su enlace corresponde a Asistente administrativo en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Asistente administrativo en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-50104412fc437203.mp3",
+      "uses": [
+        "welcome:9502"
+      ]
+    },
+    {
+      "id": "es-ec0841fd6b88bef7",
+      "language": "es",
+      "text": "Agente de compras · Conway",
+      "spoken_text": "Agente de compras · Conway",
+      "filename": "es-ec0841fd6b88bef7.mp3",
+      "uses": [
+        "jobOverview:9495"
+      ]
+    },
+    {
+      "id": "es-6f78174d4657ee82",
+      "language": "es",
+      "text": "Pide diploma de secundaria o equivalente, 3 años de experiencia relacionada, conocimientos de SAP y de la industria del acero. Se prefieren estudios adicionales relacionados; atención al cliente es una ventaja.",
+      "spoken_text": "Pide diploma de secundaria o equivalente, 3 años de experiencia relacionada, conocimientos de SAP y de la industria del acero. Se prefieren estudios adicionales relacionados; atención al cliente es una ventaja.",
+      "filename": "es-6f78174d4657ee82.mp3",
+      "uses": [
+        "jobOverview:9495",
+        "requirements:9495"
+      ]
+    },
+    {
+      "id": "es-c1e3eda7aa0ddd0a",
+      "language": "es",
+      "text": "¿Tiene 3 años de experiencia relacionada con compras?",
+      "spoken_text": "¿Tiene 3 años de experiencia relacionada con compras?",
+      "filename": "es-c1e3eda7aa0ddd0a.mp3",
+      "uses": [
+        "check:9495"
+      ]
+    },
+    {
+      "id": "es-774325aef73f50cb",
+      "language": "es",
+      "text": "Su enlace corresponde a Agente de compras en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Agente de compras en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-774325aef73f50cb.mp3",
+      "uses": [
+        "welcome:9495"
+      ]
+    },
+    {
+      "id": "es-0e37929001978ff5",
+      "language": "es",
+      "text": "Gerente de repuestos · Little Rock",
+      "spoken_text": "Gerente de repuestos · Little Rock",
+      "filename": "es-0e37929001978ff5.mp3",
+      "uses": [
+        "jobOverview:9492"
+      ]
+    },
+    {
+      "id": "es-8afeb75d23a11fc8",
+      "language": "es",
+      "text": "Las tareas incluyen compras, proveedores, inventario, envíos, hojas de cálculo e informes. El anuncio especifica un entorno libre de drogas y verificación de antecedentes.",
+      "spoken_text": "Las tareas incluyen compras, proveedores, inventario, envíos, hojas de cálculo e informes. El anuncio especifica un entorno libre de drogas y verificación de antecedentes.",
+      "filename": "es-8afeb75d23a11fc8.mp3",
+      "uses": [
+        "jobOverview:9492",
+        "requirements:9492"
+      ]
+    },
+    {
+      "id": "es-3f5270d8345fce31",
+      "language": "es",
+      "text": "Su enlace corresponde a Gerente de repuestos en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Gerente de repuestos en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-3f5270d8345fce31.mp3",
+      "uses": [
+        "welcome:9492"
+      ]
+    },
+    {
+      "id": "es-9770f1d459cff909",
+      "language": "es",
+      "text": "Soldador MIG · Little Rock",
+      "spoken_text": "Soldador MIG · Little Rock",
+      "filename": "es-9770f1d459cff909.mp3",
+      "uses": [
+        "jobOverview:9488"
+      ]
+    },
+    {
+      "id": "es-61a389fcc38800e9",
+      "language": "es",
+      "text": "Pide conocimientos de soldadura MIG, uso seguro de equipos, lectura de planos y matemáticas de taller. Requiere diploma de secundaria o GED, más certificación de soldadura o al menos 2 años de experiencia MIG.",
+      "spoken_text": "Pide conocimientos de soldadura MIG, uso seguro de equipos, lectura de planos y matemáticas de taller. Requiere diploma de secundaria o GED, más certificación de soldadura o al menos 2 años de experiencia MIG.",
+      "filename": "es-61a389fcc38800e9.mp3",
+      "uses": [
+        "jobOverview:9488",
+        "requirements:9488"
+      ]
+    },
+    {
+      "id": "es-46256059b309cecc",
+      "language": "es",
+      "text": "¿Qué máquinas, procesos de soldadura o herramientas ha usado?",
+      "spoken_text": "¿Qué máquinas, procesos de soldadura o herramientas ha usado?",
+      "filename": "es-46256059b309cecc.mp3",
+      "uses": [
+        "role:9488",
+        "role:9410",
+        "role:9397",
+        "role:9392",
+        "role:9362",
+        "role:9355"
+      ]
+    },
+    {
+      "id": "es-cd0ba6e1bb6bb2dd",
+      "language": "es",
+      "text": "¿Qué formación o certificaciones relacionadas tiene?",
+      "spoken_text": "¿Qué formación o certificaciones relacionadas tiene?",
+      "filename": "es-cd0ba6e1bb6bb2dd.mp3",
+      "uses": [
+        "role:9488",
+        "role:9410",
+        "role:9397",
+        "role:9392",
+        "role:9362",
+        "role:9355"
+      ]
+    },
+    {
+      "id": "es-10863068b077e193",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. Describa una reparación o tarea técnica que realizó. ¿Qué herramientas usó? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. Describa una reparación o tarea técnica que realizó. ¿Qué herramientas usó? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-10863068b077e193.mp3",
+      "uses": [
+        "interview:9488",
+        "interview:9458",
+        "interview:9457",
+        "interview:9456",
+        "interview:9455",
+        "interview:9410",
+        "interview:9397",
+        "interview:9362",
+        "interview:9359",
+        "interview:9355"
+      ]
+    },
+    {
+      "id": "es-f671ffe3a5025871",
+      "language": "es",
+      "text": "Una pregunta breve para su reclutador. ¿Cómo verifica que su trabajo sea seguro y esté listo para usarse? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "spoken_text": "Una pregunta breve para su reclutador. ¿Cómo verifica que su trabajo sea seguro y esté listo para usarse? Si es nuevo en este trabajo, puede explicar qué haría.",
+      "filename": "es-f671ffe3a5025871.mp3",
+      "uses": [
+        "interview:9488",
+        "interview:9458",
+        "interview:9457",
+        "interview:9456",
+        "interview:9455",
+        "interview:9410",
+        "interview:9397",
+        "interview:9362",
+        "interview:9359",
+        "interview:9355"
+      ]
+    },
+    {
+      "id": "es-6041a20490970823",
+      "language": "es",
+      "text": "Su enlace corresponde a Soldador MIG en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Soldador MIG en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-6041a20490970823.mp3",
+      "uses": [
+        "welcome:9488"
+      ]
+    },
+    {
+      "id": "es-d072562c458561eb",
+      "language": "es",
+      "text": "Inspector de metales · North Little Rock",
+      "spoken_text": "Inspector de metales · North Little Rock",
+      "filename": "es-d072562c458561eb.mp3",
+      "uses": [
+        "jobOverview:9487"
+      ]
+    },
+    {
+      "id": "es-134dc3dab8b1b91e",
+      "language": "es",
+      "text": "Pide aptitud mecánica, uso seguro de herramientas manuales, coordinación de precisión y permanecer de pie, caminar o inclinarse sobre líneas de producción por períodos prolongados.",
+      "spoken_text": "Pide aptitud mecánica, uso seguro de herramientas manuales, coordinación de precisión y permanecer de pie, caminar o inclinarse sobre líneas de producción por períodos prolongados.",
+      "filename": "es-134dc3dab8b1b91e.mp3",
+      "uses": [
+        "jobOverview:9487",
+        "requirements:9487"
+      ]
+    },
+    {
+      "id": "es-5a52542850d6b589",
+      "language": "es",
+      "text": "Su enlace corresponde a Inspector de metales en North Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Inspector de metales en North Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-5a52542850d6b589.mp3",
+      "uses": [
+        "welcome:9487"
+      ]
+    },
+    {
+      "id": "es-a5ad59e5cccaf56d",
+      "language": "es",
+      "text": "Conductor de entregas · Little Rock",
+      "spoken_text": "Conductor de entregas · Little Rock",
+      "filename": "es-a5ad59e5cccaf56d.mp3",
+      "uses": [
+        "jobOverview:9479",
+        "jobOverview:9352"
+      ]
+    },
+    {
+      "id": "es-5227b3615e048ce4",
+      "language": "es",
+      "text": "El puesto incluye levantar más de 50 libras, mover máquinas pesadas con carretillas, caminar de 2 a 5 millas y cargar vehículos. Pide historial de conducción limpio y evaluaciones. Revise el anuncio completo con un reclutador.",
+      "spoken_text": "El puesto incluye levantar más de 50 libras, mover máquinas pesadas con carretillas, caminar de 2 a 5 millas y cargar vehículos. Pide historial de conducción limpio y evaluaciones. Revise el anuncio completo con un reclutador.",
+      "filename": "es-5227b3615e048ce4.mp3",
+      "uses": [
+        "jobOverview:9479",
+        "requirements:9479"
+      ]
+    },
+    {
+      "id": "es-51396a8a640e7ab4",
+      "language": "es",
+      "text": "Su enlace corresponde a Conductor de entregas en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Conductor de entregas en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-51396a8a640e7ab4.mp3",
+      "uses": [
+        "welcome:9479",
+        "welcome:9352"
+      ]
+    },
+    {
+      "id": "es-b0744601cce48a30",
+      "language": "es",
+      "text": "Cajero bancario, 7 a. m. a 4 p. m. · Little Rock",
+      "spoken_text": "Cajero bancario, 7 a. m. a 4 p. m. · Little Rock",
+      "filename": "es-b0744601cce48a30.mp3",
+      "uses": [
+        "jobOverview:9473"
+      ]
+    },
+    {
+      "id": "es-38f1eaab9f5d05df",
+      "language": "es",
+      "text": "Requiere experiencia laboral manejando efectivo y atención amable al cliente en persona. Incluye prueba de drogas y verificación de antecedentes. El título indica horario de 7 a. m. a 4 p. m.",
+      "spoken_text": "Requiere experiencia laboral manejando efectivo y atención amable al cliente en persona. Incluye prueba de drogas y verificación de antecedentes. El título indica horario de 7 a. m. a 4 p. m.",
+      "filename": "es-38f1eaab9f5d05df.mp3",
+      "uses": [
+        "jobOverview:9473",
+        "requirements:9473"
+      ]
+    },
+    {
+      "id": "es-aa35010a490e08de",
+      "language": "es",
+      "text": "¿Tiene experiencia laboral manejando efectivo?",
+      "spoken_text": "¿Tiene experiencia laboral manejando efectivo?",
+      "filename": "es-aa35010a490e08de.mp3",
+      "uses": [
+        "check:9473"
+      ]
+    },
+    {
+      "id": "es-6e477f881b04ab1f",
+      "language": "es",
+      "text": "Su enlace corresponde a Cajero bancario, 7 a. m. a 4 p. m. en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Cajero bancario, 7 a. m. a 4 p. m. en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-6e477f881b04ab1f.mp3",
+      "uses": [
+        "welcome:9473"
+      ]
+    },
+    {
+      "id": "es-d2ac92dc875347e0",
+      "language": "es",
+      "text": "Mantenimiento de producción · Little Rock",
+      "spoken_text": "Mantenimiento de producción · Little Rock",
+      "filename": "es-d2ac92dc875347e0.mp3",
+      "uses": [
+        "jobOverview:9458"
+      ]
+    },
+    {
+      "id": "es-5e89c04e7c15bc8b",
+      "language": "es",
+      "text": "Pide experiencia en mantenimiento industrial y al menos 4 años de trabajo eléctrico o mecánico pesado, incluidos PLC, diagramas, motores y transformadores. Se prefiere experiencia en producción de alimentos, pero no es obligatoria.",
+      "spoken_text": "Pide experiencia en mantenimiento industrial y al menos 4 años de trabajo eléctrico o mecánico pesado, incluidos PLC, diagramas, motores y transformadores. Se prefiere experiencia en producción de alimentos, pero no es obligatoria.",
+      "filename": "es-5e89c04e7c15bc8b.mp3",
+      "uses": [
+        "jobOverview:9458",
+        "requirements:9458"
+      ]
+    },
+    {
+      "id": "es-256a2082f75a25cf",
+      "language": "es",
+      "text": "¿Tiene al menos 4 años de experiencia eléctrica o mecánica pesada?",
+      "spoken_text": "¿Tiene al menos 4 años de experiencia eléctrica o mecánica pesada?",
+      "filename": "es-256a2082f75a25cf.mp3",
+      "uses": [
+        "check:9458"
+      ]
+    },
+    {
+      "id": "es-71bd7c0c328ab82f",
+      "language": "es",
+      "text": "¿Qué equipos o sistemas ha mantenido o reparado?",
+      "spoken_text": "¿Qué equipos o sistemas ha mantenido o reparado?",
+      "filename": "es-71bd7c0c328ab82f.mp3",
+      "uses": [
+        "role:9458",
+        "role:9457",
+        "role:9456",
+        "role:9455",
+        "role:9359"
+      ]
+    },
+    {
+      "id": "es-399a14c086208739",
+      "language": "es",
+      "text": "¿Cuánta experiencia eléctrica o mecánica pesada tiene?",
+      "spoken_text": "¿Cuánta experiencia eléctrica o mecánica pesada tiene?",
+      "filename": "es-399a14c086208739.mp3",
+      "uses": [
+        "role:9458",
+        "role:9457",
+        "role:9456",
+        "role:9455",
+        "role:9359"
+      ]
+    },
+    {
+      "id": "es-46f4940528f4fadc",
+      "language": "es",
+      "text": "Su enlace corresponde a Mantenimiento de producción en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Mantenimiento de producción en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-46f4940528f4fadc.mp3",
+      "uses": [
+        "welcome:9458"
+      ]
+    },
+    {
+      "id": "es-563fd3ce86ed60fd",
+      "language": "es",
+      "text": "Técnico industrial · Conway",
+      "spoken_text": "Técnico industrial · Conway",
+      "filename": "es-563fd3ce86ed60fd.mp3",
+      "uses": [
+        "jobOverview:9457"
+      ]
+    },
+    {
+      "id": "es-9f28d11c2e6f9adb",
+      "language": "es",
+      "text": "Pide diploma de secundaria o equivalente, experiencia en equipos industriales, conocimientos mecánicos, eléctricos e hidráulicos y herramientas de diagnóstico. Se prefiere formación técnica relacionada. Incluye evaluaciones.",
+      "spoken_text": "Pide diploma de secundaria o equivalente, experiencia en equipos industriales, conocimientos mecánicos, eléctricos e hidráulicos y herramientas de diagnóstico. Se prefiere formación técnica relacionada. Incluye evaluaciones.",
+      "filename": "es-9f28d11c2e6f9adb.mp3",
+      "uses": [
+        "jobOverview:9457",
+        "requirements:9457"
+      ]
+    },
+    {
+      "id": "es-8e45f6545126e4f6",
+      "language": "es",
+      "text": "Su enlace corresponde a Técnico industrial en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Técnico industrial en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-8e45f6545126e4f6.mp3",
+      "uses": [
+        "welcome:9457"
+      ]
+    },
+    {
+      "id": "es-cb2766512d4af32b",
+      "language": "es",
+      "text": "Mecánico de mantenimiento · Conway",
+      "spoken_text": "Mecánico de mantenimiento · Conway",
+      "filename": "es-cb2766512d4af32b.mp3",
+      "uses": [
+        "jobOverview:9456"
+      ]
+    },
+    {
+      "id": "es-e8b510b666a06960",
+      "language": "es",
+      "text": "Pide al menos 3 años de mantenimiento industrial automotriz o de fabricación de metales, sistemas mecánicos, hidráulica, neumática, diagnóstico eléctrico básico y planos técnicos. Se prefiere soldadura y experiencia con PLC. Incluye evaluaciones.",
+      "spoken_text": "Pide al menos 3 años de mantenimiento industrial automotriz o de fabricación de metales, sistemas mecánicos, hidráulica, neumática, diagnóstico eléctrico básico y planos técnicos. Se prefiere soldadura y experiencia con PLC. Incluye evaluaciones.",
+      "filename": "es-e8b510b666a06960.mp3",
+      "uses": [
+        "jobOverview:9456",
+        "requirements:9456"
+      ]
+    },
+    {
+      "id": "es-c5132b74d78a0a2b",
+      "language": "es",
+      "text": "¿Tiene al menos 3 años de mantenimiento industrial automotriz o de fabricación de metales?",
+      "spoken_text": "¿Tiene al menos 3 años de mantenimiento industrial automotriz o de fabricación de metales?",
+      "filename": "es-c5132b74d78a0a2b.mp3",
+      "uses": [
+        "check:9456"
+      ]
+    },
+    {
+      "id": "es-e096e46b95dc4689",
+      "language": "es",
+      "text": "Su enlace corresponde a Mecánico de mantenimiento en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Mecánico de mantenimiento en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-e096e46b95dc4689.mp3",
+      "uses": [
+        "welcome:9456"
+      ]
+    },
+    {
+      "id": "es-8b55301d4921db45",
+      "language": "es",
+      "text": "Mecánico industrial millwright · Conway",
+      "spoken_text": "Mecánico industrial millwright · Conway",
+      "filename": "es-8b55301d4921db45.mp3",
+      "uses": [
+        "jobOverview:9455"
+      ]
+    },
+    {
+      "id": "es-ca7ca452875ea1d5",
+      "language": "es",
+      "text": "El anuncio especifica la certificación 433a Industrial Millwright. Considera como alternativa diploma y experiencia técnica, C.E.T. o título profesional de ingeniería. Un reclutador debe verificar equivalencias. Incluye evaluaciones.",
+      "spoken_text": "El anuncio especifica la certificación 433a Industrial Millwright. Considera como alternativa diploma y experiencia técnica, C.E.T. o título profesional de ingeniería. Un reclutador debe verificar equivalencias. Incluye evaluaciones.",
+      "filename": "es-ca7ca452875ea1d5.mp3",
+      "uses": [
+        "jobOverview:9455",
+        "requirements:9455"
+      ]
+    },
+    {
+      "id": "es-7bf754991a5ba0a7",
+      "language": "es",
+      "text": "Su enlace corresponde a Mecánico industrial millwright en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Mecánico industrial millwright en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-7bf754991a5ba0a7.mp3",
+      "uses": [
+        "welcome:9455"
+      ]
+    },
+    {
+      "id": "es-0a4ebba0abfb5dfe",
+      "language": "es",
+      "text": "Operador láser · Little Rock",
+      "spoken_text": "Operador láser · Little Rock",
+      "filename": "es-0a4ebba0abfb5dfe.mp3",
+      "uses": [
+        "jobOverview:9410"
+      ]
+    },
+    {
+      "id": "es-83bd853754c0b257",
+      "language": "es",
+      "text": "Pide fabricación, operación y mantenimiento de láser, medición, matemáticas de taller, conocimientos CNC y lectura de planos. Incluye mover hasta 65 libras, períodos largos de pie y ambiente de 40 a 100 °F con equipo de protección.",
+      "spoken_text": "Pide fabricación, operación y mantenimiento de láser, medición, matemáticas de taller, conocimientos CNC y lectura de planos. Incluye mover hasta 65 libras, períodos largos de pie y ambiente de 40 a 100 °F con equipo de protección.",
+      "filename": "es-83bd853754c0b257.mp3",
+      "uses": [
+        "jobOverview:9410",
+        "requirements:9410"
+      ]
+    },
+    {
+      "id": "es-8bb10a28b9542a83",
+      "language": "es",
+      "text": "Su enlace corresponde a Operador láser en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Operador láser en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-8bb10a28b9542a83.mp3",
+      "uses": [
+        "welcome:9410"
+      ]
+    },
+    {
+      "id": "es-7deaa79ca2f6025d",
+      "language": "es",
+      "text": "Conductor CDL Clase A, nocturno · North Little Rock",
+      "spoken_text": "Conductor CDL Clase A, nocturno · North Little Rock",
+      "filename": "es-7deaa79ca2f6025d.mp3",
+      "uses": [
+        "jobOverview:9400"
+      ]
+    },
+    {
+      "id": "es-be01fcfd0e442da7",
+      "language": "es",
+      "text": "Es un puesto de conducción nocturna. Pide CDL Clase A vigente, tarjeta médica DOT, de 1 a 2 años de conducción comercial e historial limpio. Incluye evaluaciones DOT, requisitos físicos, descarga pesada y trabajo al aire libre.",
+      "spoken_text": "Es un puesto de conducción nocturna. Pide CDL Clase A vigente, tarjeta médica DOT, de 1 a 2 años de conducción comercial e historial limpio. Incluye evaluaciones DOT, requisitos físicos, descarga pesada y trabajo al aire libre.",
+      "filename": "es-be01fcfd0e442da7.mp3",
+      "uses": [
+        "jobOverview:9400",
+        "requirements:9400"
+      ]
+    },
+    {
+      "id": "es-2a7ca3a95330ca71",
+      "language": "es",
+      "text": "¿Tiene una licencia CDL Clase A vigente?",
+      "spoken_text": "¿Tiene una licencia CDL Clase A vigente?",
+      "filename": "es-2a7ca3a95330ca71.mp3",
+      "uses": [
+        "check:9400"
+      ]
+    },
+    {
+      "id": "es-18d8e78c6d2654b0",
+      "language": "es",
+      "text": "¿Tiene una tarjeta médica DOT vigente? No comparta detalles médicos.",
+      "spoken_text": "¿Tiene una tarjeta médica DOT vigente? No comparta detalles médicos.",
+      "filename": "es-18d8e78c6d2654b0.mp3",
+      "uses": [
+        "check:9400",
+        "check:9357"
+      ]
+    },
+    {
+      "id": "es-2de9b013c75d7009",
+      "language": "es",
+      "text": "Su enlace corresponde a Conductor CDL Clase A, nocturno en North Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Conductor CDL Clase A, nocturno en North Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-2de9b013c75d7009.mp3",
+      "uses": [
+        "welcome:9400"
+      ]
+    },
+    {
+      "id": "es-e6c40afaa2384642",
+      "language": "es",
+      "text": "Contador de manufactura · Lonoke",
+      "spoken_text": "Contador de manufactura · Lonoke",
+      "filename": "es-e6c40afaa2384642.mp3",
+      "uses": [
+        "jobOverview:9399"
+      ]
+    },
+    {
+      "id": "es-fc0a40f7f1e0a5aa",
+      "language": "es",
+      "text": "Pide licenciatura en contabilidad o área relacionada, 3 años de contabilidad de manufactura, experiencia ERP y habilidades avanzadas de oficina y hojas de cálculo. Se prefiere SAP. Incluye evaluaciones.",
+      "spoken_text": "Pide licenciatura en contabilidad o área relacionada, 3 años de contabilidad de manufactura, experiencia ERP y habilidades avanzadas de oficina y hojas de cálculo. Se prefiere SAP. Incluye evaluaciones.",
+      "filename": "es-fc0a40f7f1e0a5aa.mp3",
+      "uses": [
+        "jobOverview:9399",
+        "requirements:9399"
+      ]
+    },
+    {
+      "id": "es-690d85727c2fcfb5",
+      "language": "es",
+      "text": "Este trabajo está en Lonoke. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Lonoke. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-690d85727c2fcfb5.mp3",
+      "uses": [
+        "transportation:9399"
+      ]
+    },
+    {
+      "id": "es-c7728766b8a70bbd",
+      "language": "es",
+      "text": "¿Tiene licenciatura en contabilidad o área relacionada y 3 años de contabilidad de manufactura?",
+      "spoken_text": "¿Tiene licenciatura en contabilidad o área relacionada y 3 años de contabilidad de manufactura?",
+      "filename": "es-c7728766b8a70bbd.mp3",
+      "uses": [
+        "check:9399"
+      ]
+    },
+    {
+      "id": "es-fce687e2d6c0ff2d",
+      "language": "es",
+      "text": "Su enlace corresponde a Contador de manufactura en Lonoke. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Contador de manufactura en Lonoke. ¿Quiere trabajar allí?",
+      "filename": "es-fce687e2d6c0ff2d.mp3",
+      "uses": [
+        "welcome:9399"
+      ]
+    },
+    {
+      "id": "es-74ee4f0f0d144b9f",
+      "language": "es",
+      "text": "Soldador de taller · Little Rock",
+      "spoken_text": "Soldador de taller · Little Rock",
+      "filename": "es-74ee4f0f0d144b9f.mp3",
+      "uses": [
+        "jobOverview:9397"
+      ]
+    },
+    {
+      "id": "es-a44482d3adc73e24",
+      "language": "es",
+      "text": "Pide soldadura MIG, lectura de planos, fabricación de metales, medición precisa, matemáticas de taller y experiencia con equipos de manejo de materiales, con prácticas seguras.",
+      "spoken_text": "Pide soldadura MIG, lectura de planos, fabricación de metales, medición precisa, matemáticas de taller y experiencia con equipos de manejo de materiales, con prácticas seguras.",
+      "filename": "es-a44482d3adc73e24.mp3",
+      "uses": [
+        "jobOverview:9397",
+        "requirements:9397"
+      ]
+    },
+    {
+      "id": "es-e9503517dce6f560",
+      "language": "es",
+      "text": "Su enlace corresponde a Soldador de taller en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Soldador de taller en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-e9503517dce6f560.mp3",
+      "uses": [
+        "welcome:9397"
+      ]
+    },
+    {
+      "id": "es-07effce335ea813f",
+      "language": "es",
+      "text": "Operador de máquinas, proyecto especial · Maumelle",
+      "spoken_text": "Operador de máquinas, proyecto especial · Maumelle",
+      "filename": "es-07effce335ea813f.mp3",
+      "uses": [
+        "jobOverview:9392"
+      ]
+    },
+    {
+      "id": "es-a1be7b8cd27a080e",
+      "language": "es",
+      "text": "Los requisitos publicados indican botas con punta de acero, prueba de drogas y verificación de antecedentes. No especifican años mínimos de experiencia.",
+      "spoken_text": "Los requisitos publicados indican botas con punta de acero, prueba de drogas y verificación de antecedentes. No especifican años mínimos de experiencia.",
+      "filename": "es-a1be7b8cd27a080e.mp3",
+      "uses": [
+        "jobOverview:9392",
+        "requirements:9392"
+      ]
+    },
+    {
+      "id": "es-816274c63c57dcff",
+      "language": "es",
+      "text": "Este trabajo está en Maumelle. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Maumelle. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-816274c63c57dcff.mp3",
+      "uses": [
+        "transportation:9392"
+      ]
+    },
+    {
+      "id": "es-56c384dd150f76c7",
+      "language": "es",
+      "text": "Su enlace corresponde a Operador de máquinas, proyecto especial en Maumelle. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Operador de máquinas, proyecto especial en Maumelle. ¿Quiere trabajar allí?",
+      "filename": "es-56c384dd150f76c7.mp3",
+      "uses": [
+        "welcome:9392"
+      ]
+    },
+    {
+      "id": "es-cf659c6b7c66a49d",
+      "language": "es",
+      "text": "Ayudante de conductor · Little Rock",
+      "spoken_text": "Ayudante de conductor · Little Rock",
+      "filename": "es-cf659c6b7c66a49d.mp3",
+      "uses": [
+        "jobOverview:9364"
+      ]
+    },
+    {
+      "id": "es-989133ff1802c204",
+      "language": "es",
+      "text": "El anuncio dice “New Federal DL (21yrs+)”, pide atención al cliente, levantar 50 libras repetidamente y evaluaciones. Un reclutador debe aclarar el tipo de licencia.",
+      "spoken_text": "El anuncio dice “New Federal DL (21yrs+)”, pide atención al cliente, levantar 50 libras repetidamente y evaluaciones. Un reclutador debe aclarar el tipo de licencia.",
+      "filename": "es-989133ff1802c204.mp3",
+      "uses": [
+        "jobOverview:9364",
+        "requirements:9364"
+      ]
+    },
+    {
+      "id": "es-90ffe078f2986b97",
+      "language": "es",
+      "text": "Su enlace corresponde a Ayudante de conductor en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Ayudante de conductor en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-90ffe078f2986b97.mp3",
+      "uses": [
+        "welcome:9364"
+      ]
+    },
+    {
+      "id": "es-ba1872ff5d19a123",
+      "language": "es",
+      "text": "Operador láser CO2 · Conway",
+      "spoken_text": "Operador láser CO2 · Conway",
+      "filename": "es-ba1872ff5d19a123.mp3",
+      "uses": [
+        "jobOverview:9362"
+      ]
+    },
+    {
+      "id": "es-0cfe85a58255b7cc",
+      "language": "es",
+      "text": "Pide 5 años de experiencia en taller; permite sustituir parte con formación técnica. Incluye planos técnicos, licencia de conducir, vehículo y mover más de 50 libras. El requisito de láser CO2 dice “requerido/preferido”; un reclutador debe aclararlo.",
+      "spoken_text": "Pide 5 años de experiencia en taller; permite sustituir parte con formación técnica. Incluye planos técnicos, licencia de conducir, vehículo y mover más de 50 libras. El requisito de láser CO2 dice “requerido/preferido”; un reclutador debe aclararlo.",
+      "filename": "es-0cfe85a58255b7cc.mp3",
+      "uses": [
+        "jobOverview:9362",
+        "requirements:9362"
+      ]
+    },
+    {
+      "id": "es-1ec9df1751b6cb8d",
+      "language": "es",
+      "text": "Su enlace corresponde a Operador láser CO2 en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Operador láser CO2 en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-1ec9df1751b6cb8d.mp3",
+      "uses": [
+        "welcome:9362"
+      ]
+    },
+    {
+      "id": "es-4bb0368b00a2354e",
+      "language": "es",
+      "text": "Asistente de taller mecánico · Little Rock",
+      "spoken_text": "Asistente de taller mecánico · Little Rock",
+      "filename": "es-4bb0368b00a2354e.mp3",
+      "uses": [
+        "jobOverview:9359"
+      ]
+    },
+    {
+      "id": "es-66f95e772cddc3cb",
+      "language": "es",
+      "text": "Pide aptitud mecánica, herramientas manuales, mover vehículos de forma segura, licencia de conducir y tareas físicas como levantar 50 libras. Se prefieren secundaria/GED y formación técnica. Incluye evaluaciones.",
+      "spoken_text": "Pide aptitud mecánica, herramientas manuales, mover vehículos de forma segura, licencia de conducir y tareas físicas como levantar 50 libras. Se prefieren secundaria/GED y formación técnica. Incluye evaluaciones.",
+      "filename": "es-66f95e772cddc3cb.mp3",
+      "uses": [
+        "jobOverview:9359",
+        "requirements:9359"
+      ]
+    },
+    {
+      "id": "es-024e6ecfa850538e",
+      "language": "es",
+      "text": "Su enlace corresponde a Asistente de taller mecánico en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Asistente de taller mecánico en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-024e6ecfa850538e.mp3",
+      "uses": [
+        "welcome:9359"
+      ]
+    },
+    {
+      "id": "es-eb179fe797b41975",
+      "language": "es",
+      "text": "Preparador de pedidos y conductor · Little Rock",
+      "spoken_text": "Preparador de pedidos y conductor · Little Rock",
+      "filename": "es-eb179fe797b41975.mp3",
+      "uses": [
+        "jobOverview:9358"
+      ]
+    },
+    {
+      "id": "es-88e570856a139731",
+      "language": "es",
+      "text": "Incluye preparación de pedidos, inventario, sistemas de almacén y uso seguro de equipos de manejo de materiales. Pide levantar cargas pesadas y licencia de conducir válida para entregas.",
+      "spoken_text": "Incluye preparación de pedidos, inventario, sistemas de almacén y uso seguro de equipos de manejo de materiales. Pide levantar cargas pesadas y licencia de conducir válida para entregas.",
+      "filename": "es-88e570856a139731.mp3",
+      "uses": [
+        "jobOverview:9358",
+        "requirements:9358"
+      ]
+    },
+    {
+      "id": "es-617a3be492ad52cf",
+      "language": "es",
+      "text": "Su enlace corresponde a Preparador de pedidos y conductor en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Preparador de pedidos y conductor en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-617a3be492ad52cf.mp3",
+      "uses": [
+        "welcome:9358"
+      ]
+    },
+    {
+      "id": "es-f399334d2ae9d0c4",
+      "language": "es",
+      "text": "Conductores CDL Clase A/B · Little Rock",
+      "spoken_text": "Conductores CDL Clase A/B · Little Rock",
+      "filename": "es-f399334d2ae9d0c4.mp3",
+      "uses": [
+        "jobOverview:9357"
+      ]
+    },
+    {
+      "id": "es-aa7ec5a4a955ce2a",
+      "language": "es",
+      "text": "Pide licencia comercial vigente, tarjeta médica DOT e historial de conducción limpio. Incluye evaluaciones DOT, carga y descarga pesada, trabajo al aire libre, planificación de rutas y registros.",
+      "spoken_text": "Pide licencia comercial vigente, tarjeta médica DOT e historial de conducción limpio. Incluye evaluaciones DOT, carga y descarga pesada, trabajo al aire libre, planificación de rutas y registros.",
+      "filename": "es-aa7ec5a4a955ce2a.mp3",
+      "uses": [
+        "jobOverview:9357",
+        "requirements:9357"
+      ]
+    },
+    {
+      "id": "es-0fa85374ef9ddaf5",
+      "language": "es",
+      "text": "¿Tiene una licencia CDL Clase A o B vigente?",
+      "spoken_text": "¿Tiene una licencia CDL Clase A o B vigente?",
+      "filename": "es-0fa85374ef9ddaf5.mp3",
+      "uses": [
+        "check:9357"
+      ]
+    },
+    {
+      "id": "es-ffa4b5717e72fa0f",
+      "language": "es",
+      "text": "Su enlace corresponde a Conductores CDL Clase A/B en Little Rock. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Conductores CDL Clase A/B en Little Rock. ¿Quiere trabajar allí?",
+      "filename": "es-ffa4b5717e72fa0f.mp3",
+      "uses": [
+        "welcome:9357"
+      ]
+    },
+    {
+      "id": "es-917a925f4bf6d6e7",
+      "language": "es",
+      "text": "Maquinista de herramientas y matrices · Conway",
+      "spoken_text": "Maquinista de herramientas y matrices · Conway",
+      "filename": "es-917a925f4bf6d6e7.mp3",
+      "uses": [
+        "jobOverview:9355"
+      ]
+    },
+    {
+      "id": "es-ab7d8e808b37e3e8",
+      "language": "es",
+      "text": "Pide experiencia en herramientas y matrices o mecanizado, planos, medición precisa, diploma de secundaria o equivalente y levantar hasta 40 libras. Se prefieren experiencia manual/CNC y aprendizaje profesional.",
+      "spoken_text": "Pide experiencia en herramientas y matrices o mecanizado, planos, medición precisa, diploma de secundaria o equivalente y levantar hasta 40 libras. Se prefieren experiencia manual/CNC y aprendizaje profesional.",
+      "filename": "es-ab7d8e808b37e3e8.mp3",
+      "uses": [
+        "jobOverview:9355",
+        "requirements:9355"
+      ]
+    },
+    {
+      "id": "es-af7cc8dda9702f1f",
+      "language": "es",
+      "text": "Su enlace corresponde a Maquinista de herramientas y matrices en Conway. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Maquinista de herramientas y matrices en Conway. ¿Quiere trabajar allí?",
+      "filename": "es-af7cc8dda9702f1f.mp3",
+      "uses": [
+        "welcome:9355"
+      ]
+    },
+    {
+      "id": "es-45d3cc4e8c41d06d",
+      "language": "es",
+      "text": "Conductor de entregas no comercial · Fayetteville",
+      "spoken_text": "Conductor de entregas no comercial · Fayetteville",
+      "filename": "es-45d3cc4e8c41d06d.mp3",
+      "uses": [
+        "jobOverview:9353"
+      ]
+    },
+    {
+      "id": "es-b81cdc3a500e1f2e",
+      "language": "es",
+      "text": "Pide licencia de conducir, historial limpio, levantar hasta 75 libras y verificación de antecedentes y drogas.",
+      "spoken_text": "Pide licencia de conducir, historial limpio, levantar hasta 75 libras y verificación de antecedentes y drogas.",
+      "filename": "es-b81cdc3a500e1f2e.mp3",
+      "uses": [
+        "jobOverview:9353",
+        "requirements:9353"
+      ]
+    },
+    {
+      "id": "es-c59a19adf858b884",
+      "language": "es",
+      "text": "Este trabajo está en Fayetteville. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Fayetteville. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-c59a19adf858b884.mp3",
+      "uses": [
+        "transportation:9353"
+      ]
+    },
+    {
+      "id": "es-61dba60eb6c30c4c",
+      "language": "es",
+      "text": "Su enlace corresponde a Conductor de entregas no comercial en Fayetteville. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Conductor de entregas no comercial en Fayetteville. ¿Quiere trabajar allí?",
+      "filename": "es-61dba60eb6c30c4c.mp3",
+      "uses": [
+        "welcome:9353"
+      ]
+    },
+    {
+      "id": "es-67096a8d972b0247",
+      "language": "es",
+      "text": "Pide experiencia en entregas o conducción comercial, licencia válida, historial limpio y levantar cargas de forma segura. Incluye rutas, inspecciones, atención al cliente y registros. Experiencia minorista es una ventaja.",
+      "spoken_text": "Pide experiencia en entregas o conducción comercial, licencia válida, historial limpio y levantar cargas de forma segura. Incluye rutas, inspecciones, atención al cliente y registros. Experiencia minorista es una ventaja.",
+      "filename": "es-67096a8d972b0247.mp3",
+      "uses": [
+        "jobOverview:9352",
+        "requirements:9352"
+      ]
+    },
+    {
+      "id": "es-0c90f87a7a6974ef",
+      "language": "es",
+      "text": "Asociado de almacén con montacargas · Manor",
+      "spoken_text": "Asociado de almacén con montacargas · Manor",
+      "filename": "es-0c90f87a7a6974ef.mp3",
+      "uses": [
+        "jobOverview:9202"
+      ]
+    },
+    {
+      "id": "es-86be968dca4e10db",
+      "language": "es",
+      "text": "Pide experiencia con montacargas de pie y retráctiles, inventario, conteos cíclicos, pedidos, envíos/BOL, computadoras, comunicación en inglés y levantar hasta 50 libras. Se prefieren 2 años en almacén. No indica que un certificado de montacargas sea obligatorio.",
+      "spoken_text": "Pide experiencia con montacargas de pie y retráctiles, inventario, conteos cíclicos, pedidos, envíos/BOL, computadoras, comunicación en inglés y levantar hasta 50 libras. Se prefieren 2 años en almacén. No indica que un certificado de montacargas sea obligatorio.",
+      "filename": "es-86be968dca4e10db.mp3",
+      "uses": [
+        "jobOverview:9202",
+        "requirements:9202"
+      ]
+    },
+    {
+      "id": "es-84de89b6878eb254",
+      "language": "es",
+      "text": "Este trabajo está en Manor. ¿Puede llegar de forma confiable para trabajar?",
+      "spoken_text": "Este trabajo está en Manor. ¿Puede llegar de forma confiable para trabajar?",
+      "filename": "es-84de89b6878eb254.mp3",
+      "uses": [
+        "transportation:9202"
+      ]
+    },
+    {
+      "id": "es-fd7470a0f39496be",
+      "language": "es",
+      "text": "¿Ha operado montacargas de pie y montacargas retráctiles?",
+      "spoken_text": "¿Ha operado montacargas de pie y montacargas retráctiles?",
+      "filename": "es-fd7470a0f39496be.mp3",
+      "uses": [
+        "check:9202"
+      ]
+    },
+    {
+      "id": "es-3430c30e6f2d7d2d",
+      "language": "es",
+      "text": "¿Qué equipos de almacén ha usado?",
+      "spoken_text": "¿Qué equipos de almacén ha usado?",
+      "filename": "es-3430c30e6f2d7d2d.mp3",
+      "uses": [
+        "role:9202"
+      ]
+    },
+    {
+      "id": "es-7b3c5907dd711048",
+      "language": "es",
+      "text": "¿Qué tareas de almacén ha realizado?",
+      "spoken_text": "¿Qué tareas de almacén ha realizado?",
+      "filename": "es-7b3c5907dd711048.mp3",
+      "uses": [
+        "role:9202"
+      ]
+    },
+    {
+      "id": "es-af34c8d43880cd50",
+      "language": "es",
+      "text": "Su enlace corresponde a Asociado de almacén con montacargas en Manor. ¿Quiere trabajar allí?",
+      "spoken_text": "Su enlace corresponde a Asociado de almacén con montacargas en Manor. ¿Quiere trabajar allí?",
+      "filename": "es-af34c8d43880cd50.mp3",
+      "uses": [
+        "welcome:9202"
+      ]
+    }
+  ]
+}

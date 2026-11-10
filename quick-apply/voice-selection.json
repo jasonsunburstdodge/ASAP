@@ -1,5 +1,5 @@
 {
-  "status": "selected_pending_connection",
+  "status": "selected_pending_saved_audio_generation",
   "selected_by": "Jason Dodge",
   "selected_on": "2026-11-10",
   "provider": "elevenlabs",
@@ -11,11 +11,15 @@
     "es"
   ],
   "active_in_preview": false,
-  "delivery": "Backend synthesis or pre-generated prompt audio; never expose API credentials in this static site.",
+  "delivery": "Saved MP3 clips served by the static website; device voice fallback.",
   "activation_requires": [
-    "ElevenLabs API access in a server-side secret store",
-    "Backend speech endpoint or generated audio assets",
-    "English and Spanish audition with recruiter prompts"
+    "Generate Rachel recordings through an authorized ElevenLabs account",
+    "Audition English and Spanish recruiter prompts",
+    "Validate files and build audio/manifest.js"
   ],
-  "current_fallback": "Device speech synthesis; not Rachel"
+  "current_fallback": "Device speech synthesis; not Rachel",
+  "planned_clips": {
+    "en": 162,
+    "es": 160
+  }
 }

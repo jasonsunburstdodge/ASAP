@@ -7,7 +7,7 @@ function setup(query='?entry=direct'){
  w.structuredClone=structuredClone;w.HTMLElement.prototype.scrollIntoView=function(){};w.HTMLElement.prototype.reportValidity=function(){return this.checkValidity()};w.HTMLDialogElement.prototype.showModal=function(){this.open=true};w.HTMLDialogElement.prototype.close=function(){this.open=false};w.URL.createObjectURL=()=> 'blob:test';w.URL.revokeObjectURL=()=>{};w.HTMLAnchorElement.prototype.click=function(){};
  w.speechSynthesis={cancel(){},speak(u){w.spoken=u},getVoices(){return [{name:'Microsoft David',lang:'en-US',voiceURI:'david'},{name:'Microsoft Aria',lang:'en-US',voiceURI:'aria'},{name:'Microsoft Sabina',lang:'es-US',voiceURI:'sabina'}]}};w.SpeechSynthesisUtterance=function(t){this.text=t};
  w.SpeechRecognition=function(){w.rec=this;this.start=()=>this.onstart();this.stop=()=>this.onend();this.abort=()=>this.onend?.()};
- for(const f of ['jobs.js','app.js','recruiter-data.js','recruiter.js'])w.eval(fs.readFileSync(path.join(base,f),'utf8'));
+ for(const f of ['jobs.js','app.js','recruiter-data.js','audio/manifest.js','saved-audio.js','recruiter.js'])w.eval(fs.readFileSync(path.join(base,f),'utf8'));
  const $=id=>w.document.getElementById(id);
  const click=s=>{const all=[...$('chatChoices').querySelectorAll('button')];const b=all.find(b=>b.textContent===s)||all.find(b=>b.textContent.startsWith(s));assert(b,'Missing choice '+s+' in '+all.map(b=>b.textContent).join(' | '));b.click();};
  const say=s=>{$('chatInput').value=s;$('chatForm').dispatchEvent(new w.Event('submit',{cancelable:true}));};

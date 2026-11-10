@@ -21,8 +21,8 @@ let availableVoices=[],waitingForVoice=false;
 function voiceKey(v){return v.voiceURI||v.name+'|'+v.lang;}
 // Device voices have no standard gender field; exclude recognized male names and Zira.
 const excludedVoiceNames=/\b(zira|david|mark|george|james|guy|christopher|eric|roger|ryan|andrew|brian|steffan|tony|jacob|sean|richard|ravi|rishi|hemant|pablo|raul|raúl|alvaro|álvaro|jorge|diego|enrique|miguel|alonso|alex|daniel|fred|thomas|lee|oliver|male)\b/i;
-function isPermittedVoice(v){if(excludedVoiceNames.test(v.name||''))return false;return !v.lang?.toLowerCase().startsWith('es')||voicePreferences.es.some(name=>(v.name||'').toLowerCase().includes(name.toLowerCase()));}
-function voiceRank(v){const i=voicePreferences[lang].findIndex(n=>(v.name||'').toLowerCase().includes(n.toLowerCase()));return (i<0?1000:i*10)+(v.lang.toLowerCase()===(lang==='es'?'es-mx':'en-us')?0:2);}
+function isPermittedVoice(v){if(excludedVoiceNames.test(v.name||''))return false;if(v.lang?.toLowerCase()==='en-gb')return voicePreferences.en.some(name=>(v.name||'').toLowerCase().includes(name.toLowerCase()));return !v.lang?.toLowerCase().startsWith('es')||voicePreferences.es.some(name=>(v.name||'').toLowerCase().includes(name.toLowerCase()));}
+function voiceRank(v){const i=voicePreferences[lang].findIndex(n=>(v.name||'').toLowerCase().includes(n.toLowerCase()));return (lang==='en'?(v.lang.toLowerCase()==='en-gb'?0:2000):0)+(i<0?1000:i*10)+(v.lang.toLowerCase()===(lang==='es'?'es-mx':'en-gb')?0:2);}
 function refreshVoices(){
  availableVoices=(window.speechSynthesis?.getVoices()||[]).filter(v=>v.lang?.toLowerCase().startsWith(lang)&&isPermittedVoice(v)).sort((a,b)=>voiceRank(a)-voiceRank(b));
  const box=$('chatVoice');box.replaceChildren();const recorded=window.ASAP_SAVED_AUDIO?.available(lang);

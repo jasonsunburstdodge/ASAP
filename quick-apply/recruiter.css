@@ -15,3 +15,31 @@
 #recruiterChat .chat-header>div{text-align:center}
 #recruiterChat #closeChat{position:absolute;right:12px;top:12px;margin:0}
 @media(max-width:650px){#chatLauncher{width:150px;right:12px;bottom:12px}#chatLauncher img{width:94px;height:94px}#chatLauncher>span{font-size:12px}#recruiterChat .chat-header{padding:10px 42px;gap:5px}#recruiterChat .chat-header img{width:72px;height:72px}#recruiterChat h2{font-size:17px}}
+
+/* Warm, dimensional controls that match the animated recruiter. */
+#recruiterChat{background:#fffaf5;border:2px solid #f6c99f;border-radius:24px}
+#recruiterChat .chat-header{background:linear-gradient(145deg,#34302d,#1a1a1a)}
+#chatMessages{background:linear-gradient(180deg,#fffaf5,#fff3e7)}
+.chat-message{background:#fff;border:1px solid #f3dcc7;box-shadow:0 3px 0 #f2dfce;font-size:18px;font-weight:650;line-height:1.6;border-radius:18px;padding:17px 19px}
+.chat-message.user{font-size:15px;font-weight:500;background:#ffe4c9}
+.chat-message .message-who{font-size:11px;letter-spacing:.07em;color:#855329}
+#chatChoices{gap:10px;padding-top:8px;max-height:235px}
+#chatChoices button,#chatChoices button.job-choice,#chatChoices a{background:#bf5000;color:#fff;border:1px solid #a94300;border-radius:13px;font-size:15px;font-weight:750;min-height:48px;padding:13px 17px;box-shadow:0 4px 0 #8d3900;animation:choice-appear .3s ease-out both;transition:transform .15s,background .15s,box-shadow .15s}
+#chatChoices>:nth-child(2){animation-delay:40ms}#chatChoices>:nth-child(3){animation-delay:80ms}#chatChoices>:nth-child(4){animation-delay:120ms}
+#chatChoices button:hover,#chatChoices a:hover{background:#a94300;transform:translateY(-2px);box-shadow:0 6px 0 #8d3900}
+#chatChoices button.job-choice small{color:#fff2e7;font-size:12px;font-weight:550}
+#chatForm{padding-top:12px;background:#fff}#chatForm label{font-size:14px;font-weight:700}
+#chatForm textarea{border:2px solid #e4c7ac;border-radius:12px;font-size:16px}
+#chatForm .chat-input-actions{align-items:stretch}
+#chatForm #chatMic{display:flex;align-items:center;justify-content:center;gap:10px;background:#bf5000;border:1px solid #a94300;color:#fff;font-size:16px;font-weight:750;border-radius:13px;min-height:60px;box-shadow:0 3px 0 #8d3900;flex:1}
+#chatForm #chatMic::before{content:'';display:block;width:42px;height:42px;flex:0 0 42px;background:white url('assets/microphone-cartoon.webp') center/cover no-repeat;border-radius:12px}
+#chatForm #chatMic[aria-pressed=true]{background:#9c291c;box-shadow:0 0 0 4px #f7c4ad}
+#chatForm #chatSend{background:#2d2926;border-color:#2d2926;color:#fff;font-size:15px;font-weight:750;border-radius:13px}
+#recruiterChat .chat-bottom{padding:12px 16px 16px;gap:8px;flex-wrap:wrap;background:#fff}
+#recruiterChat .chat-bottom button,#recruiterChat .chat-bottom a,#repeatQuestion{display:inline-flex;align-items:center;justify-content:center;min-height:42px;border:1px solid #be8e64;border-radius:10px;padding:9px 12px;background:#fff2e5;color:#703600;font-size:13px;font-weight:750;text-decoration:none}
+#recruiterChat .chat-bottom a{background:#2d2926;color:#fff;border-color:#2d2926;flex:1}
+#chatStatus{font-size:12px;line-height:1.5}
+#recruiterChat button:focus-visible,#recruiterChat a:focus-visible{outline:3px solid #175b91;outline-offset:3px}
+@keyframes choice-appear{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){#chatChoices button,#chatChoices a{animation:none;transition:none}}
+@media(max-width:650px){#recruiterChat{border-radius:0;border:0}.chat-message{font-size:17px;padding:14px}#chatChoices{max-height:185px}#chatChoices button,#chatChoices a{font-size:14px}#chatForm #chatMic{font-size:14px}#chatForm #chatSend{padding:10px;font-size:13px}#recruiterChat .chat-bottom{padding-bottom:max(12px,env(safe-area-inset-bottom))}}

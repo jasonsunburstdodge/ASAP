@@ -1,10 +1,10 @@
-FILE: en-5dc7efcf286bc811.mp3
-Hi, I am the A S A P virtual recruiting assistant. You can call us directly, fill out the quick-apply form or answer a few questions with me. You can type your answers or use the microphone to speak. Turn on “Read questions aloud” to hear me. We can explore jobs together and prepare your quick-apply form. A recruiter makes the next decision.
+FILE: en-7b06c8a0a7348fce.mp3
+Hi, I’m A S A P’s virtual recruiting assistant. I can help you explore jobs that fit your experience and location. You can type your answers or tap the microphone to speak. Turn on “Read questions aloud” if you’d like me to speak, too. How would you like to get started? Would you like to call a recruiter, fill out the application yourself or answer a few questions with me?
 
 --------------------
 
-FILE: en-789ae1c0a6b8f152.mp3
-Where would you like to work? Choose a location with listed jobs.
+FILE: en-285d98802dce0cd4.mp3
+Where would you like to work? Choose a location with listed jobs. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -13,8 +13,8 @@ I only have listings for the locations shown. A recruiter can help with other ar
 
 --------------------
 
-FILE: en-693f9efbd60bec0f.mp3
-What kind of work interests you? It is fine to be open to several options.
+FILE: en-d46535fe1817abe9.mp3
+What kind of work interests you? It is fine to be open to several options. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -23,13 +23,13 @@ How much experience do you have in that kind of work?
 
 --------------------
 
-FILE: en-d83c7ed3805d83dd.mp3
-Tell me about work you have done, equipment you have used or skills you want to bring. If this would be your first job, say so.
+FILE: en-d90d649a74c62a53.mp3
+Tell me about work you have done, equipment you have used or skills you want to bring. If this would be your first job, say so. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-ab9c1440cf103c89.mp3
-Which shift works for you? I will keep this preference for the recruiter.
+FILE: en-46368abcb87296f5.mp3
+Which shift works for you? I will keep this preference for the recruiter. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -43,13 +43,13 @@ When could you start?
 
 --------------------
 
-FILE: en-7e4db23a0e772d59.mp3
-What hourly pay are you looking for? Enter a dollar amount, or choose “Discuss with recruiter.” Pay is not available in this catalog.
+FILE: en-c79fae0ccb5db5ad.mp3
+What hourly pay are you looking for? Enter a dollar amount, or choose “Discuss with recruiter.” Pay is not available in this catalog. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-0fe239fc7c1415e9.mp3
-Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location.
+FILE: en-2ce934552e575219.mp3
+Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location. Which position would you like to explore?
 
 --------------------
 
@@ -58,13 +58,13 @@ Based on your answers, this position may not be the right fit right now. Other p
 
 --------------------
 
-FILE: en-ea39d972fed85666.mp3
-An A S A P recruiter can help clarify this. I will not mark you as meeting a requirement you are unsure about. Call the Little Rock recruiter line below, or explore other positions.
+FILE: en-e3d3aefbf39a8cf9.mp3
+An A S A P recruiter can help clarify this. I will not mark you as meeting a requirement you are unsure about. Call the Little Rock recruiter line below, or explore other positions. Would you like to call using the button below, explore other positions or review this role again?
 
 --------------------
 
-FILE: en-ad86340df5b2c875.mp3
-What is your first name? Use sample details in this concept.
+FILE: en-745cc930ff2b15f1.mp3
+What is your first name? Use sample details in this concept. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -73,23 +73,23 @@ What is your last name?
 
 --------------------
 
-FILE: en-c5f1522cd3f52c89.mp3
-What phone number can a recruiter use? Please check all 10 digits after dictating.
+FILE: en-da7bcf71ffe97602.mp3
+What phone number can a recruiter use? Please check all 10 digits after dictating. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-e756892857e6e492.mp3
-What email address should the confirmation use? Please check the spelling after dictating.
+FILE: en-22da8858b431705d.mp3
+What email address should the confirmation use? Please check the spelling after dictating. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-906e226929b228f2.mp3
-What city do you live in? This can differ from your preferred work location.
+FILE: en-036cf9a8928098e7.mp3
+What city do you live in? This can differ from your preferred work location. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-74445f08beee97a4.mp3
-What state do you live in? You may type another U.S. state.
+FILE: en-debc038a91988a8d.mp3
+What state do you live in? You may type another U.S. state. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -98,8 +98,8 @@ What is your ZIP code?
 
 --------------------
 
-FILE: en-accbf88503619618.mp3
-Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent.
+FILE: en-5eafb3d13537ea34.mp3
+Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent. Choose an Edit button to make changes, fill your form or confirm and create the application preview.
 
 --------------------
 
@@ -108,8 +108,8 @@ Construction Materials Technician (Cmt) · South Austin
 
 --------------------
 
-FILE: en-c187fbabbe4a5d2e.mp3
-The listing asks for age 18+, a valid driver’s license with no DUIs, a truck for equipment transport and lifting 50 pounds. Reliability, flexibility and communication are also listed.
+FILE: en-c0f24183be1551ab.mp3
+The listing asks for age 18+, a valid driver’s license with no DUIs, a truck for equipment transport and lifting 50 pounds. Reliability, flexibility and communication are also listed. Would you like to review this role with me or explore another position?
 
 --------------------
 
@@ -118,8 +118,13 @@ Can you meet the minimum requirements for this role, including its job duties? I
 
 --------------------
 
-FILE: en-6f3a5a55c8978846.mp3
-What relevant training, licenses or certifications do you hold? Include the type only, no ID numbers.
+FILE: en-50699ecf1792e503.mp3
+The listing asks for age 18+, a valid driver’s license with no DUIs, a truck for equipment transport and lifting 50 pounds. Reliability, flexibility and communication are also listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
+
+--------------------
+
+FILE: en-3f2f72a5e7f02d94.mp3
+What relevant training, licenses or certifications do you hold? Include the type only, no ID numbers. Tell me what you hold, or choose none currently or discuss with recruiter. Tell me what you hold, or choose none currently or discuss with recruiter.
 
 --------------------
 
@@ -133,13 +138,13 @@ Which tasks or equipment are you most comfortable with?
 
 --------------------
 
-FILE: en-5c1a52a7977dbb80.mp3
-A short question for your recruiter. What outdoor or physical work have you done, and what equipment did you use? A new worker can explain what they would do.
+FILE: en-6c92e70c19cf4e09.mp3
+A short question for your recruiter. What outdoor or physical work have you done, and what equipment did you use? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-2329ab022e6da436.mp3
-A short question for your recruiter. How do you prepare to work safely in changing conditions? A new worker can explain what they would do.
+FILE: en-fc11a19129cf1eb2.mp3
+A short question for your recruiter. How do you prepare to work safely in changing conditions? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -153,13 +158,18 @@ Warehouse / Driver Associate · Round Rock/Pflugerville
 
 --------------------
 
-FILE: en-5c638bb9f721608a.mp3
-The listing asks for 3 years of recent warehouse experience, picking and packing, repeated lifting of 40–75 pounds and reliable transportation. Forklift experience is preferred. A warehouse aptitude test is part of hiring.
+FILE: en-fcfe64504de9a018.mp3
+The listing asks for 3 years of recent warehouse experience, picking and packing, repeated lifting of 40–75 pounds and reliable transportation. Forklift experience is preferred. A warehouse aptitude test is part of hiring. Would you like to review this role with me or explore another position?
 
 --------------------
 
-FILE: en-a0d3da08ebd0908d.mp3
-What forklift training or certification do you hold, if any? Include the equipment type and when you trained. Do not include ID numbers. This answer goes to a recruiter; a certificate is not an automatic requirement unless the listing says so.
+FILE: en-86a3eb012672db31.mp3
+The listing asks for 3 years of recent warehouse experience, picking and packing, repeated lifting of 40–75 pounds and reliable transportation. Forklift experience is preferred. A warehouse aptitude test is part of hiring. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
+
+--------------------
+
+FILE: en-fd1cfb4d9cbc2366.mp3
+What forklift training or certification do you hold, if any? Include the equipment type and when you trained. Do not include ID numbers. This answer goes to a recruiter; a certificate is not an automatic requirement unless the listing says so. Tell me what you hold, or choose none currently or discuss with recruiter. Tell me what you hold, or choose none currently or discuss with recruiter.
 
 --------------------
 
@@ -183,13 +193,13 @@ What vehicles have you driven for work?
 
 --------------------
 
-FILE: en-c2432db9914da4ca.mp3
-A short question for your recruiter. Tell me about the equipment you used and the tasks you handled in a recent warehouse role. A new worker can explain what they would do.
+FILE: en-a1d7e0bf9582e926.mp3
+A short question for your recruiter. Tell me about the equipment you used and the tasks you handled in a recent warehouse role. A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-2b5aa5513d23d8b3.mp3
-A short question for your recruiter. What would you do if a shipment count did not agree with the paperwork? A new worker can explain what they would do.
+FILE: en-096dd2d673ca6d03.mp3
+A short question for your recruiter. What would you do if a shipment count did not agree with the paperwork? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -203,8 +213,13 @@ Box Truck Driver · South Austin
 
 --------------------
 
-FILE: en-2add61278c0a1e52.mp3
-The listing asks for at least 1 year driving a box truck or larger commercial vehicle, Austin/San Marcos area familiarity, physical work and a clean driving record. Screening and dependable attendance are listed.
+FILE: en-2660541f4dde1e31.mp3
+The listing asks for at least 1 year driving a box truck or larger commercial vehicle, Austin/San Marcos area familiarity, physical work and a clean driving record. Screening and dependable attendance are listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-8444631a09b6eec2.mp3
+The listing asks for at least 1 year driving a box truck or larger commercial vehicle, Austin/San Marcos area familiarity, physical work and a clean driving record. Screening and dependable attendance are listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -213,13 +228,13 @@ Do you have at least 1 year driving a box truck or larger commercial vehicle?
 
 --------------------
 
-FILE: en-5c0dddf961e9e708.mp3
-A short question for your recruiter. What vehicles have you driven for work, and what deliveries did you handle? A new worker can explain what they would do.
+FILE: en-239f0b8b420fdbd0.mp3
+A short question for your recruiter. What vehicles have you driven for work, and what deliveries did you handle? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-a0d4f571940c6896.mp3
-A short question for your recruiter. What would you do if you found a vehicle problem before a delivery? A new worker can explain what they would do.
+FILE: en-ab6cf7391864bba9.mp3
+A short question for your recruiter. What would you do if you found a vehicle problem before a delivery? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -233,8 +248,13 @@ Mover/ Lawn Care · Conway
 
 --------------------
 
-FILE: en-0753caa096ae7b00.mp3
-The listing asks for a valid driver’s license with no outstanding tickets, lifting 50 pounds, a background check and a drug test.
+FILE: en-e57b4cc5433d3ae8.mp3
+The listing asks for a valid driver’s license with no outstanding tickets, lifting 50 pounds, a background check and a drug test. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-8c11a91a02d6e6e8.mp3
+The listing asks for a valid driver’s license with no outstanding tickets, lifting 50 pounds, a background check and a drug test. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -258,8 +278,13 @@ Seamstress · Little Rock
 
 --------------------
 
-FILE: en-172c9884c20cc50b.mp3
-Experience operating a sewing machine is required.
+FILE: en-93e2555a1a9836ee.mp3
+Experience operating a sewing machine is required. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-3dc476952778079a.mp3
+Experience operating a sewing machine is required. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -273,13 +298,13 @@ Have you operated a sewing machine for work?
 
 --------------------
 
-FILE: en-8ebb9bfdfa08abc7.mp3
-A short question for your recruiter. Describe the machines or production tasks you have handled. A new worker can explain what they would do.
+FILE: en-7dca1a15cb68a8d8.mp3
+A short question for your recruiter. Describe the machines or production tasks you have handled. A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-4dbb4d80954706f7.mp3
-A short question for your recruiter. What would you do if you noticed a quality or safety problem? A new worker can explain what they would do.
+FILE: en-69744312ba962d8d.mp3
+A short question for your recruiter. What would you do if you noticed a quality or safety problem? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -293,8 +318,13 @@ Manufacturing Lead · North Little Rock
 
 --------------------
 
-FILE: en-fbc1583a0eae29c6.mp3
-This listing only says “LEAD.” A recruiter needs to clarify its requirements.
+FILE: en-5b8fd70321998ec2.mp3
+This listing only says “LEAD.” A recruiter needs to clarify its requirements. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-251937cbd99ec6cc.mp3
+This listing only says “LEAD.” A recruiter needs to clarify its requirements. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -313,8 +343,13 @@ Administrative Assistant · Little Rock
 
 --------------------
 
-FILE: en-011d9092a4c266c0.mp3
-The role involves office administration, scheduling, records and supplies. Microsoft Office proficiency, communication, organization and computer skills are listed. Administrative experience is preferred.
+FILE: en-b6e6e189964a0ee0.mp3
+The role involves office administration, scheduling, records and supplies. Microsoft Office proficiency, communication, organization and computer skills are listed. Administrative experience is preferred. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-0f6cbfce4ba04d40.mp3
+The role involves office administration, scheduling, records and supplies. Microsoft Office proficiency, communication, organization and computer skills are listed. Administrative experience is preferred. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -328,13 +363,13 @@ Which duties in this job have you handled before?
 
 --------------------
 
-FILE: en-c9e85d156f9352ae.mp3
-A short question for your recruiter. Tell me about the office systems or software you have used. A new worker can explain what they would do.
+FILE: en-84b4d0a1f320d922.mp3
+A short question for your recruiter. Tell me about the office systems or software you have used. A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-780f13b86eb7c1ed.mp3
-A short question for your recruiter. How do you check your work when handling records, money or orders? A new worker can explain what they would do.
+FILE: en-20c74a4f2ff9fdd2.mp3
+A short question for your recruiter. How do you check your work when handling records, money or orders? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -348,8 +383,13 @@ Buyer/ Purchasing Agent · Conway
 
 --------------------
 
-FILE: en-d47eb6a39a15bf37.mp3
-The listing asks for a high school diploma or equivalent, 3 years of related experience, SAP skills and steel-industry knowledge. Related postsecondary courses are preferred; customer service is a plus.
+FILE: en-c6e861e080f2d5ab.mp3
+The listing asks for a high school diploma or equivalent, 3 years of related experience, SAP skills and steel-industry knowledge. Related postsecondary courses are preferred; customer service is a plus. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-478f8ca6ca1d39a9.mp3
+The listing asks for a high school diploma or equivalent, 3 years of related experience, SAP skills and steel-industry knowledge. Related postsecondary courses are preferred; customer service is a plus. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -368,8 +408,13 @@ Parts Manager · Little Rock
 
 --------------------
 
-FILE: en-46a34a9b4017f13f.mp3
-Duties include purchasing, vendor contact, inventory, shipping, spreadsheets and reports. The listing specifies a drug-free environment and a background check.
+FILE: en-919c421be01880a4.mp3
+Duties include purchasing, vendor contact, inventory, shipping, spreadsheets and reports. The listing specifies a drug-free environment and a background check. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-81373b94935cb38f.mp3
+Duties include purchasing, vendor contact, inventory, shipping, spreadsheets and reports. The listing specifies a drug-free environment and a background check. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -383,8 +428,13 @@ Mig Welder · Little Rock
 
 --------------------
 
-FILE: en-7c9e33c9d953236d.mp3
-The listing asks for MIG welding knowledge, safe equipment use, reading drawings and shop math. A high school diploma/GED is required, plus welding certification or at least 2 years of MIG experience.
+FILE: en-988aa43963c7246b.mp3
+The listing asks for MIG welding knowledge, safe equipment use, reading drawings and shop math. A high school diploma/GED is required, plus welding certification or at least 2 years of MIG experience. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-bbabef6318a7a814.mp3
+The listing asks for MIG welding knowledge, safe equipment use, reading drawings and shop math. A high school diploma/GED is required, plus welding certification or at least 2 years of MIG experience. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -398,13 +448,13 @@ What related training or certifications do you have?
 
 --------------------
 
-FILE: en-406f60d167d3e8d6.mp3
-A short question for your recruiter. Describe a repair or technical task you completed. Which tools did you use? A new worker can explain what they would do.
+FILE: en-9a0690948dbfc715.mp3
+A short question for your recruiter. Describe a repair or technical task you completed. Which tools did you use? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
-FILE: en-b2e5a9d5b2be35e3.mp3
-A short question for your recruiter. How do you check that your work is safe and ready for use? A new worker can explain what they would do.
+FILE: en-973b9fe77a97f0b2.mp3
+A short question for your recruiter. How do you check that your work is safe and ready for use? A new worker can explain what they would do. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -418,8 +468,13 @@ Metal Inspector · North Little Rock
 
 --------------------
 
-FILE: en-dd3c816770ed0f22.mp3
-The listing asks for mechanical aptitude, safe hand-tool use, precision coordination and standing, walking or leaning over production lines for extended periods.
+FILE: en-6930783baccab69b.mp3
+The listing asks for mechanical aptitude, safe hand-tool use, precision coordination and standing, walking or leaning over production lines for extended periods. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-898ea9a614a746d9.mp3
+The listing asks for mechanical aptitude, safe hand-tool use, precision coordination and standing, walking or leaning over production lines for extended periods. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -433,8 +488,13 @@ Delivery Driver · Little Rock
 
 --------------------
 
-FILE: en-89c1883c46c95916.mp3
-The role involves lifting 50+ pounds, moving heavy machines with dollies, walking 2–5 miles and loading vehicles. A clean driving record and screening are listed. Review the full listing with a recruiter.
+FILE: en-ca6a33619b3e04bf.mp3
+The role involves lifting 50+ pounds, moving heavy machines with dollies, walking 2–5 miles and loading vehicles. A clean driving record and screening are listed. Review the full listing with a recruiter. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-63d3d200552a8b66.mp3
+The role involves lifting 50+ pounds, moving heavy machines with dollies, walking 2–5 miles and loading vehicles. A clean driving record and screening are listed. Review the full listing with a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -448,8 +508,13 @@ Bank Teller 7a-4p · Little Rock
 
 --------------------
 
-FILE: en-523e62aeee7e8d5a.mp3
-Cash-handling work experience and friendly face-to-face customer service are required. Drug testing and background screening are listed. The title specifies 7 a.m.–4 p.m.
+FILE: en-be3a57df2cdf11a5.mp3
+Cash-handling work experience and friendly face-to-face customer service are required. Drug testing and background screening are listed. The title specifies 7 a.m.–4 p.m. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-e4e8e261cb80a85d.mp3
+Cash-handling work experience and friendly face-to-face customer service are required. Drug testing and background screening are listed. The title specifies 7 a.m.–4 p.m. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -468,8 +533,13 @@ Production Maintenance · Little Rock
 
 --------------------
 
-FILE: en-2c26d791b1f4ba3f.mp3
-The listing asks for industrial maintenance experience and at least 4 years of heavy electrical/mechanical work, including PLCs, wiring diagrams, motors and transformers. Food manufacturing is preferred, not required.
+FILE: en-6f0d5ecb9295625c.mp3
+The listing asks for industrial maintenance experience and at least 4 years of heavy electrical/mechanical work, including PLCs, wiring diagrams, motors and transformers. Food manufacturing is preferred, not required. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-3214554ac0818b6b.mp3
+The listing asks for industrial maintenance experience and at least 4 years of heavy electrical/mechanical work, including PLCs, wiring diagrams, motors and transformers. Food manufacturing is preferred, not required. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -498,8 +568,13 @@ Industrial Tech · Conway
 
 --------------------
 
-FILE: en-0a0fa895f55a278c.mp3
-The listing asks for a high school diploma/equivalent, industrial equipment experience, mechanical/electrical/hydraulic knowledge and diagnostic tools. A related technical qualification is preferred. Screening is listed.
+FILE: en-f1fe3971de0b133c.mp3
+The listing asks for a high school diploma/equivalent, industrial equipment experience, mechanical/electrical/hydraulic knowledge and diagnostic tools. A related technical qualification is preferred. Screening is listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-d76fd8b1db4d3d47.mp3
+The listing asks for a high school diploma/equivalent, industrial equipment experience, mechanical/electrical/hydraulic knowledge and diagnostic tools. A related technical qualification is preferred. Screening is listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -513,8 +588,13 @@ Maintenance Mechanic · Conway
 
 --------------------
 
-FILE: en-7ce75d1a306efd51.mp3
-The listing asks for 3+ years of industrial maintenance in automotive or metal fabrication, mechanical systems, hydraulics/pneumatics, basic electrical troubleshooting and technical drawings. Welding and PLC exposure are preferred. Screening is listed.
+FILE: en-ac92fb1476df8e72.mp3
+The listing asks for 3+ years of industrial maintenance in automotive or metal fabrication, mechanical systems, hydraulics/pneumatics, basic electrical troubleshooting and technical drawings. Welding and PLC exposure are preferred. Screening is listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-33e49d20c45723d0.mp3
+The listing asks for 3+ years of industrial maintenance in automotive or metal fabrication, mechanical systems, hydraulics/pneumatics, basic electrical troubleshooting and technical drawings. Welding and PLC exposure are preferred. Screening is listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -533,8 +613,13 @@ Maintenance Millwright · Conway
 
 --------------------
 
-FILE: en-a18957f57b657e03.mp3
-The listing specifies a 433a Industrial Millwright qualification, with a related diploma/experience, C.E.T. or professional engineering designation considered as an alternative. A recruiter must verify equivalency. Screening is listed.
+FILE: en-aba34dd76d9d265a.mp3
+The listing specifies a 433a Industrial Millwright qualification, with a related diploma/experience, C.E.T. or professional engineering designation considered as an alternative. A recruiter must verify equivalency. Screening is listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-e6199f7d7edf49ee.mp3
+The listing specifies a 433a Industrial Millwright qualification, with a related diploma/experience, C.E.T. or professional engineering designation considered as an alternative. A recruiter must verify equivalency. Screening is listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -548,8 +633,13 @@ Laser Operator · Little Rock
 
 --------------------
 
-FILE: en-c3397770ab6e3ed4.mp3
-The listing asks for fabrication, laser operation/maintenance, measuring, shop math, CNC familiarity and reading drawings. Physical duties include moving up to 65 pounds, long periods on your feet and a 40–100°F environment with protective equipment.
+FILE: en-054b1126537a88ee.mp3
+The listing asks for fabrication, laser operation/maintenance, measuring, shop math, CNC familiarity and reading drawings. Physical duties include moving up to 65 pounds, long periods on your feet and a 40–100°F environment with protective equipment. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-0762c0b0424da890.mp3
+The listing asks for fabrication, laser operation/maintenance, measuring, shop math, CNC familiarity and reading drawings. Physical duties include moving up to 65 pounds, long periods on your feet and a 40–100°F environment with protective equipment. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -563,8 +653,13 @@ Class A CDL – Nights · North Little Rock
 
 --------------------
 
-FILE: en-3f6f4201c13ca7c5.mp3
-This is a night-driving role. The listing asks for a current Class A CDL, DOT medical card, 1–2 years commercial driving and a clean driving record. DOT screening, physical requirements, heavy unloading and outdoor work are listed.
+FILE: en-77bfc2f474600fc8.mp3
+This is a night-driving role. The listing asks for a current Class A CDL, DOT medical card, 1–2 years commercial driving and a clean driving record. DOT screening, physical requirements, heavy unloading and outdoor work are listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-2e9c12c8b49174c5.mp3
+This is a night-driving role. The listing asks for a current Class A CDL, DOT medical card, 1–2 years commercial driving and a clean driving record. DOT screening, physical requirements, heavy unloading and outdoor work are listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -573,8 +668,8 @@ Do you hold a current Class A CDL?
 
 --------------------
 
-FILE: en-b6a1f0c4b1d2ea3b.mp3
-Do you hold a current DOT medical card? Do not share medical details.
+FILE: en-f96901958e893eca.mp3
+Do you hold a current DOT medical card? Do not share medical details. Please type your answer or tap the microphone and tell me. Please type your answer or tap the microphone and tell me.
 
 --------------------
 
@@ -588,8 +683,13 @@ Manufacturing Accountant · Lonoke
 
 --------------------
 
-FILE: en-0869b65960cc123f.mp3
-The listing asks for an accounting-related bachelor’s degree, 3 years of manufacturing accounting, integrated ERP experience and advanced office/spreadsheet skills. SAP is preferred. Screening is listed.
+FILE: en-faa64b17a05e7a77.mp3
+The listing asks for an accounting-related bachelor’s degree, 3 years of manufacturing accounting, integrated ERP experience and advanced office/spreadsheet skills. SAP is preferred. Screening is listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-79a7673587fe9b68.mp3
+The listing asks for an accounting-related bachelor’s degree, 3 years of manufacturing accounting, integrated ERP experience and advanced office/spreadsheet skills. SAP is preferred. Screening is listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -613,8 +713,13 @@ Shop Welder · Little Rock
 
 --------------------
 
-FILE: en-1c215f7346fc128d.mp3
-The listing asks for MIG welding, reading blueprints, metal-fabrication knowledge, precision measurement, shop math and material-handling equipment experience, with safe working practices.
+FILE: en-1c1d03cbbe9ae1c6.mp3
+The listing asks for MIG welding, reading blueprints, metal-fabrication knowledge, precision measurement, shop math and material-handling equipment experience, with safe working practices. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-679285e1a1fd16ad.mp3
+The listing asks for MIG welding, reading blueprints, metal-fabrication knowledge, precision measurement, shop math and material-handling equipment experience, with safe working practices. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -628,8 +733,13 @@ Machine Operator Special Project · Maumelle
 
 --------------------
 
-FILE: en-f050742beb1049ee.mp3
-The published requirements list steel-toed boots and passing a drug test and background check. No minimum years of experience are stated.
+FILE: en-de60339f95923434.mp3
+The published requirements list steel-toed boots and passing a drug test and background check. No minimum years of experience are stated. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-daea177c1893508b.mp3
+The published requirements list steel-toed boots and passing a drug test and background check. No minimum years of experience are stated. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -648,8 +758,13 @@ Driver Helper · Little Rock
 
 --------------------
 
-FILE: en-3f366f1336f01392.mp3
-The listing specifies a “New Federal DL (21yrs+)”, customer service, repeated lifting of 50 pounds and screening. A recruiter should clarify the license wording.
+FILE: en-74d735f620f0bdc8.mp3
+The listing specifies a “New Federal DL (21yrs+)”, customer service, repeated lifting of 50 pounds and screening. A recruiter should clarify the license wording. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-8e9694e19774eec2.mp3
+The listing specifies a “New Federal DL (21yrs+)”, customer service, repeated lifting of 50 pounds and screening. A recruiter should clarify the license wording. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -663,8 +778,13 @@ Co2 Laser Operator · Conway
 
 --------------------
 
-FILE: en-9c84cfbcbec612d3.mp3
-The listing asks for 5 years of machine-shop experience, with technical training allowed to replace part, technical drawings, a valid driver’s license/vehicle and moving 50+ pounds. Its CO2 laser requirement is ambiguous (“required/preferred”); a recruiter should clarify.
+FILE: en-1525664c3b692746.mp3
+The listing asks for 5 years of machine-shop experience, with technical training allowed to replace part, technical drawings, a valid driver’s license/vehicle and moving 50+ pounds. Its CO2 laser requirement is ambiguous (“required/preferred”); a recruiter should clarify. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-a6e2326215b265ae.mp3
+The listing asks for 5 years of machine-shop experience, with technical training allowed to replace part, technical drawings, a valid driver’s license/vehicle and moving 50+ pounds. Its CO2 laser requirement is ambiguous (“required/preferred”); a recruiter should clarify. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -678,8 +798,13 @@ Mechanic Shop Assistant · Little Rock
 
 --------------------
 
-FILE: en-c6cf27139a015ffe.mp3
-The listing asks for mechanical aptitude, hand tools, safe vehicle movement, a valid driver’s license and physical duties including lifting 50 pounds. High school/GED and vocational training are preferred. Screening is listed.
+FILE: en-ccc067a0d164fd6e.mp3
+The listing asks for mechanical aptitude, hand tools, safe vehicle movement, a valid driver’s license and physical duties including lifting 50 pounds. High school/GED and vocational training are preferred. Screening is listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-cbce702803c21e9c.mp3
+The listing asks for mechanical aptitude, hand tools, safe vehicle movement, a valid driver’s license and physical duties including lifting 50 pounds. High school/GED and vocational training are preferred. Screening is listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -693,8 +818,13 @@ Order Selector / Delivery Driver · Little Rock
 
 --------------------
 
-FILE: en-26d359b0d5e69609.mp3
-The role involves order picking, inventory, warehouse systems and safe material-handling equipment use. Heavy lifting and a valid driver’s license for deliveries are listed.
+FILE: en-9d61272169fff594.mp3
+The role involves order picking, inventory, warehouse systems and safe material-handling equipment use. Heavy lifting and a valid driver’s license for deliveries are listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-76e6bb3c0690694b.mp3
+The role involves order picking, inventory, warehouse systems and safe material-handling equipment use. Heavy lifting and a valid driver’s license for deliveries are listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -708,8 +838,13 @@ CDL Drivers – Class A / B · Little Rock
 
 --------------------
 
-FILE: en-7b14b02430077faf.mp3
-The listing asks for a current commercial driver’s license, DOT medical card and clean driving record. DOT screening, heavy lifting/unloading, outdoor work, route planning and records are listed.
+FILE: en-6ee606e6580c2618.mp3
+The listing asks for a current commercial driver’s license, DOT medical card and clean driving record. DOT screening, heavy lifting/unloading, outdoor work, route planning and records are listed. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-0c0697f81fad9589.mp3
+The listing asks for a current commercial driver’s license, DOT medical card and clean driving record. DOT screening, heavy lifting/unloading, outdoor work, route planning and records are listed. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -728,8 +863,13 @@ Tool & Die / Machinist · Conway
 
 --------------------
 
-FILE: en-995d222a04aa868e.mp3
-The listing asks for tool-and-die or machining experience, blueprints, precision measurement, a high school diploma/equivalent and lifting up to 40 pounds. Manual/CNC experience and an apprenticeship are preferences.
+FILE: en-adbd7acb4a22ede0.mp3
+The listing asks for tool-and-die or machining experience, blueprints, precision measurement, a high school diploma/equivalent and lifting up to 40 pounds. Manual/CNC experience and an apprenticeship are preferences. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-592ba8e3adf1a478.mp3
+The listing asks for tool-and-die or machining experience, blueprints, precision measurement, a high school diploma/equivalent and lifting up to 40 pounds. Manual/CNC experience and an apprenticeship are preferences. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -743,8 +883,13 @@ Non Commercial Delivery Driver · Fayetteville
 
 --------------------
 
-FILE: en-620c08eaa159f53c.mp3
-The listing asks for a driver’s license, clean driving record, lifting up to 75 pounds and background/drug screening.
+FILE: en-6807765af885185c.mp3
+The listing asks for a driver’s license, clean driving record, lifting up to 75 pounds and background/drug screening. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-c869a841a8a31759.mp3
+The listing asks for a driver’s license, clean driving record, lifting up to 75 pounds and background/drug screening. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -763,8 +908,13 @@ Deliver Driver · Little Rock
 
 --------------------
 
-FILE: en-4ad15d1391dd4b42.mp3
-The listing asks for delivery/commercial driving experience, a valid driver’s license, clean driving record and safe heavy lifting. Duties include routes, inspections, customer service and delivery records. Retail experience is a plus.
+FILE: en-1f6ef9cf3cea0881.mp3
+The listing asks for delivery/commercial driving experience, a valid driver’s license, clean driving record and safe heavy lifting. Duties include routes, inspections, customer service and delivery records. Retail experience is a plus. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-0a412a2ed7653163.mp3
+The listing asks for delivery/commercial driving experience, a valid driver’s license, clean driving record and safe heavy lifting. Duties include routes, inspections, customer service and delivery records. Retail experience is a plus. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 
@@ -778,8 +928,13 @@ Forklift Warehouse Associate · Manor
 
 --------------------
 
-FILE: en-0891fc2f9ee20454.mp3
-The listing asks for stand-up and reach forklift experience, inventory/cycle counting, picking, shipping/BOLs, computer use, English communication and lifting up to 50 pounds. Two years of warehouse experience is preferred. It does not explicitly list a forklift certificate as mandatory.
+FILE: en-27a5ec569b6ae8a9.mp3
+The listing asks for stand-up and reach forklift experience, inventory/cycle counting, picking, shipping/BOLs, computer use, English communication and lifting up to 50 pounds. Two years of warehouse experience is preferred. It does not explicitly list a forklift certificate as mandatory. Would you like to review this role with me or explore another position?
+
+--------------------
+
+FILE: en-b5c712323a94a5b8.mp3
+The listing asks for stand-up and reach forklift experience, inventory/cycle counting, picking, shipping/BOLs, computer use, English communication and lifting up to 50 pounds. Two years of warehouse experience is preferred. It does not explicitly list a forklift certificate as mandatory. Can you meet these requirements? Choose yes, no or talk to a recruiter. Can you meet these requirements? Choose yes, no or talk to a recruiter.
 
 --------------------
 

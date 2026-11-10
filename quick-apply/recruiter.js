@@ -48,7 +48,20 @@ function speakDevice(text){
 }
 
 function message(text,user=false){const box=document.createElement('div');box.className='chat-message'+(user?' user':'');box.lang=lang;const who=document.createElement('span');who.className='message-who';who.textContent=user?tr('YOU','USTED'):tr('ASAP ASSISTANT','ASISTENTE ASAP');box.append(who,document.createTextNode(text));$('chatMessages').append(box);$('chatMessages').scrollTop=$('chatMessages').scrollHeight;transcript.push({speaker:user?'candidate':'assistant',text,language:lang});return box;}
-function ask(text){currentQuestion=text;return message(text);}
+function responsePrompt(text){
+ if(text.trim().endsWith('?'))return text;
+ const endings={
+  jobOverview:['Would you like to review this role with me or explore another position?','¿Quiere revisar este puesto conmigo o explorar otro?'],
+  requirements:['Can you meet these requirements? Choose yes, no or talk to a recruiter.','¿Puede cumplir estos requisitos? Elija sí, no o hablar con un reclutador.'],
+  results:['Which position would you like to explore?','¿Qué puesto le gustaría explorar?'],
+  review:['Choose an Edit button to make changes, fill your form or confirm and create the application preview.','Elija Editar para hacer cambios, complete su formulario o confirme y cree la vista previa de la solicitud.'],
+  unclear:['Would you like to call using the button below, explore other positions or review this role again?','¿Quiere llamar con el botón de abajo, explorar otros puestos o revisar este puesto otra vez?'],
+  certifications:['Tell me what you hold, or choose none currently or discuss with recruiter.','Dígame qué tiene, o elija ninguna actualmente o hablar con el reclutador.']
+ };
+ const ending=endings[state]||['Please type your answer or tap the microphone and tell me.','Escriba su respuesta o toque el micrófono para decírmela.'];
+ return text+' '+tr(ending[0],ending[1]);
+}
+function ask(text){currentQuestion=responsePrompt(text);return message(currentQuestion);}
 function option(en,es,value,action,sub='',aliases=[]){const b=document.createElement('button');b.type='button';b.textContent=tr(en,es);if(sub){b.className='job-choice';const s=document.createElement('small');s.textContent=sub;b.append(s);}const item={value,label:tr(en,es),aliases:[en,es,String(value),...aliases],action};choices.push(item);b.onclick=()=>accept(item.label,item.value,action);$('chatChoices').append(b);}
 function save(){history.push({state,p:structuredClone(p),selected:selected?.id||null,answers:structuredClone(answers),checkIndex,roleIndex,interviewIndex,editing,transcriptLength:transcript.length});}
 function accept(text,val,action){stopVoice();save();message(text,true);$('chatInput').value='';$('chatStatus').textContent='';if(action)action(val);else handle(val);}
@@ -80,7 +93,7 @@ function render(){
  let box;
  switch(state){
  case 'welcome':
- ask(tr('Hi, I am the ASAP virtual recruiting assistant. You can call us directly, fill out the quick-apply form or answer a few questions with me. You can type your answers or use the microphone to speak. Turn on “Read questions aloud” to hear me. We can explore jobs together and prepare your quick-apply form. A recruiter makes the next decision.','Hola, soy el asistente virtual de reclutamiento de ASAP. Puede llamarnos directamente, completar el formulario o responder unas preguntas conmigo. Puede escribir sus respuestas o usar el micrófono para hablar. Active “Leer preguntas en voz alta” para escucharme. Podemos explorar empleos y preparar su formulario. Un reclutador decide el siguiente paso.'));
+ ask(tr('Hi, I’m ASAP’s virtual recruiting assistant. I can help you explore jobs that fit your experience and location. You can type your answers or tap the microphone to speak. Turn on “Read questions aloud” if you’d like me to speak, too. How would you like to get started? Would you like to call a recruiter, fill out the application yourself or answer a few questions with me?','Hola, soy la asistente virtual de reclutamiento de ASAP. Puedo ayudarle a explorar empleos según su experiencia y ubicación. Puede escribir sus respuestas o tocar el micrófono para hablar. Active “Leer preguntas en voz alta” si desea escucharme. ¿Cómo le gustaría comenzar? ¿Prefiere llamar a un reclutador, completar la solicitud por su cuenta o responder unas preguntas conmigo?'));
  const call=document.createElement('a');call.href='tel:+15015372727';call.textContent=tr('Call ASAP: 501-537-2727 (Little Rock)','Llamar a ASAP: 501-537-2727 (Little Rock)');$('chatChoices').append(call);
  option('Fill out the form myself','Completar el formulario por mi cuenta','form',()=>{close();window.ASAP_FORM.open();});
  const linked=window.ASAP_FORM.getJob();
@@ -122,6 +135,7 @@ function render(){
  }
  if(state==='results')currentQuestion=tr('Review the positions shown. Choose a role to review its requirements, explore other kinds of work or choose another location.','Revise los puestos mostrados. Elija uno para revisar sus requisitos, explore otros tipos de trabajo o elija otro lugar.');
  if(state==='review')currentQuestion=tr('Review your contact details and answers on the screen. You can edit them before creating the application preview. No information has been sent.','Revise sus datos de contacto y respuestas en la pantalla. Puede editarlos antes de crear la vista previa. No se ha enviado información.');
+ currentQuestion=responsePrompt(currentQuestion);
  speak(currentQuestion);
 }
 function enumOptions(k){enums[k].forEach(v=>option(v[0],v[1],v[0]));}

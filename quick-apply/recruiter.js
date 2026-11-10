@@ -139,7 +139,7 @@ function render(){
  let box;
  switch(state){
  case 'welcome':
- ask(tr('Hi, I’m ASAP’s virtual recruiting assistant. I can help you explore jobs that fit your experience and location. You can type your answers or tap the microphone to speak. Turn on “Read questions aloud” if you’d like me to speak, too. How would you like to get started? Would you like to call a recruiter, fill out the application yourself or answer a few questions with me?','Hola, soy la asistente virtual de reclutamiento de ASAP. Puedo ayudarle a explorar empleos según su experiencia y ubicación. Puede escribir sus respuestas o tocar el micrófono para hablar. Active “Leer preguntas en voz alta” si desea escucharme. ¿Cómo le gustaría comenzar? ¿Prefiere llamar a un reclutador, completar la solicitud por su cuenta o responder unas preguntas conmigo?'));
+ ask(tr('Hi, I’m ASAP’s virtual recruiting assistant. I can help you explore jobs that fit your experience and location. You can type your answers or tap the microphone to speak. Turn on “Read questions aloud” if you’d like me to speak, too. Review the options provided and answer with one of them. You can click an option, type it or say it using the microphone. How would you like to get started? Would you like to call a recruiter, fill out the application yourself or answer a few questions with me?','Hola, soy la asistente virtual de reclutamiento de ASAP. Puedo ayudarle a explorar empleos según su experiencia y ubicación. Puede escribir sus respuestas o tocar el micrófono para hablar. Active “Leer preguntas en voz alta” si desea escucharme. Revise las opciones y responda con una de ellas. Puede seleccionar una opción, escribirla o decirla usando el micrófono. ¿Cómo le gustaría comenzar? ¿Prefiere llamar a un reclutador, completar la solicitud por su cuenta o responder unas preguntas conmigo?'));
  const call=document.createElement('a');call.href='tel:+15015372727';call.textContent=tr('Call ASAP: 501-537-2727 (Little Rock)','Llamar a ASAP: 501-537-2727 (Little Rock)');$('chatChoices').append(call);
  option('Fill out the form myself','Completar el formulario por mi cuenta','form',()=>{close();window.ASAP_FORM.open();});
  const linked=window.ASAP_FORM.getJob();
@@ -186,6 +186,8 @@ function render(){
  speak(currentQuestion);
 }
 function arrangeStep(){
+ $('chatChoiceHint').hidden=choices.length===0;
+ $('chatChoiceHint').textContent=tr('Review the options below and answer with one of them. Click an option, type it or tap the microphone to say it.','Revise las opciones de abajo y responda con una de ellas. Seleccione una opción, escríbala o toque el micrófono para decirla.');
  const nodes=[...$('chatChoices').children],nav=$('chatPages');nav.replaceChildren();nav.hidden=nodes.length<=4;
  let page=0;const pages=Math.ceil(nodes.length/4);
  function draw(){nodes.forEach((n,i)=>{n.hidden=Math.floor(i/4)!==page;});nav.replaceChildren();if(pages<=1)return;

@@ -64,7 +64,7 @@ function responsePrompt(text){
 function ask(text){currentQuestion=responsePrompt(text);return message(currentQuestion);}
 function option(en,es,value,action,sub='',aliases=[]){const b=document.createElement('button');b.type='button';b.textContent=tr(en,es);if(sub){b.className='job-choice';const s=document.createElement('small');s.textContent=sub;b.append(s);}const item={value,label:tr(en,es),aliases:[en,es,String(value),...aliases],action};choices.push(item);b.onclick=()=>accept(item.label,item.value,action);$('chatChoices').append(b);}
 function save(){history.push({state,p:structuredClone(p),selected:selected?.id||null,answers:structuredClone(answers),checkIndex,roleIndex,interviewIndex,editing,transcriptLength:transcript.length});}
-function accept(text,val,action){stopVoice();save();message(text,true);$('chatInput').value='';$('chatStatus').textContent='';if(action)action(val);else handle(val);}
+function accept(text,val,action){stopVoice();save();message(text,true);message(tr('Thank you for sharing that.','Gracias por compartirlo.'));$('chatInput').value='';$('chatStatus').textContent='';if(action)action(val);else handle(val);}
 function go(next){state=next;render();}
 function profileNext(){go(profileSteps.find(k=>p[k]===undefined)||'results');}
 function contactNext(){go(contactSteps.find(k=>!p[k])||'review');}
@@ -172,11 +172,32 @@ function handle(v){
  error(tr('Please choose one of the options shown.','Elija una de las opciones mostradas.'));
 }
 function error(s){$('chatStatus').textContent=s;message(s);}
+function clarifyAnswer(text){
+ stopVoice();message(text,true);
+ const needs={
+  welcome:['To get started, I need to know how you would like help: use the form yourself or explore jobs with me. You can also use the call button to speak with a recruiter.','Para comenzar, necesito saber cómo prefiere recibir ayuda: completar el formulario o explorar empleos conmigo. También puede usar el botón de llamada para hablar con un reclutador.'],
+  location:['To show the right openings, I need the location where you want to work. If it is not shown, choose “My location is not listed.”','Para mostrarle las vacantes adecuadas, necesito saber dónde quiere trabajar. Si no aparece, elija “Mi ubicación no aparece”.'],
+  category:['To narrow down the openings, I need one kind of work to start with. We can explore other kinds afterward.','Para reducir las opciones, necesito un tipo de trabajo para comenzar. Después podemos explorar otros.'],
+  experience:['For this step, I need roughly how much experience you have in that kind of work. Choose the closest experience range shown. You can describe your background in the next question.','En este paso, necesito saber aproximadamente cuánta experiencia tiene en ese tipo de trabajo. Elija el rango más cercano. En la siguiente pregunta puede describir su experiencia.'],
+  shift:['To record your availability, I need the shift that works best for you. Choose the closest option shown.','Para registrar su disponibilidad, necesito saber qué turno le conviene más. Elija la opción más cercana.'],
+  type:['To narrow down the openings, I need the type of employment you want. Choose one of the employment options shown.','Para reducir las opciones, necesito saber qué tipo de empleo busca. Elija una de las opciones mostradas.'],
+  startAvailability:['To help the recruiter plan, I need to know when you could start. Choose the closest option shown.','Para ayudar al reclutador a planificar, necesito saber cuándo podría comenzar. Elija la opción más cercana.'],
+  results:['To continue, I need to know which listed job you want to explore. You can use its name or number, or choose another location.','Para continuar, necesito saber qué puesto anunciado quiere explorar. Puede usar su nombre o número, o elegir otro lugar.'],
+  check:['For this requirement, I need a clear yes or no. If your answer depends on the details, choose “Talk to a recruiter” so someone can help clarify.','Para este requisito, necesito un sí o un no claro. Si su respuesta depende de los detalles, elija “Hablar con un reclutador” para aclararlo.'],
+  requirements:['To continue with this role, I need to know whether you can meet its listed minimum requirements. You can answer yes, no or ask a recruiter to clarify.','Para continuar con este puesto, necesito saber si puede cumplir los requisitos mínimos anunciados. Puede responder sí, no o pedir una aclaración al reclutador.'],
+  transportation:['For this step, I need to know whether you can reliably get to the work location. You can answer yes, no or choose to discuss it with a recruiter.','En este paso, necesito saber si puede llegar al lugar de trabajo de forma confiable. Puede responder sí, no o hablarlo con un reclutador.']
+ };
+ const detail=needs[state]||['I need one choice for this step before we continue. The options below show the next steps I can help with.','Necesito una opción para este paso antes de continuar. Las opciones de abajo muestran cómo puedo ayudarle.'];
+ const examples=choices.slice(0,2).map(c=>'“'+c.label+'”').join(tr(' or ',' o '));
+ currentQuestion=tr('Thank you for explaining. I have kept your response in this conversation. ','Gracias por explicarlo. Su respuesta queda en esta conversación. ')+tr(...detail)+' '+tr('Which option fits best? You can say or select ','¿Qué opción le corresponde mejor? Puede decir o seleccionar ')+examples+'.';
+ message(currentQuestion);$('chatStatus').textContent=tr('Your answer is above. Please choose the closest option, or use the recruiter call link.','Su respuesta aparece arriba. Elija la opción más cercana o use el enlace para llamar al reclutador.');
+ speak(currentQuestion);
+}
 function submitText(e){e.preventDefault();const text=$('chatInput').value.trim();if(!validText(text))return;
  if(choices.length){let hits=choices.filter(c=>c.aliases.some(a=>norm(a)===norm(text)));if(!hits.length)hits=choices.filter(c=>c.aliases.some(a=>norm(a).length>3&&norm(text).includes(norm(a))));
  if(hits.length===1){accept(text,hits[0].value,hits[0].action);return;}
  const free=['certifications','desiredPay','state','interview'].includes(state);
- if(!free){error(tr('Please choose one option, or say its displayed name. I do not want to guess.','Elija una opción o diga su nombre. No quiero adivinar.'));return;}}
+ if(!free){clarifyAnswer(text);return;}}
  accept(text,text);
 }
 function transfer(submit){

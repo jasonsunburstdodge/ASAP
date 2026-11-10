@@ -41,3 +41,9 @@ function finish(t){t.say('Alex');t.say('Sample');t.say('5015550123');t.say('alex
 {
  const t=setup();for(const j of t.w.ASAP_JOBS.jobs){assert(t.w.ASAP_RECRUITER_DATA.summaries[j.id]?.length===2);assert(t.w.ASAP_RECRUITER_DATA.titles[j.id]);assert(j.requirements.length);}console.log('PASS all 31 jobs have source requirements and bilingual summaries');t.dom.window.close();
 }
+{
+ const t=setup();assert.equal(t.$('chatChoices').querySelector('a').getAttribute('href'),'tel:+15015372727');t.click('Fill out the form myself');assert(!t.$('recruiterChat').open);assert.equal(t.$('stepLabel').textContent,'Step 1 of 3 · Contact & opportunity');console.log('PASS welcome offers phone, independent form and guided chat');t.dom.window.close();
+}
+{
+ const t=setup();discover(t);t.click('1. Order Selector');t.click('Review this role');t.click('No');t.click('Yes, show me');assert(t.$('chatMessages').textContent.includes('do not see another'));t.click('Explore all roles');assert(!t.$('chatChoices').textContent.includes('Order Selector'));assert(t.$('chatChoices').textContent.includes('Seamstress'));t.click('1. Seamstress');t.click('Review this role');t.click('Yes');t.click('Yes');t.click('None currently');t.click('Yes');t.say('Industrial sewing machines');t.say('I sew garments and inspect seams.');t.say('I would stop and tell the supervisor.');finish(t);t.click('Confirm and create');const out=JSON.parse(t.$('jsonPreview').textContent);assert.equal(out.position.wordpress_job_id,9505);assert(out.recruiter_chat.declined_job_ids.includes('9358'));assert.equal(out.candidate_screening.skills_and_experience,'I have operated reach forklifts, picked orders and counted inventory.');assert(out.recruiter_chat.requirement_answers.every(a=>a.job_id==='9505'));console.log('PASS alternate role retains profile, resets requirement checks and exports correct new job');t.dom.window.close();
+}

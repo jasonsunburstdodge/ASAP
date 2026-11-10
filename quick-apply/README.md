@@ -45,3 +45,5 @@ Public-browser checks verified the top call CTA and its tel target, no-prefill e
 ### Voice selection update
 
 Nov. 10, 2026: prefer available named adult female voices in each language, expose the actual device voice selector and handle late-loading voice lists. Nine DOM tests pass, including female-voice preference over an earlier-listed male voice and Spanish voice selection. ElevenLabs Rachel is documented as a recommended hosted option, not an active integration. Prior source preserved at `4ae410ab8582084241e45c04e69db79988c4cded`.
+
+Nov. 10, 2026: Jason selected ElevenLabs Rachel. The selection and pending activation requirements are recorded in `voice-selection.json`. Rachel audio is not yet connected; the existing device-voice fallback remains unchanged.

@@ -1,0 +1,21 @@
+{
+  "status": "selected_pending_connection",
+  "selected_by": "Jason Dodge",
+  "selected_on": "2026-11-10",
+  "provider": "elevenlabs",
+  "voice_name": "Rachel",
+  "voice_id": "21m00Tcm4TlvDq8ikWAM",
+  "model_id": "eleven_multilingual_v2",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "active_in_preview": false,
+  "delivery": "Backend synthesis or pre-generated prompt audio; never expose API credentials in this static site.",
+  "activation_requires": [
+    "ElevenLabs API access in a server-side secret store",
+    "Backend speech endpoint or generated audio assets",
+    "English and Spanish audition with recruiter prompts"
+  ],
+  "current_fallback": "Device speech synthesis; not Rachel"
+}

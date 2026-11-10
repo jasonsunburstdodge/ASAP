@@ -63,7 +63,52 @@ function responsePrompt(text){
  return text+' '+tr(ending[0],ending[1]);
 }
 function ask(text){currentQuestion=responsePrompt(text);return message(currentQuestion);}
-function option(en,es,value,action,sub='',aliases=[]){const b=document.createElement('button');b.type='button';b.textContent=tr(en,es);if(sub){b.className='job-choice';const s=document.createElement('small');s.textContent=sub;b.append(s);}const item={value,label:tr(en,es),aliases:[en,es,String(value),...aliases],action};choices.push(item);b.onclick=()=>accept(item.label,item.value,action);$('chatChoices').append(b);}
+// Common phrases stay scoped to the current question and its offered choices.
+const commonAnswers={
+ shift:{
+  Day:['day shift','days','daytime','morning shift','mornings','first shift','1st shift','I like working days','I prefer days','I can work days','turno de dia','de dia','por la manana','prefiero trabajar de dia','me gusta trabajar de dia'],
+  Evening:['evening shift','evenings','afternoon shift','afternoons','second shift','2nd shift','I prefer evenings','turno de tarde','por la tarde','prefiero las tardes'],
+  Night:['night shift','nights','overnight','graveyard shift','third shift','3rd shift','I like working nights','turno nocturno','turno de noche','por la noche','prefiero las noches'],
+  Flexible:['any shift','any time','either shift','all shifts','I am flexible','my schedule is flexible','no preference','days or nights','cualquier turno','cualquier horario','soy flexible','no tengo preferencia']
+ },
+ experience:{
+  'No experience yet':['no experience','I have no experience','this is my first job','first job','new to this','sin experiencia','no tengo experiencia','es mi primer trabajo'],
+  'Less than 1 year':['less than a year','under a year','a few months','six months','6 months','menos de un ano','unos meses','seis meses'],
+  '1-2 years':['one year','1 year','two years','2 years','a year','un ano','dos anos','2 anos'],
+  '3-4 years':['three years','3 years','four years','4 years','tres anos','3 anos','cuatro anos','4 anos'],
+  '5+ years':['five years','5 years','five or more years','5 or more years','more than five years','over five years','cinco anos','5 anos','cinco anos o mas','mas de cinco anos']
+ },
+ type:{
+  Any:['anything','either one','no preference','any type','open to anything','cualquiera','cualquier empleo','no tengo preferencia'],
+  'Full Time':['full time job','fulltime','a full time position','I want full time','40 hours a week','tiempo completo','jornada completa'],
+  Contract:['contract work','contract job','a contract position','trabajo por contrato','por contrato'],
+  Other:['part time','parttime','part time work','weekends only','medio tiempo','tiempo parcial','solo fines de semana']
+ },
+ startAvailability:{
+  Immediately:['right away','as soon as possible','asap','today','tomorrow','I can start now','ready now','ahora','hoy','manana','lo antes posible','puedo empezar ya'],
+  'Within 1 week':['next week','in a week','one week','1 week','this week','la proxima semana','en una semana','esta semana'],
+  'Within 2 weeks':['in two weeks','two weeks','2 weeks','I need two weeks notice','en dos semanas','dos semanas'],
+  'More than 2 weeks':['in a month','next month','in three weeks','three weeks','3 weeks','en un mes','el proximo mes','tres semanas'],
+  'Need to discuss':['not sure yet','I am not sure','need to discuss','talk to a recruiter','no estoy seguro','no estoy segura','necesito hablarlo']
+ },
+ category:{
+  warehouse:['warehouse work','warehouse jobs','picking and packing','order picking','almacen','trabajo de almacen','montacargas'],
+  driving:['driving','delivery','delivery driver','truck driving','conducir','conductor','reparto','entregas'],
+  trades:['maintenance','welding','welder','mechanic','skilled trades','mantenimiento','soldadura','mecanico'],
+  production:['factory work','factory','manufacturing','production','sewing','fabrica','produccion','costura'],
+  office:['office work','office job','administrative work','accounting','bookkeeping','oficina','administracion','contabilidad'],
+  outdoor:['construction','landscaping','outdoor work','lawn care','construccion','jardineria','trabajo al aire libre'],
+  any:['anything','open to anything','any kind of work','not sure yet','cualquier trabajo','estoy abierto a opciones','estoy abierta a opciones']
+ },
+ welcome:{discover:['help me','help me find work','find a job','looking for a job','ask me questions','lets start','let s start','buscar trabajo','busco empleo','hagame preguntas'],form:['the form','application form','I will fill it out','fill it out myself','el formulario','completar por mi cuenta']},
+ transportation:{Yes:['yes I can','I can get there','I have reliable transportation','I have a ride','si puedo','puedo llegar','tengo transporte'],No:['no I cannot','I cannot get there','I do not have transportation','no puedo llegar','no tengo transporte'],'Need to discuss':['not sure','it depends','I need to discuss it','no estoy seguro','no estoy segura','depende']}
+};
+function commonAliases(value){
+ const local=commonAnswers[state]?.[value]||[];
+ if(['check','requirements'].includes(state))return [...local,...({yes:['yes I do','yes I can','I meet those requirements','si puedo','si cumplo'],no:['no I do not','no I cannot','I do not meet those requirements','no cumplo','no puedo'],unsure:['not sure','I am not sure','I need more information','it depends','talk to a recruiter','no estoy seguro','no estoy segura','necesito mas informacion','depende']}[value]||[])];
+ return local;
+}
+function option(en,es,value,action,sub='',aliases=[]){const b=document.createElement('button');b.type='button';b.textContent=tr(en,es);if(sub){b.className='job-choice';const s=document.createElement('small');s.textContent=sub;b.append(s);}const item={value,label:tr(en,es),aliases:[en,es,String(value),...aliases,...commonAliases(value)],action};choices.push(item);b.onclick=()=>accept(item.label,item.value,action);$('chatChoices').append(b);}
 function save(){history.push({state,p:structuredClone(p),selected:selected?.id||null,answers:structuredClone(answers),checkIndex,roleIndex,interviewIndex,editing,transcriptLength:transcript.length});}
 function accept(text,val,action){stopVoice();save();message(text,true);message(tr('Thank you for sharing that.','Gracias por compartirlo.'));$('chatInput').value='';$('chatStatus').textContent='';if(action)action(val);else handle(val);}
 function go(next){state=next;render();}
@@ -215,7 +260,12 @@ function answerMatchText(value){
  return text;
 }
 function submitText(e){e.preventDefault();const text=$('chatInput').value.trim();if(!validText(text))return;
- if(choices.length){let hits=choices.filter(c=>c.aliases.some(a=>answerMatchText(a)===answerMatchText(text)));if(!hits.length)hits=choices.filter(c=>c.aliases.some(a=>answerMatchText(a).length>3&&answerMatchText(text).includes(answerMatchText(a))));
+ if(choices.length){let hits=choices.filter(c=>c.aliases.some(a=>answerMatchText(a)===answerMatchText(text)));if(!hits.length){
+ const normalized=answerMatchText(text);
+ // Do not treat a preference mentioned in a denial or qualification as an answer.
+ const qualified=/\b(no|not|never|cannot|can t|don t|do not|but|except|maybe|unsure|depends|pero|excepto|quizas|depende|ni)\b/.test(normalized);
+ if(!qualified&&!['check','requirements','transportation'].includes(state))hits=choices.filter(c=>c.aliases.some(a=>{const phrase=answerMatchText(a);return phrase.length>3&&(' '+normalized+' ').includes(' '+phrase+' ');}));
+ }
  if(hits.length===1){accept(text,hits[0].value,hits[0].action);return;}
  const free=['certifications','desiredPay','state','interview'].includes(state);
  if(!free){clarifyAnswer(text);return;}}

@@ -5,3 +5,13 @@
 #recruiterChat{text-align:left}#recruiterChat .chat-header,#chatForm{text-align:left}
 
 #recruiterChat .voice-setting{width:100%;display:flex;align-items:center;gap:8px}#recruiterChat .voice-setting select{max-width:calc(100% - 45px);font-size:11px;flex:1;min-width:0}
+/* Circular recruiter launcher with the name below the portrait. */
+#chatLauncher{flex-direction:column;gap:8px;width:174px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;text-align:center}
+#chatLauncher img{width:112px;height:112px;box-sizing:border-box;border:3px solid #f08221;border-radius:50%;object-fit:cover;object-position:center top;background:#ffe0c0;box-shadow:0 5px 22px #0003}
+#chatLauncher>span{display:block;padding:8px 10px;border-radius:12px;background:#fff;box-shadow:0 3px 15px #0002;line-height:1.35;font-size:13px}
+#chatLauncher small{text-align:center;margin-top:3px}
+#recruiterChat .chat-header{position:relative;flex-direction:column;gap:8px;text-align:center;padding:16px 45px}
+#recruiterChat .chat-header img{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0}
+#recruiterChat .chat-header>div{text-align:center}
+#recruiterChat #closeChat{position:absolute;right:12px;top:12px;margin:0}
+@media(max-width:650px){#chatLauncher{width:150px;right:12px;bottom:12px}#chatLauncher img{width:94px;height:94px}#chatLauncher>span{font-size:12px}#recruiterChat .chat-header{padding:10px 42px;gap:5px}#recruiterChat .chat-header img{width:72px;height:72px}#recruiterChat h2{font-size:17px}}

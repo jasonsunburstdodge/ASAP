@@ -205,8 +205,17 @@ function clarifyAnswer(text){
  arrangeStep();
  speak(currentQuestion);
 }
+function answerMatchText(value){
+ let text=norm(value);
+ if(state==='experience'){
+  const numbers={one:'1',two:'2',three:'3',four:'4',five:'5',uno:'1',un:'1',dos:'2',tres:'3',cuatro:'4',cinco:'5'};
+  text=text.replace(/\b(one|two|three|four|five|uno|un|dos|tres|cuatro|cinco)\b/g,w=>numbers[w]);
+  text=text.replace(/(\d+)\s+(?:to|through|a|hasta)\s+(\d+)/g,'$1 $2');
+ }
+ return text;
+}
 function submitText(e){e.preventDefault();const text=$('chatInput').value.trim();if(!validText(text))return;
- if(choices.length){let hits=choices.filter(c=>c.aliases.some(a=>norm(a)===norm(text)));if(!hits.length)hits=choices.filter(c=>c.aliases.some(a=>norm(a).length>3&&norm(text).includes(norm(a))));
+ if(choices.length){let hits=choices.filter(c=>c.aliases.some(a=>answerMatchText(a)===answerMatchText(text)));if(!hits.length)hits=choices.filter(c=>c.aliases.some(a=>answerMatchText(a).length>3&&answerMatchText(text).includes(answerMatchText(a))));
  if(hits.length===1){accept(text,hits[0].value,hits[0].action);return;}
  const free=['certifications','desiredPay','state','interview'].includes(state);
  if(!free){clarifyAnswer(text);return;}}

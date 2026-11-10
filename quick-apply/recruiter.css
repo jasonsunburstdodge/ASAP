@@ -140,3 +140,20 @@
  #recruiterChat h2{max-width:150px;font-size:13px}
  #recruiterChat .chat-bottom{display:none}
 }
+
+/* Keep all mobile actions in document flow: no floating or overlapping footer. */
+@media(max-width:759px){
+ #recruiterChat .chat-columns{display:block;isolation:isolate;overflow:auto;flex:1 1 0;min-height:0}
+ #recruiterChat .chat-columns>*,#recruiterChat .chat-response>*{position:static;flex-shrink:0;min-width:0}
+ #recruiterChat .chat-response{display:block;padding:12px 16px}
+ #recruiterChat .chat-choice-hint{margin:0 0 12px;font-size:12px}
+ #recruiterChat #chatChoices{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin:0;padding:0 0 4px}
+ #recruiterChat #chatChoices button,#recruiterChat #chatChoices a{min-height:48px;height:auto;white-space:normal;font-size:15px;line-height:1.4;padding:12px 14px;transform:none;animation:none;box-shadow:0 2px 0 #8d3900}
+ #recruiterChat #chatPages{margin-top:14px;gap:10px;flex-wrap:wrap}
+ #recruiterChat #chatMobileDock{position:static;padding:12px 16px;box-shadow:none}
+ #recruiterChat #chatForm .chat-input-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+ #recruiterChat #chatForm #chatMic,#recruiterChat #chatForm #chatSend{width:100%;margin:0;min-height:48px}
+ #recruiterChat .chat-bottom{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:14px 16px max(16px,env(safe-area-inset-bottom));background:#fff6ed;clear:both}
+ #recruiterChat .chat-bottom button,#recruiterChat .chat-bottom a{width:100%;min-height:48px;font-size:13px;white-space:normal;line-height:1.35}
+ #recruiterChat .chat-bottom #humanRecruiter{grid-column:1 / -1}
+}

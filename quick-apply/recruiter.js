@@ -158,7 +158,7 @@ function render(){
  let box;
  switch(state){
  case 'welcome':
- ask(tr('Hi, I’m ASAP’s virtual recruiting assistant. I can help you explore jobs that fit your experience and location. You can type your answers or tap the microphone to speak. Turn on “Read questions aloud” if you’d like me to speak, too. Review the options provided and answer with one of them. You can click an option, type it or say it using the microphone. How would you like to get started? Would you like to call a recruiter, fill out the application yourself or answer a few questions with me?','Hola, soy la asistente virtual de reclutamiento de ASAP. Puedo ayudarle a explorar empleos según su experiencia y ubicación. Puede escribir sus respuestas o tocar el micrófono para hablar. Active “Leer preguntas en voz alta” si desea escucharme. Revise las opciones y responda con una de ellas. Puede seleccionar una opción, escribirla o decirla usando el micrófono. ¿Cómo le gustaría comenzar? ¿Prefiere llamar a un reclutador, completar la solicitud por su cuenta o responder unas preguntas conmigo?'));
+ ask(tr('Hi, I’m ASAP’s virtual recruiting assistant. I can help you find work that fits your experience and location. You can type or use the microphone. Would you like to call ASAP, apply yourself or explore jobs with me?','Hola, soy la asistente virtual de reclutamiento de ASAP. Puedo ayudarle a encontrar trabajo según su experiencia y ubicación. Puede escribir o usar el micrófono. ¿Prefiere llamar a ASAP, completar la solicitud o explorar empleos conmigo?'));
  const call=document.createElement('a');call.href='tel:+15015372727';call.textContent=tr('Call ASAP: 501-537-2727 (Little Rock)','Llamar a ASAP: 501-537-2727 (Little Rock)');$('chatChoices').append(call);
  option('Fill out the form myself','Completar el formulario por mi cuenta','form',()=>{close();window.ASAP_FORM.open();});
  const linked=window.ASAP_FORM.getJob();
@@ -206,7 +206,7 @@ function render(){
 }
 function arrangeStep(){
  $('chatChoiceHint').hidden=choices.length===0;
- $('chatChoiceHint').textContent=tr('Review the options below and answer with one of them. Click an option, type it or tap the microphone to say it.','Revise las opciones de abajo y responda con una de ellas. Seleccione una opción, escríbala o toque el micrófono para decirla.');
+ $('chatChoiceHint').textContent=tr('Review the options below and answer with one of them. Tap an option, type it or use the microphone. Enable speech in Language & audio.','Revise las opciones de abajo y responda con una de ellas. Toque una opción, escríbala o use el micrófono. Active la voz en Idioma y audio.');
  const nodes=[...$('chatChoices').children],nav=$('chatPages');nav.replaceChildren();nav.hidden=nodes.length<=4;
  let page=0;const pages=Math.ceil(nodes.length/4);
  function draw(){nodes.forEach((n,i)=>{n.hidden=Math.floor(i/4)!==page;});nav.replaceChildren();if(pages<=1)return;
@@ -328,6 +328,8 @@ const mobileDock=document.createElement('div');mobileDock.id='chatMobileDock';
 $('recruiterChat').insertBefore(mobileDock,document.querySelector('#recruiterChat .chat-bottom'));
 function fitMobileChat(){
  const mobile=window.innerWidth<=759,dialog=$('recruiterChat');
+ const columns=document.querySelector('.chat-columns'),footer=document.querySelector('#recruiterChat .chat-bottom');
+ if(mobile){columns.append(mobileDock,footer);}else{dialog.append(mobileDock,footer);}
  const target=mobile?mobileDock:document.querySelector('.chat-response');
  if($('chatForm').parentElement!==target){target.append($('chatForm'),$('chatStatus'));}
  const viewport=window.visualViewport;

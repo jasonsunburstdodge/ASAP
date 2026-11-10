@@ -15,13 +15,16 @@ function label(key){return labels[key]?.[lang==='es'?1:0]||key;}
 function displayValue(key,val){return enums[key]?.find(x=>x[0]===val)?.[lang==='es'?1:0] || (key==='category'?data.categories.find(x=>x[0]===val)?.[lang==='es'?2:1]:null)||val;}
 function stopVoice(){window.ASAP_SAVED_AUDIO?.stop();waitingForVoice=false;if(recognizer){recognizer.abort();recognizer=null;}listening=false;window.speechSynthesis?.cancel();$('chatMic').setAttribute('aria-pressed','false');$('chatMic').textContent=tr('Use microphone','Usar micrófono');}
 // Prefer named adult women's voices where the device offers them; never infer gender from language alone.
-const voicePreferences={en:['Aria','Jenny','Samantha','Zira','Ava','Allison','Susan','Victoria','Karen','Serena','Sonia'],es:['Dalia','Paloma','Sabina','Paulina','Mónica','Monica','Elvira','Helena','Laura']};
+const voicePreferences={en:['Aria','Jenny','Samantha','Ava','Allison','Susan','Victoria','Karen','Serena','Sonia'],es:['Dalia','Paloma','Sabina','Paulina','Mónica','Monica','Elvira','Helena','Laura']};
 const selectedVoices={};
 let availableVoices=[],waitingForVoice=false;
 function voiceKey(v){return v.voiceURI||v.name+'|'+v.lang;}
+// Device voices have no standard gender field; exclude recognized male names and Zira.
+const excludedVoiceNames=/\b(zira|david|mark|george|james|guy|christopher|eric|roger|ryan|andrew|brian|steffan|tony|jacob|sean|richard|ravi|rishi|hemant|pablo|raul|raúl|alvaro|álvaro|jorge|diego|enrique|miguel|alonso|alex|daniel|fred|thomas|lee|oliver|male)\b/i;
+function isPermittedVoice(v){return !excludedVoiceNames.test(v.name||'');}
 function voiceRank(v){const i=voicePreferences[lang].findIndex(n=>(v.name||'').toLowerCase().includes(n.toLowerCase()));return (i<0?1000:i*10)+(v.lang.toLowerCase()===(lang==='es'?'es-mx':'en-us')?0:2);}
 function refreshVoices(){
- availableVoices=(window.speechSynthesis?.getVoices()||[]).filter(v=>v.lang?.toLowerCase().startsWith(lang)).sort((a,b)=>voiceRank(a)-voiceRank(b));
+ availableVoices=(window.speechSynthesis?.getVoices()||[]).filter(v=>v.lang?.toLowerCase().startsWith(lang)&&isPermittedVoice(v)).sort((a,b)=>voiceRank(a)-voiceRank(b));
  const box=$('chatVoice');box.replaceChildren();const recorded=window.ASAP_SAVED_AUDIO?.available(lang);
  if(recorded)box.add(new Option(tr('Rachel · saved audio','Rachel · audio grabado'),'recorded-rachel'));
  if(!availableVoices.length&&!recorded){box.add(new Option(tr('No voice loaded for this language','No hay voz cargada para este idioma'),''));box.disabled=true;return;}
